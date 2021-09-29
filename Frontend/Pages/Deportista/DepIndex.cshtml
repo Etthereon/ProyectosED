@@ -1,0 +1,55 @@
+﻿@page
+@model Frontend.Pages.DepIndexModel
+@{
+    ViewData ["Title"]="DepIndex";
+}
+<h1>Listado de Deportistas</h1>
+<p>
+    <a asp-page="CreateDep">Crear Deportista</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Documento</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Genero</th>
+            <th>Rh</th>
+            <th>EPS</th>
+            <th>FechaNac</th>
+            <th>Disciplina</th>
+            <th>Direccion</th>
+            <th>NumeroEmergencia</th>
+            <th>EquipoId</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var dep in Model.Deportistas)
+        {
+            <tr>
+                <td>@dep.id</td>
+                <td>@dep.Documento</td>
+                <td>@dep.Nombres</td>
+                <td>@dep.Apellidos</td>
+                <td>@dep.Genero</td>
+                <td>@dep.Rh</td>
+                <td>@dep.EPS</td>
+                <td>@dep.FechaNac</td>
+                <td>@dep.Disciplina</td>
+                <td>@dep.Direccion</td>
+                <td>@dep.NumeroEmergencia</td>
+                <td>@dep.EquipoId</td>
+                <td>
+                    <a asp-page="./EditDep" asp-route-id="@dep.id">Editar</a>
+                    <a asp-page="./DeleteDep" asp-route-id="@dep.id">Eliminar</a>
+                    <a asp-page="./DetailsDep" asp-route-id="@dep.id">Detalles</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+    
+</table>
+
+
+

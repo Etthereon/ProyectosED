@@ -17,16 +17,20 @@ namespace Persistencia
         bool IRepositorioPatrocinador.CrearPatrocinador(Patrocinador patrocinador)
         {
             bool creado=false;
-            try
+            bool ex= Existe(patrocinador);
+            if(!ex)
             {
-                 _appContext.Patrocinadores.Add(patrocinador);
-                 _appContext.SaveChanges();
-                 creado=true;
-            }
-            catch (System.Exception)
-            {
-                return creado;
-                //throw;
+                try
+                {
+                    _appContext.Patrocinadores.Add(patrocinador);
+                    _appContext.SaveChanges();
+                    creado=true;
+                }
+                catch (System.Exception)
+                {
+                    return creado;
+                    //throw;
+                }
             }
             return creado;
         }
@@ -34,12 +38,16 @@ namespace Persistencia
         bool IRepositorioPatrocinador.ActualizarPatrocinador(Patrocinador patrocinador)
         {
             bool actualizado=false;
-            var pat=_appContext.Patrocinadores.Find(3);
+            var pat=_appContext.Patrocinadores.Find(patrocinador.id);
             if (pat!=null)
             {
                 try
                 {
+                     pat.Identificacion=patrocinador.Identificacion;
                      pat.Nombre=patrocinador.Nombre;
+                     pat.tipoPersona=patrocinador.tipoPersona;
+                     pat.Direccion=patrocinador.Direccion;
+                     pat.Telefono=patrocinador.Telefono;
                      _appContext.SaveChanges();
                      actualizado=true;
                 }
@@ -83,6 +91,17 @@ namespace Persistencia
         IEnumerable<Patrocinador> IRepositorioPatrocinador.ListarPatrocinadores()
         {
             return _appContext.Patrocinadores;
+        }
+
+        bool Existe(Patrocinador patro)
+        {
+            bool ex=false;
+            var pat=_appContext.Patrocinadores.FirstOrDefault(m=> m.Identificacion==patro.Identificacion);
+            if(pat!=null)
+            {
+                ex=true;
+            }
+            return ex;
         }
 
     }

@@ -1,0 +1,58 @@
+﻿@page
+@model Frontend.Pages.DetailsPatrocinadorModel
+@{
+    ViewData["Title"]="Details";
+}
+<h1>Details</h1>
+<h4>Patrocinador</h4>
+
+<div class="form-horizontal">
+        <hr />
+        <div class="row">
+           <div class="col-md-4">
+               <form method="post">
+
+                   <input type="hidden" asp-for="Patrocinador.id" />
+
+                    <div class="form-group">
+                       <label asp-for="Patrocinador.id" class="control-label"> </label>
+                       <input asp-for="Patrocinador.id"  class="form-control" readonly/>                       
+                   </div>
+
+                   <div class="form-group">
+                    <label asp-for="Patrocinador.Identificacion" class="control-label"> </label>
+                    <input asp-for="Patrocinador.Identificacion" class="form-control" />                     
+                   </div>
+
+                    <div class="form-group">
+                    <label asp-for="Patrocinador.Nombre" class="control-label"> </label>
+                    <input asp-for="Patrocinador.Nombre" class="form-control" />                   
+                   </div>
+
+                    <div class="form-group">
+                    <label asp-for="Patrocinador.tipoPersona" class="control-label"> </label>
+                    <input asp-for="Patrocinador.tipoPersona" class="form-control" />                   
+                    </div>
+
+                    <div class="form-group">
+                    <label asp-for="Patrocinador.Direccion" class="control-label"> </label>
+                    <input asp-for="Patrocinador.Direccion" class="form-control" />                   
+                    </div>
+                   
+                    <div class="form-group">
+                    <label asp-for="Patrocinador.Telefono" class="control-label"> </label>
+                    <input asp-for="Patrocinador.Telefono" class="form-control" />                  
+                    </div>
+
+               </form>
+           </div>
+        </div>
+
+        <div>
+            <a asp-page="PIndex"> Back to List</a>
+        </div> 
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

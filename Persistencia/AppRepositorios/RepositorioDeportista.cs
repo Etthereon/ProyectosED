@@ -17,29 +17,43 @@ namespace Persistencia
         bool IRepositorioDeportista.CrearDeportista(Deportista deportista)
         {
             bool creado=false;
-            try
-            {
-                 _appContext.Deportistas.Add(deportista);
-                 _appContext.SaveChanges();
-                 creado=true;
-            }
-            catch (System.Exception)
-            {
-                return creado;
-                //throw;
-            }
+            bool ex= Existe(deportista);
+           if(!ex)
+           {
+                try
+                {
+                    _appContext.Deportistas.Add(deportista);
+                    _appContext.SaveChanges();
+                    creado=true;
+                }
+                catch (System.Exception)
+                {
+                    return creado;
+                    //throw;
+                }
+           }
             return creado;
         }
 
         bool IRepositorioDeportista.ActualizarDeportista(Deportista deportista)
         {
             bool actualizado=false;
-            var dep=_appContext.Deportistas.Find(4);
+            var dep=_appContext.Deportistas.Find(deportista.id);
             if (dep!=null)
             {
                 try
                 {
+                     dep.Documento=deportista.Documento;
                      dep.Nombres=deportista.Nombres;
+                     dep.Apellidos=deportista.Apellidos;
+                     dep.Genero=deportista.Genero;
+                     dep.Rh=deportista.Rh;
+                     dep.EPS=deportista.EPS;
+                     dep.FechaNac=deportista.FechaNac;
+                     dep.Disciplina=deportista.Disciplina;
+                     dep.Direccion=deportista.Direccion;
+                     dep.NumeroEmergencia=deportista.NumeroEmergencia;
+                     dep.EquipoId=deportista.EquipoId;
                      _appContext.SaveChanges();
                      actualizado=true;
                 }
@@ -83,6 +97,17 @@ namespace Persistencia
         IEnumerable<Deportista> IRepositorioDeportista.ListarDeportistas()
         {
             return _appContext.Deportistas;
+        }
+
+        bool Existe(Deportista depor)
+        {
+            bool ex=false;
+            var dep=_appContext.Deportistas.FirstOrDefault(d=> d.Documento==depor.Documento);
+            if(dep!=null)
+            {
+                ex=true;
+            }
+            return ex;
         }
 
     }

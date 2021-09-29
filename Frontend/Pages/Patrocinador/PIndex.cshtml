@@ -1,0 +1,38 @@
+﻿@page
+@model Frontend.Pages.PIndexModel
+@{
+    ViewData["Titulo"]="PIndex"; // Sirven para el manejo de directivas. 
+}
+<h1>Listado de Patrocinadores</h1> 
+<p>
+    <a asp-page="CreatePatrocinador">Crear Patrocinador</a> 
+</p>
+<table class="table"> 
+   <thead> 
+       <tr>
+           <th>Id</th>
+           <th>Identificacion</th>
+           <th>Nombre</th>
+           <th>TipoPersona</th>
+           <th>Direccion</th>
+           <th>Telefono</th>
+       </tr>
+   </thead>
+   @foreach (var patro in Model.Patrocinadores)
+   {
+    <tr> 
+        <td>  @patro.id  </td>
+        <td>  @patro.Identificacion </td>
+        <td>  @patro.Nombre</td>
+        <td>  @patro.tipoPersona </td>
+        <td>  @patro.Direccion </td>
+        <td>  @patro.Telefono </td>
+        <td>
+             <a asp-page="./EditPatrocinador" asp-route-id= "@patro.id"> Editar </a> 
+             <a asp-page="./DeletePatrocinador" asp-route-id= "@patro.id"> Eliminar </a>
+             <a asp-page="./DetailsPatrocinador" asp-route-id= "@patro.id"> Detalles </a>
+        </td>
+    </tr>
+   }
+</table>
+

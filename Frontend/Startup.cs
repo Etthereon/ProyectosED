@@ -26,10 +26,17 @@ namespace Frontend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            //Inyeccion de dependencia
-            services.AddScoped<IRepositorioMunicipio, RepositorioMunicipio>();
             //Registrar el contexto de datos
             services.AddDbContext<Persistencia.AppContext>();
+            //Inyeccion de dependencia para municipio
+            services.AddScoped<IRepositorioMunicipio, RepositorioMunicipio>();
+            //Inyeccion de dependencia para deportista
+            services.AddScoped<IRepositorioDeportista, RepositorioDeportista>();
+            //Inyeccion de dependencia para patrocinador
+            services.AddScoped<IRepositorioPatrocinador, RepositorioPatrocinador>();
+            //Inyeccion de dependencia para equipo
+            services.AddScoped<IRepositorioEquipo, RepositorioEquipo>();
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
