@@ -16,19 +16,23 @@ namespace Persistencia
         // implementar de IRepositorio
         bool IRepositorioMunicipio.CrearMunicipio(Municipio municipio)
         {
-            bool creado=false;
-            try
-            {
-                 _appContext.Municipios.Add(municipio);
-                 _appContext.SaveChanges();
-                 creado=true;
-            }
-            catch (System.Exception)
-            {
+           bool creado=false;
+           bool ex= Existe(municipio);
+           if(!ex)
+           {
+                try
+                {
+                    _appContext.Municipios.Add(municipio);
+                    _appContext.SaveChanges();
+                    creado=true;
+                }
+                catch (System.Exception)
+                {
                 return creado;
-                //throw;
-            }
-            return creado;
+                    //throw;
+                }
+           }          
+           return creado;
         }
 
         bool IRepositorioMunicipio.ActualizarMunicipio(Municipio municipio)
@@ -83,6 +87,17 @@ namespace Persistencia
         IEnumerable<Municipio> IRepositorioMunicipio.ListarMunicipios()
         {
             return _appContext.Municipios;
+        }
+
+        bool Existe(Municipio muni)
+        {
+            bool ex=false;
+            var mun=_appContext.Municipios.FirstOrDefault(m=> m.Nombre==muni.Nombre);
+            if(mun!=null)
+            {
+                ex=true;
+            }
+            return ex;
         }
 
     }

@@ -1093,16 +1093,5 @@ namespace Consola
             }
         }
 
-        /*bool Existe(Municipio municipio)
-        {
-            bool existe = false;
-            var mun = _appContext.Municipio.FirstOrDefault(municipio.Nombre);
-            if (mun!=null)
-            {
-                existe=true;
-            }
-            return existe;
-        }*/
-
     }
 }
