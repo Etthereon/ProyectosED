@@ -34,7 +34,7 @@ namespace Persistencia
         bool IRepositorioMunicipio.ActualizarMunicipio(Municipio municipio)
         {
             bool actualizado=false;
-            var mun=_appContext.Municipios.Find(4);
+            var mun=_appContext.Municipios.Find(municipio.id);
             if (mun!=null)
             {
                 try

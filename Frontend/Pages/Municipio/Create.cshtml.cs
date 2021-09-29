@@ -37,6 +37,7 @@ namespace Frontend.Pages
             }
             else
             {
+                ViewData ["Mensaje"]= "El municipio ya se encuentra registrado";
                 return Page();
             }
         }

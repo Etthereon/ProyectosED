@@ -1,16 +1,17 @@
 ﻿@page
 @model Frontend.Pages.CreateModel
 @{
-    ViewData["Title"]= "Create";
+    ViewData["title"]="Create";
 }
 <h1>Crear Municipio</h1>
+<h3>@ViewData["Mensaje"]</h3>
 
 <div class="form-horizontal">
-    <hr/> 
+    <hr/>
     <div class="row">
-        <div class method=col-md-4>
-            <form method="post">
-                <div></div>
+        <div class=col-md-4>
+            <form method="POST">
+                <div> </div>
                 <div class="form-group">
                     <label asp-for="Municipio.Nombre" class="control-label"></label>
                     <input asp-for="Municipio.Nombre" class="form-control" />
@@ -23,11 +24,12 @@
         </div>
     </div>
     <div>
-        <a asp-page="MunIndex">Ir al Inicio</a>
+        <a asp-page="MIndex">ir a inicio</a>
     </div>
 </div>
-@section Scripts{
+@section Scripts
+{
     @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+       await Html.RenderPartialAsync("_ValidationScriptsPartial"); 
     }
 }
