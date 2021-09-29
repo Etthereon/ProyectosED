@@ -21,7 +21,7 @@ namespace Persistencia
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB;Initial Catalog= EventosDep8");
+                optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB;Initial Catalog= EventosEscenarios");
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

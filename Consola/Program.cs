@@ -25,7 +25,7 @@ namespace Consola
         {
             //---------------------
             // INSTANCIA MUNICIPIOS FINAL
-            //listarMunicipios();
+            listarMunicipios();
             //buscarMunicipio();
             //crearMunicipio();
             //eliminarMunicipio();
@@ -62,7 +62,7 @@ namespace Consola
 
             //---------------------
             // INSTANCIA Entrenador 
-            crearEntrenador();
+            //crearEntrenador();
             //eliminarEntrenador();
             //actualizarEntrenador();
             //buscarEntrenador();
@@ -920,7 +920,7 @@ namespace Consola
     
         private static bool eliminarMunicipio()
         {
-            bool funciono=_repomunicipio.EliminarMunicipio(5);
+            bool funciono=_repomunicipio.EliminarMunicipio(6);
             if (funciono)
                 {
                 Console.WriteLine("Municipio eliminado con exito.");
@@ -1073,16 +1073,35 @@ namespace Consola
         //-------------------------------------------------------
 
 
-        /*private static void ingresarDatos()
+        private static void ingresarDatos()
         {
-            string mun="";
-            Console.WriteLine("Ingrese el nombre dle municipio que desea crear");
-            mun= Console.ReadLine();
-            var muni= new Municipio
+            string nombre ="";
+            Console.WriteLine("Ingrese el nombre del municipio que desea crear");
+            nombre= Console.ReadLine();
+            var municipio = new Municipio
             {
-                Nombre=mun
+               Nombre = nombre
             };
-            bool f=crearMunicipio(mun);
+            bool funciono = _repomunicipio.CrearMunicipio(municipio);
+            if (funciono)
+            {
+                Console.WriteLine("Municipio adicionado con exito.");
+            }
+            else
+            {
+                Console.WriteLine("Se ha presentado una falla en el proceso.");
+            }
+        }
+
+        /*bool Existe(Municipio municipio)
+        {
+            bool existe = false;
+            var mun = _appContext.Municipio.FirstOrDefault(municipio.Nombre);
+            if (mun!=null)
+            {
+                existe=true;
+            }
+            return existe;
         }*/
 
     }
