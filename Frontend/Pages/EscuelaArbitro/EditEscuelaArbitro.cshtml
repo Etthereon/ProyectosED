@@ -1,0 +1,45 @@
+﻿@page
+@model Frontend.Pages.EditEscuelaArbitroModel
+@{
+    ViewData["Title"]="Edit";
+}
+<h1>Edit Escuela Arbitros </h1>
+<h4>Escuela arbitros</h4>
+<h3>@ViewData["Mensaje"]</h3>
+
+<div class="form-horizontal">  
+        <hr />    
+        <div class="row">
+           <div class="col-md-4">
+               <form method="post">
+                   <input type="hidden" asp-for="EscuelaArbitro.id" />
+                   <div class="form-group">
+                    <label asp-for="EscuelaArbitro.Nombre" class="control-label"> </label>
+                    <input asp-for="EscuelaArbitro.Nombre" class="form-control" />
+                    <label asp-for="EscuelaArbitro.Resolucion" class="control-label"> </label>
+                    <input asp-for="EscuelaArbitro.Resolucion" class="form-control" />
+                    <label asp-for="EscuelaArbitro.Direccion" class="control-label"> </label>
+                    <input asp-for="EscuelaArbitro.Direccion" class="form-control" />
+                    <label asp-for="EscuelaArbitro.Telefono" class="control-label"> </label>
+                    <input asp-for="EscuelaArbitro.Telefono" class="form-control" />
+                    <label asp-for="EscuelaArbitro.Correo" class="control-label"> </label>
+                    <input asp-for="EscuelaArbitro.Correo" class="form-control" />              
+                   </div>
+                   <div class="form-group">                       
+                       <input type="submit" value="Edit" class="btn btn-primary"/>                       
+                   </div>
+               </form>
+           </div>
+        </div>
+
+        <div>
+            <a asp-page="EAIndex">Ir al Inicio</a>
+        </div> 
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
+
+
+

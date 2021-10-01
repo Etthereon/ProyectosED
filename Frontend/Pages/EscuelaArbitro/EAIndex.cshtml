@@ -1,0 +1,41 @@
+﻿@page
+@model Frontend.Pages.EAIndexModel
+@{
+    ViewData["Titulo"]="PIndex"; // Sirven para el manejo de directivas. 
+}
+<h1>Listado de las Escuelas de los Arbitros</h1> 
+<p>
+    <a asp-page="CreateEscuelaArbitro">Crear una Escuela de Arbitros</a> 
+</p>
+<table class="table"> 
+   <thead> 
+       <tr>
+           <th>Id</th>
+           <th>Nombre</th>
+           <th>Resolucion</th>
+           <th>Dirección</th>
+           <th>Teléfono</th>
+           <th>Correo</th>
+
+
+       </tr>
+   </thead>
+   @foreach (var earbitro in Model.EscuelaArbitros)
+   {
+    <tr> 
+        <td>  @earbitro.id  </td>
+        <td>  @earbitro.Nombre</td>
+        <td>  @earbitro.Resolucion </td>
+        <td>  @earbitro.Direccion </td>
+        <td>  @earbitro.Telefono </td>
+        <td>  @earbitro.Correo </td>
+
+        <td>
+             <a asp-page="./EditEscuelaArbitro" asp-route-id= "@earbitro.id"> Editar </a> 
+             <a asp-page="./DeleteEscuelaArbitro" asp-route-id= "@earbitro.id"> Eliminar </a>
+             <a asp-page="./DetailEscuelaArbitro" asp-route-id= "@earbitro.id"> Detalles </a>
+        </td>
+    </tr>
+   }
+</table>
+

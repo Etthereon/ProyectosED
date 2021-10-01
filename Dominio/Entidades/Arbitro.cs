@@ -13,6 +13,6 @@ namespace Dominio
         public string Disciplina{get;set;}
         //llave foranea
         public int TorneoId{get;set;}
-        public int EscuelaArbitro{get;set;}
+        public int EscuelaArbitroId{get;set;}
     }
 }

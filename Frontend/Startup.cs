@@ -36,6 +36,10 @@ namespace Frontend
             services.AddScoped<IRepositorioPatrocinador, RepositorioPatrocinador>();
             //Inyeccion de dependencia para equipo
             services.AddScoped<IRepositorioEquipo, RepositorioEquipo>();
+            //Inyeccion de dependencia para escuelaArbitro
+            services.AddScoped<IRepositorioEscuelaArbitro, RepositorioEscuelaArbitro>();
+            //Inyeccion de dependencia para Arbitro
+            services.AddScoped<IRepositorioArbitro, RepositorioArbitro>();
            
         }
 

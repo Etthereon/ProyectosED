@@ -17,16 +17,20 @@ namespace Persistencia
         bool IRepositorioArbitro.CrearArbitro(Arbitro arbitro)
         {
             bool creado=false;
-            try
+            bool ex= Existe(arbitro);
+            if(!ex)
             {
-                 _appContext.Arbitros.Add(arbitro);
-                 _appContext.SaveChanges();
-                 creado=true;
-            }
-            catch (System.Exception)
-            {
-                return creado;
-                //throw;
+                try
+                {
+                    _appContext.Arbitros.Add(arbitro);
+                    _appContext.SaveChanges();
+                    creado=true;
+                }
+                catch (System.Exception)
+                {
+                    return creado;
+                    //throw;
+                }
             }
             return creado;
         }
@@ -34,14 +38,20 @@ namespace Persistencia
         bool IRepositorioArbitro.ActualizarArbitro(Arbitro arbitro)
         {
             bool actualizado=false;
-            var arb=_appContext.Arbitros.Find(4);
+            var arb=_appContext.Arbitros.Find(arbitro.id);
             if (arb!=null)
             {
                 try
                 {
-                     arb.Nombres=arbitro.Nombres;
-                     _appContext.SaveChanges();
-                     actualizado=true;
+                    arb.Documento=arbitro.Documento;
+                    arb.Nombres=arbitro.Nombres;
+                    arb.Apellidos=arbitro.Apellidos;
+                    arb.Genero=arbitro.Genero;
+                    arb.Disciplina=arbitro.Disciplina;
+                    arb.TorneoId=arbitro.TorneoId;
+                    arb.EscuelaArbitroId=arbitro.EscuelaArbitroId;
+                    _appContext.SaveChanges();
+                    actualizado=true;
                 }
                 catch (System.Exception)
                 {
@@ -83,6 +93,17 @@ namespace Persistencia
         IEnumerable<Arbitro> IRepositorioArbitro.ListarArbitros()
         {
             return _appContext.Arbitros;
+        }
+
+        bool Existe(Arbitro arbi)
+        {
+            bool ex=false;
+            var arb=_appContext.Arbitros.FirstOrDefault(a=> a.Documento==arbi.Documento);
+            if(arb!=null)
+            {
+                ex=true;
+            }
+            return ex;
         }
 
     }

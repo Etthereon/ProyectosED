@@ -1,0 +1,43 @@
+﻿@page
+@model Frontend.Pages.CreateEscuelaArbitroModel
+@{
+    ViewData["Titulo"]="Create"; // Sirven para el manejo de directivas. 
+}
+<h1>Crear Escuela de Arbitros</h1> 
+<h3>@ViewData["Mensaje"] </h3>
+
+<div class="form-horizontal">
+    <hr/> 
+    <div class="row">
+        <div class=col-md-4> 
+            <form method="post">
+                <div> </div>
+                <div class="form-group"> 
+                    <label asp-for="EscuelaArbitro.Nombre" class="control-label"> </label>
+                    <input asp-for="EscuelaArbitro.Nombre" class="form-control" />
+                    <label asp-for="EscuelaArbitro.Resolucion" class="control-label"> </label>
+                    <input asp-for="EscuelaArbitro.Resolucion" class="form-control" />
+                    <label asp-for="EscuelaArbitro.Direccion" class="control-label"> </label>
+                    <input asp-for="EscuelaArbitro.Direccion" class="form-control" />
+                    <label asp-for="EscuelaArbitro.Telefono" class="control-label"> </label>
+                    <input asp-for="EscuelaArbitro.Telefono" class="form-control" />
+                    <label asp-for="EscuelaArbitro.Correo" class="control-label"> </label>
+                    <input asp-for="EscuelaArbitro.Correo" class="form-control" />
+                </div>
+                <div class="form-group">
+                     <input type="submit" value="Crear" class="btn btn-secondary" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <a asp-page="EAIndex">Ir al Inicio</a>
+    </div>
+</div>
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
+
+
+
+

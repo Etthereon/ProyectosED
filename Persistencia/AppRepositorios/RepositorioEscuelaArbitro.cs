@@ -17,29 +17,37 @@ namespace Persistencia
         bool IRepositorioEscuelaArbitro.CrearEscuelaArbitro(EscuelaArbitro escuelaArbitro)
         {
             bool creado=false;
-            try
-            {
-                 _appContext.EscuelaArbitros.Add(escuelaArbitro);
-                 _appContext.SaveChanges();
-                 creado=true;
-            }
-            catch (System.Exception)
-            {
-                return creado;
-                //throw;
-            }
+            bool ex= Existe(escuelaArbitro);
+           if(!ex)
+           {
+                try
+                {
+                    _appContext.EscuelaArbitros.Add(escuelaArbitro);
+                    _appContext.SaveChanges();
+                    creado=true;
+                }
+                catch (System.Exception)
+                {
+                    return creado;
+                    //throw;
+                }
+           }
             return creado;
         }
 
         bool IRepositorioEscuelaArbitro.ActualizarEscuelaArbitro(EscuelaArbitro escuelaArbitro)
         {
             bool actualizado=false;
-            var arb=_appContext.EscuelaArbitros.Find(4);
+            var arb=_appContext.EscuelaArbitros.Find(escuelaArbitro.id);
             if (arb!=null)
             {
                 try
                 {
                      arb.Nombre=escuelaArbitro.Nombre;
+                     arb.Resolucion=escuelaArbitro.Resolucion;
+                     arb.Direccion=escuelaArbitro.Direccion;
+                     arb.Telefono=escuelaArbitro.Telefono;
+                     arb.Correo=escuelaArbitro.Correo;
                      _appContext.SaveChanges();
                      actualizado=true;
                 }
@@ -83,6 +91,17 @@ namespace Persistencia
         IEnumerable<EscuelaArbitro> IRepositorioEscuelaArbitro.ListarEscuelaArbitros()
         {
             return _appContext.EscuelaArbitros;
+        }
+
+        bool Existe(EscuelaArbitro esc)
+        {
+            bool ex=false;
+            var arb=_appContext.EscuelaArbitros.FirstOrDefault(e=> e.Resolucion==esc.Resolucion);
+            if(arb!=null)
+            {
+                ex=true;
+            }
+            return ex;
         }
 
     }

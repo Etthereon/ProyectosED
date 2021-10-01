@@ -17,17 +17,21 @@ namespace Persistencia
         bool IRepositorioEquipo.CrearEquipo(Equipo equipo)
         {
             bool creado=false;
-            try
-            {
-                 _appContext.Equipos.Add(equipo);
-                 _appContext.SaveChanges();
-                 creado=true;
-            }
-            catch (System.Exception)
-            {
-                return creado;
-                //throw;
-            }
+            bool ex= Existe(equipo);
+           if(!ex)
+           {
+                try
+                {
+                    _appContext.Equipos.Add(equipo);
+                    _appContext.SaveChanges();
+                    creado=true;
+                }
+                catch (System.Exception)
+                {
+                    return creado;
+                    //throw;
+                }
+           }
             return creado;
         }
 
@@ -40,6 +44,9 @@ namespace Persistencia
                 try
                 {
                      equi.Nombre=equipo.Nombre;
+                     equi.CantidadDeportistas=equipo.CantidadDeportistas;
+                     equi.Disciplina=equipo.Disciplina;
+                     equi.Entrenador=equipo.Entrenador;
                      _appContext.SaveChanges();
                      actualizado=true;
                 }
@@ -83,6 +90,17 @@ namespace Persistencia
         IEnumerable<Equipo> IRepositorioEquipo.ListarEquipos()
         {
             return _appContext.Equipos;
+        }
+
+        bool Existe(Equipo equi)
+        {
+            bool ex=false;
+            var equ=_appContext.Municipios.FirstOrDefault(e=> e.Nombre==equi.Nombre);
+            if(equ!=null)
+            {
+                ex=true;
+            }
+            return ex;
         }
 
     }

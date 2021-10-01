@@ -1,0 +1,58 @@
+﻿@page
+@model Frontend.Pages.DetailEscuelaArbitroModel
+@{
+    ViewData["Title"]="Details";
+}
+<h1>Details</h1>
+<h4>Escuela Arbitro</h4>
+
+<div class="form-horizontal">
+        <hr />
+        <div class="row">
+           <div class="col-md-4">
+               <form method="post">
+
+                   <input type="hidden" asp-for="EscuelaArbitro.id" />
+                    
+                    <div class="form-group">
+                       <label asp-for="EscuelaArbitro.id" class="control-label"> </label>
+                       <input asp-for="EscuelaArbitro.id"  class="form-control" readonly/>                       
+                    </div>
+
+                   <div class="form-group">
+                    <label asp-for="EscuelaArbitro.Nombre" class="control-label"> </label>
+                    <input asp-for="EscuelaArbitro.Nombre" class="form-control" />                   
+                   </div>
+
+                   <div class="form-group">
+                    <label asp-for="EscuelaArbitro.Resolucion" class="control-label"> </label>
+                    <input asp-for="EscuelaArbitro.Resolucion" class="form-control" />                  
+                   </div>
+
+                    <div class="form-group">
+                    <label asp-for="EscuelaArbitro.Direccion" class="control-label"> </label>
+                    <input asp-for="EscuelaArbitro.Direccion" class="form-control" />                 
+                    </div>
+
+                    <div class="form-group">
+                    <label asp-for="EscuelaArbitro.Telefono" class="control-label"> </label>
+                    <input asp-for="EscuelaArbitro.Telefono" class="form-control" />                  
+                    </div>
+                   
+                    <div class="form-group">
+                    <label asp-for="EscuelaArbitro.Correo" class="control-label"> </label>
+                    <input asp-for="EscuelaArbitro.Correo" class="form-control" />               
+                    </div>
+               </form>
+           </div>
+        </div>
+
+        <div>
+            <a asp-page="EAIndex">Ir al Inicio</a>
+        </div> 
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
+

@@ -1,0 +1,45 @@
+﻿@page
+@model Frontend.Pages.ArbIndexModel
+@{
+    ViewData ["Title"]="ArbIndex";
+}
+<h1>Listado de Arbitros</h1>
+<p>
+    <a asp-page="CreateArb">Crear Arbitro</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Documento</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Genero</th>
+            <th>Disciplina</th>
+            <th>TorneoId</th>
+            <th>EscuelaArbitroId</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var arb in Model.Arbitros)
+        {
+            <tr>
+                <td>@arb.id</td>
+                <td>@arb.Documento</td>
+                <td>@arb.Nombres</td>
+                <td>@arb.Apellidos</td>
+                <td>@arb.Genero</td>
+                <td>@arb.Disciplina</td>
+                <td>@arb.TorneoId</td>
+                <td>@arb.EscuelaArbitroId</td>
+                <td>
+                    <a asp-page="./EditArb" asp-route-id="@arb.id">Editar</a>
+                    <a asp-page="./DeleteArb" asp-route-id="@arb.id">Eliminar</a>
+                    <a asp-page="./DetailsArb" asp-route-id="@arb.id">Detalles</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+    
+</table>
+

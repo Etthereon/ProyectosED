@@ -1,0 +1,47 @@
+﻿@page
+@model Frontend.Pages.CreateArbModel
+@{
+    ViewData["title"]="Create";
+}
+<h1>Crear arbitro</h1>
+<h3>@ViewData["Mensaje"]</h3>
+
+<div class="form-horizontal">
+    <hr/>
+    <div class="row">
+        <div class=col-md-4>
+            <form method="POST">
+                <div> </div>
+                <div class="form-group">
+                    <label asp-for="Arbitro.Documento" class="control-label"></label>
+                    <input asp-for="Arbitro.Documento" class="form-control" />
+                    <label asp-for="Arbitro.Nombres" class="control-label"></label>
+                    <input asp-for="Arbitro.Nombres" class="form-control" />
+                    <label asp-for="Arbitro.Apellidos" class="control-label"></label>
+                    <input asp-for="Arbitro.Apellidos" class="form-control" />
+                    <label asp-for="Arbitro.Genero" class="control-label"></label>
+                    <input asp-for="Arbitro.Genero" class="form-control" />
+                    <label asp-for="Arbitro.Disciplina" class="control-label"></label>
+                    <input asp-for="Arbitro.Disciplina" class="form-control" />
+                    <label asp-for="Arbitro.TorneoId" class="control-label">id del torneo</label>
+                    <input asp-for="Arbitro.TorneoId" class="form-control" />
+                    <label asp-for="Arbitro.EscuelaArbitroId" class="control-label">Id de la escuela</label>
+                    <input asp-for="Arbitro.EscuelaArbitroId" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <br>
+                    <input type="submit" value="Crear" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <a asp-page="ArbIndex">ir a inicio</a>
+    </div>
+</div>
+@section Scripts
+{
+    @{
+       await Html.RenderPartialAsync("_ValidationScriptsPartial"); 
+    }
+}
