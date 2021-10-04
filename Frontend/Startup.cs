@@ -38,8 +38,14 @@ namespace Frontend
             services.AddScoped<IRepositorioEquipo, RepositorioEquipo>();
             //Inyeccion de dependencia para escuelaArbitro
             services.AddScoped<IRepositorioEscuelaArbitro, RepositorioEscuelaArbitro>();
-            //Inyeccion de dependencia para Arbitro
+            //Inyeccion de dependencia para arbitro
             services.AddScoped<IRepositorioArbitro, RepositorioArbitro>();
+            //Inyeccion de dependencia para entrenador
+            services.AddScoped<IRepositorioEntrenador, RepositorioEntrenador>();
+            //Inyeccion de dependencia para escenario
+            services.AddScoped<IRepositorioEscenario, RepositorioEscenario>();
+            //Inyeccion de dependencia para canchaEspacio
+            services.AddScoped<IRepositorioCanchaEspacio, RepositorioCanchaEspacio>();
            
         }
 

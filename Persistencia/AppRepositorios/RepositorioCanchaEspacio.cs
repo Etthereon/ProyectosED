@@ -17,16 +17,20 @@ namespace Persistencia
         bool IRepositorioCanchaEspacio.CrearCanchaEspacio(CanchaEspacio canchaEspacio)
         {
             bool creado=false;
-            try
+            bool ex= Existe(canchaEspacio);
+            if(!ex)
             {
-                 _appContext.CanchaEspacios.Add(canchaEspacio);
-                 _appContext.SaveChanges();
-                 creado=true;
-            }
-            catch (System.Exception)
-            {
-                return creado;
-                //throw;
+                try
+                {
+                    _appContext.CanchaEspacios.Add(canchaEspacio);
+                    _appContext.SaveChanges();
+                    creado=true;
+                }
+                catch (System.Exception)
+                {
+                    return creado;
+                    //throw;
+                }
             }
             return creado;
         }
@@ -34,12 +38,17 @@ namespace Persistencia
         bool IRepositorioCanchaEspacio.ActualizarCanchaEspacio(CanchaEspacio canchaEspacio)
         {
             bool actualizado=false;
-            var canchaEsp=_appContext.CanchaEspacios.Find(4);
+            var canchaEsp=_appContext.CanchaEspacios.Find(canchaEspacio.id);
             if (canchaEsp!=null)
             {
                 try
                 {
                      canchaEsp.Nombre=canchaEspacio.Nombre;
+                     canchaEsp.Disciplina=canchaEspacio.Disciplina;
+                     canchaEsp.Estado=canchaEspacio.Estado;
+                     canchaEsp.CapacidadEspectadores=canchaEspacio.CapacidadEspectadores;
+                     canchaEsp.Medidas=canchaEspacio.Medidas;
+                     canchaEsp.EscenarioId=canchaEspacio.EscenarioId;
                      _appContext.SaveChanges();
                      actualizado=true;
                 }
@@ -83,6 +92,17 @@ namespace Persistencia
         IEnumerable<CanchaEspacio> IRepositorioCanchaEspacio.ListarCanchaEspacios()
         {
             return _appContext.CanchaEspacios;
+        }
+
+        bool Existe(CanchaEspacio canc)
+        {
+            bool ex=false;
+            var can=_appContext.CanchaEspacios.FirstOrDefault(c=> c.Nombre==canc.Nombre);
+            if(can!=null)
+            {
+                ex=true;
+            }
+            return ex;
         }
 
     }

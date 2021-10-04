@@ -9,29 +9,29 @@ using Persistencia;
 
 namespace Frontend.Pages
 {
-    public class DeleteEquModel : PageModel
+    public class DeleteEntModel : PageModel
     {
-        private readonly IRepositorioEquipo _repoequipo;
-        public DeleteEquModel(IRepositorioEquipo repoequipo)
+        private readonly IRepositorioEntrenador _repoentrenador;
+        public DeleteEntModel(IRepositorioEntrenador repoentrenador)
         {
-            this._repoequipo=repoequipo;
+            this._repoentrenador=repoentrenador;
         }
         [BindProperty]
-        public Equipo Equipo{get;set;}
+        public Entrenador Entrenador{get;set;}
 
         public ActionResult OnGet(int id)
         {
             ViewData["Mensaje"]="Esta seguro de eliminar el registro?";
-            Equipo= _repoequipo.BuscarEquipo(id);
+            Entrenador= _repoentrenador.BuscarEntrenador(id);
             return Page();
         }
 
          public ActionResult OnPost()
          {
-             bool funciono=_repoequipo.EliminarEquipo(Equipo.id);
+             bool funciono=_repoentrenador.EliminarEntrenador(Entrenador.id);
              if(funciono)
              {
-                return RedirectToPage("./EquIndex");
+                return RedirectToPage("./EntIndex");
              }
              else
              {
@@ -41,4 +41,3 @@ namespace Frontend.Pages
          }
     }
 }
-

@@ -9,23 +9,23 @@ using Persistencia;
 
 namespace Frontend.Pages
 {
-    public class EquIndexModel : PageModel
+    public class EntIndexModel : PageModel
     {
         //Crear un objeto para hacer uso de los repositorios
-        private readonly IRepositorioEquipo _repoequipo;
+        private readonly IRepositorioEntrenador _repoentrenador;
 
         //Modelo u objeto para transportar hacia MunIndex.cshtml
-        public IEnumerable<Equipo> Equipos {get;set;}
+        public IEnumerable<Entrenador> Entrenadores {get;set;}
 
         //Constructor
-        public EquIndexModel(IRepositorioEquipo repoequipo)
+        public EntIndexModel(IRepositorioEntrenador repoentrenador)
         {
-            this._repoequipo=repoequipo;
+            this._repoentrenador=repoentrenador;
         }
 
         public void OnGet()
         {
-            Equipos = _repoequipo.ListarEquipos();
+            Entrenadores = _repoentrenador.ListarEntrenadores();
         }
     }
 }

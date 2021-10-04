@@ -17,16 +17,20 @@ namespace Persistencia
         bool IRepositorioEntrenador.CrearEntrenador(Entrenador entrenador)
         {
             bool creado=false;
-            try
+            bool ex= Existe(entrenador);
+            if(!ex)
             {
-                 _appContext.Entrenadores.Add(entrenador);
-                 _appContext.SaveChanges();
-                 creado=true;
-            }
-            catch (System.Exception)
-            {
-                return creado;
-                //throw;
+                    try
+                    {
+                        _appContext.Entrenadores.Add(entrenador);
+                        _appContext.SaveChanges();
+                        creado=true;
+                    }
+                    catch (System.Exception)
+                    {
+                        return creado;
+                        //throw;
+                    }
             }
             return creado;
         }
@@ -34,12 +38,17 @@ namespace Persistencia
         bool IRepositorioEntrenador.ActualizarEntrenador(Entrenador entrenador)
         {
             bool actualizado=false;
-            var ent=_appContext.Entrenadores.Find(1);
+            var ent=_appContext.Entrenadores.Find(entrenador.id);
             if (ent!=null)
             {
                 try
                 {
+                     ent.Documento=entrenador.Documento;
                      ent.Nombres=entrenador.Nombres;
+                     ent.Apellidos=entrenador.Apellidos;
+                     ent.Genero=entrenador.Genero;
+                     ent.DisciplinaDeportiva=entrenador.DisciplinaDeportiva;
+                     ent.EquipoId=entrenador.EquipoId;
                      _appContext.SaveChanges();
                      actualizado=true;
                 }
@@ -83,6 +92,17 @@ namespace Persistencia
         IEnumerable<Entrenador> IRepositorioEntrenador.ListarEntrenadores()
         {
             return _appContext.Entrenadores;
+        }
+
+        bool Existe(Entrenador entre)
+        {
+            bool ex=false;
+            var ent=_appContext.Entrenadores.FirstOrDefault(e=> e.Documento==entre.Documento);
+            if(ent!=null)
+            {
+                ex=true;
+            }
+            return ex;
         }
 
     }

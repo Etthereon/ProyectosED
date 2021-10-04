@@ -9,20 +9,20 @@ using Persistencia;
 
 namespace Frontend.Pages
 {
-    public class DetailsEquModel : PageModel
+    public class DetailsEntModel : PageModel
     {
-        private readonly IRepositorioEquipo _repoequipo;
-        public DetailsEquModel(IRepositorioEquipo repoequipo)
+        private readonly IRepositorioEntrenador _repoentrenador;
+        public DetailsEntModel(IRepositorioEntrenador repoentrenador)
         {
-            this._repoequipo=repoequipo;
+            this._repoentrenador=repoentrenador;
         }
         [BindProperty]
-        public Equipo Equipo{get;set;}
+        public Entrenador Entrenador{get;set;}
 
         public ActionResult OnGet(int id)
         {
-            Equipo= _repoequipo.BuscarEquipo(id);
-            if (Equipo==null)
+            Entrenador= _repoentrenador.BuscarEntrenador(id);
+            if (Entrenador==null)
             {
                 return NotFound();
             }
@@ -30,3 +30,4 @@ namespace Frontend.Pages
         }
     }
 }
+

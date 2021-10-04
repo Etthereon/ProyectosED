@@ -109,3 +109,8 @@ C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\EscuelaArbit
 C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Arbitro\DeleteArb.cshtml.g.cs
 C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Arbitro\DetailsArb.cshtml.g.cs
 C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\EscuelaArbitro\DetailEscuelaArbitro.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Entrenador\CreateEnt.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Entrenador\DeleteEnt.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Entrenador\DetailsEnt.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Entrenador\EditEnt.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Entrenador\EntIndex.cshtml.g.cs

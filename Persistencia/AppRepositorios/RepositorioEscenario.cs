@@ -17,16 +17,20 @@ namespace Persistencia
         bool IRepositorioEscenario.CrearEscenario(Escenario escenario)
         {
             bool creado=false;
-            try
+            bool ex= Existe(escenario);
+            if(!ex)
             {
-                 _appContext.Escenarios.Add(escenario);
-                 _appContext.SaveChanges();
-                 creado=true;
-            }
-            catch (System.Exception)
-            {
-                return creado;
-                //throw;
+                try
+                {
+                    _appContext.Escenarios.Add(escenario);
+                    _appContext.SaveChanges();
+                    creado=true;
+                }
+                catch (System.Exception)
+                {
+                    return creado;
+                    //throw;
+                }
             }
             return creado;
         }
@@ -34,12 +38,16 @@ namespace Persistencia
         bool IRepositorioEscenario.ActualizarEscenario(Escenario escenario)
         {
             bool actualizado=false;
-            var esc=_appContext.Escenarios.Find(4);
+            var esc=_appContext.Escenarios.Find(escenario.id);
             if (esc!=null)
             {
                 try
                 {
                      esc.Nombre=escenario.Nombre;
+                     esc.Direccion=escenario.Direccion;
+                     esc.Telefono=escenario.Telefono;
+                     esc.Horario=escenario.Horario;
+                     esc.TorneoId=escenario.TorneoId;
                      _appContext.SaveChanges();
                      actualizado=true;
                 }
@@ -83,6 +91,17 @@ namespace Persistencia
         IEnumerable<Escenario> IRepositorioEscenario.ListarEscenarios()
         {
             return _appContext.Escenarios;
+        }
+
+        bool Existe(Escenario esce)
+        {
+            bool ex=false;
+            var esc=_appContext.Escenarios.FirstOrDefault(e=> e.Nombre==esce.Nombre);
+            if(esc!=null)
+            {
+                ex=true;
+            }
+            return ex;
         }
 
     }

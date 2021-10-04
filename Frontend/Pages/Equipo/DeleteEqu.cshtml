@@ -1,4 +1,40 @@
 ﻿@page
 @model Frontend.Pages.DeleteEquModel
 @{
+     ViewData["Title"]="Delete";
+}
+<h1>Delete</h1>
+<h4>Equipo</h4>
+<h2>@ViewData["Mensaje"] </h2>
+<div class="form-horizontal">        
+        <hr />        
+        <div class="row">
+           <div class="col-md-4">
+               <form method="post">                   
+                   <input type="hidden" asp-for="Equipo.id" />
+                   <div class="form-group">
+                       <label asp-for="Equipo.Nombre" class="control-label"> </label>
+                       <input asp-for="Equipo.Nombre" readonly class="form-control"/> 
+                       <label asp-for="Equipo.CantidadDeportistas" class="control-label"> Cantidad de deportistas</label>
+                       <input asp-for="Equipo.CantidadDeportistas" readonly class="form-control"/>
+                       <label asp-for="Equipo.Disciplina" class="control-label"> </label>
+                       <input asp-for="Equipo.Disciplina" readonly class="form-control"/>
+                       <label asp-for="Equipo.PatrocinadorId" class="control-label">Id del patrocinador</label>
+                       <input asp-for="Equipo.PatrocinadorId" readonly class="form-control"/>                      
+                        
+                   </div>
+                   <div class="form-group">                       
+                       <input type="submit" value="Eliminar" class="btn btn-primary"/>                       
+                   </div>
+               </form>
+           </div>
+        </div>
+
+        <div>
+            <a asp-page="EquIndex"> volver a la lista</a>
+        </div> 
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
 }

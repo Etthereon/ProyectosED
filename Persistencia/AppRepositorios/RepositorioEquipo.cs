@@ -38,7 +38,7 @@ namespace Persistencia
         bool IRepositorioEquipo.ActualizarEquipo(Equipo equipo)
         {
             bool actualizado=false;
-            var equi=_appContext.Equipos.Find(5);
+            var equi=_appContext.Equipos.Find(equipo.id);
             if (equi!=null)
             {
                 try
@@ -46,7 +46,7 @@ namespace Persistencia
                      equi.Nombre=equipo.Nombre;
                      equi.CantidadDeportistas=equipo.CantidadDeportistas;
                      equi.Disciplina=equipo.Disciplina;
-                     equi.Entrenador=equipo.Entrenador;
+                     equi.PatrocinadorId=equipo.PatrocinadorId;
                      _appContext.SaveChanges();
                      actualizado=true;
                 }
@@ -95,7 +95,7 @@ namespace Persistencia
         bool Existe(Equipo equi)
         {
             bool ex=false;
-            var equ=_appContext.Municipios.FirstOrDefault(e=> e.Nombre==equi.Nombre);
+            var equ=_appContext.Equipos.FirstOrDefault(e=> e.Nombre==equi.Nombre);
             if(equ!=null)
             {
                 ex=true;

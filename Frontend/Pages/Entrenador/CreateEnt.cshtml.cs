@@ -9,18 +9,18 @@ using Persistencia;
 
 namespace Frontend.Pages
 {
-    public class CreateEquModel : PageModel
+    public class CreateEntModel : PageModel
     {
         //Objeto para crear el repositorio
-        private readonly IRepositorioEquipo _repoequipo;
+        private readonly IRepositorioEntrenador _repoentrenador;
         //Propiedad para transportar al cshtml
         [BindProperty]
-        public Equipo Equipo {get;set;}
+        public Entrenador Entrenador {get;set;}
 
         //Constructor
-        public CreateEquModel(IRepositorioEquipo repoequipo)
+        public CreateEntModel(IRepositorioEntrenador repoentrenador)
         {
-            this._repoequipo=repoequipo;
+            this._repoentrenador=repoentrenador;
         }
         
         public ActionResult OnGet()
@@ -30,14 +30,14 @@ namespace Frontend.Pages
 
         public ActionResult OnPost()
         {
-            bool creado =_repoequipo.CrearEquipo(Equipo);
+            bool creado =_repoentrenador.CrearEntrenador(Entrenador);
             if(creado)
             {
-                return RedirectToPage("./EquIndex");
+                return RedirectToPage("./EntIndex");
             }
             else
             {
-                ViewData ["Mensaje"]= "El equipo ya se encuentra registrado";
+                ViewData ["Mensaje"]= "El entrenador ya se encuentra registrado";
                 return Page();
             }
         }
