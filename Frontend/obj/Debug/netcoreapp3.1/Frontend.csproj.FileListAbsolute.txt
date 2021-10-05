@@ -114,3 +114,13 @@ C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Entrenador\D
 C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Entrenador\DetailsEnt.cshtml.g.cs
 C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Entrenador\EditEnt.cshtml.g.cs
 C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Entrenador\EntIndex.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\CanchaEspacio\CEIndex.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\CanchaEspacio\CreateCE.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\CanchaEspacio\DeleteCE.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\CanchaEspacio\DetailsCE.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\CanchaEspacio\EditCE.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Escenario\CreateEsc.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Escenario\DeleteEsc.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Escenario\DetailsEsc.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Escenario\EditEsc.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Escenario\EscIndex.cshtml.g.cs

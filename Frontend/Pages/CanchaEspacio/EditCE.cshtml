@@ -1,0 +1,53 @@
+﻿@page
+@model Frontend.Pages.EditCEModel
+@{
+    ViewData["Title"]="Edit";
+}
+
+<h1>Edit </h1>
+<h4>CanchaEspacio</h4>
+<h3>@ViewData["Mensaje"]</h3>
+
+<div class="form-horizontal">
+        
+        <hr />
+        
+        <div class="row">
+           <div class="col-md-4">
+               <form method="post">
+                  
+                   <input type="hidden" asp-for="CanchaEspacio.id" />
+                   <div class="form-group">
+                    <label asp-for="CanchaEspacio.Nombre" class="control-label"></label>
+                    <input asp-for="CanchaEspacio.Nombre" class="form-control" />
+                    <label asp-for="CanchaEspacio.Disciplina" class="control-label"></label>
+                    <input asp-for="CanchaEspacio.Disciplina" class="form-control" />
+                    <label asp-for="CanchaEspacio.Estado" class="control-label"></label>
+                    <input asp-for="CanchaEspacio.Estado" class="form-control" />
+                    <label asp-for="CanchaEspacio.CapacidadEspectadores" class="control-label"></label>
+                    <input asp-for="CanchaEspacio.CapacidadEspectadores" class="form-control" />
+                    <label asp-for="CanchaEspacio.Medidas" class="control-label"></label>
+                    <input asp-for="CanchaEspacio.Medidas" class="form-control" />
+                    <label asp-for="CanchaEspacio.EscenarioId" class="control-label"></label>
+                    <input asp-for="CanchaEspacio.EscenarioId" class="form-control" />                     
+                       
+                   </div>
+                   <div class="form-group">                       
+                       <input type="submit" value="Edit" class="btn btn-primary"/>                       
+                   </div>
+               </form>
+           </div>
+        </div>
+
+        <div>
+            <a asp-page="CEIndex"> Back to List</a>
+        </div> 
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
+
+
+
+

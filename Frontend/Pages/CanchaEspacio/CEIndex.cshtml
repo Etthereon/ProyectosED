@@ -1,0 +1,43 @@
+﻿@page
+@model Frontend.Pages.CEIndexModel
+@{
+    ViewData ["Title"]="CEIndex";
+}
+<h1>Listado de Entrenadores</h1>
+<p>
+    <a asp-page="CreateCE">Crear CanchaEspacio</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Disciplina</th>
+            <th>Estado</th>
+            <th>CapacidadEspectadores</th>
+            <th>Medidas</th>
+            <th>EscenarioId</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var canesp in Model.CanchaEspacios)
+        {
+            <tr>
+                <td>@canesp.id</td>
+                <td>@canesp.Nombre</td>
+                <td>@canesp.Disciplina</td>
+                <td>@canesp.Estado</td>
+                <td>@canesp.CapacidadEspectadores</td>
+                <td>@canesp.Medidas</td>
+                <td>@canesp.EscenarioId</td>
+                <td>
+                    <a asp-page="./EditCE" asp-route-id="@canesp.id">Editar</a>
+                    <a asp-page="./DeleteCE" asp-route-id="@canesp.id">Eliminar</a>
+                    <a asp-page="./DetailsCE" asp-route-id="@canesp.id">Detalles</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+    
+</table>
+
