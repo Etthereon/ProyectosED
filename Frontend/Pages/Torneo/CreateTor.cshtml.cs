@@ -13,18 +13,22 @@ namespace Frontend.Pages
     {
         //Objeto para crear el repositorio
         private readonly IRepositorioTorneo _repotorneo;
+        private readonly IRepositorioMunicipio _repomunicipio;
         //Propiedad para transportar al cshtml
         [BindProperty]
         public Torneo Torneo {get;set;}
+        public IEnumerable<Municipio> Municipios{get;set;}
 
         //Constructor
-        public CreateTorModel(IRepositorioTorneo repotorneo)
+        public CreateTorModel(IRepositorioTorneo repotorneo, IRepositorioMunicipio repomunicipio)
         {
             this._repotorneo=repotorneo;
+            this._repomunicipio=repomunicipio;
         }
         
         public ActionResult OnGet()
         {
+            Municipios=_repomunicipio.ListarMunicipios();
             return Page();
         }
 
@@ -37,7 +41,8 @@ namespace Frontend.Pages
             }
             else
             {
-                ViewData ["Mensaje"]= "El torneo ya se encuentra registrado";
+                Municipios=_repomunicipio.ListarMunicipios();
+                ViewData ["Error"]= "El torneo ya se encuentra registrado";
                 return Page();
             }
         }

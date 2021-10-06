@@ -89,6 +89,11 @@ namespace Persistencia
             return _appContext.Municipios;
         }
 
+         List<Municipio> IRepositorioMunicipio.ListarMunicipios1()
+        {
+            return _appContext.Municipios.ToList();
+        }
+
         bool Existe(Municipio muni)
         {
             bool ex=false;

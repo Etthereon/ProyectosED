@@ -5,7 +5,7 @@
 }
 <h1>Listado de torneos</h1>
 <p>
-    <a asp-page="CreateTor">Crear torneos</a>
+    <a asp-page="CreateTor" class="btn btn-success">Crear Torneos</a>
 </p>
 <table class="table">
     <thead>
@@ -16,12 +16,12 @@
             <th>FechaInicial</th>
             <th>FechaFinal</th>
             <th>Tipo</th>
-            <th>MunicipioId</th>
+            <th>Municipio</th>
             
         </tr>
     </thead>
     <tbody>
-        @foreach (var tor in Model.Torneos)
+        @foreach (var tor in Model.TorneoView)
         {
             <tr>
                 <td>@tor.id</td>
@@ -30,11 +30,11 @@
                 <td>@tor.FechaInicial</td>
                 <td>@tor.FechaFinal</td>
                 <td>@tor.Tipo</td>
-                <td>@tor.MunicipioId</td>
+                <td>@tor.Municipio</td>
                 <td>
-                    <a asp-page="./EditTor" asp-route-id="@tor.id">Editar</a>
-                    <a asp-page="./DeleteTor" asp-route-id="@tor.id">Eliminar</a>
-                    <a asp-page="./DetailsTor" asp-route-id="@tor.id">Detalles</a>
+                    <a asp-page="./EditTor" asp-route-id="@tor.id" class="btn btn-primary">Editar</a>
+                    <a asp-page="./DeleteTor" asp-route-id="@tor.id" class="btn btn-warning">Eliminar</a>
+                    <a asp-page="./DetailsTor" asp-route-id="@tor.id" class="btn btn-info">Detalles</a>
                 </td>
             </tr>
         }
