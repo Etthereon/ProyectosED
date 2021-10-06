@@ -1,0 +1,44 @@
+﻿@page
+@model Frontend.Pages.TorIndexModel
+@{
+    ViewData ["Title"]="TorIndex";
+}
+<h1>Listado de torneos</h1>
+<p>
+    <a asp-page="CreateTor">Crear torneos</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>Nombre</th>
+            <th>Categoria</th>
+            <th>FechaInicial</th>
+            <th>FechaFinal</th>
+            <th>Tipo</th>
+            <th>MunicipioId</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tor in Model.Torneos)
+        {
+            <tr>
+                <td>@tor.id</td>
+                <td>@tor.Nombre</td>
+                <td>@tor.Categoria</td>
+                <td>@tor.FechaInicial</td>
+                <td>@tor.FechaFinal</td>
+                <td>@tor.Tipo</td>
+                <td>@tor.MunicipioId</td>
+                <td>
+                    <a asp-page="./EditTor" asp-route-id="@tor.id">Editar</a>
+                    <a asp-page="./DeleteTor" asp-route-id="@tor.id">Eliminar</a>
+                    <a asp-page="./DetailsTor" asp-route-id="@tor.id">Detalles</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+    
+</table>
+

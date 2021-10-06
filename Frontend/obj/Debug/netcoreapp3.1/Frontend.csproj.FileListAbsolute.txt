@@ -124,3 +124,8 @@ C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Escenario\De
 C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Escenario\DetailsEsc.cshtml.g.cs
 C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Escenario\EditEsc.cshtml.g.cs
 C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Escenario\EscIndex.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Torneo\CreateTor.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Torneo\DeleteTor.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Torneo\DetailsTor.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Torneo\EditTor.cshtml.g.cs
+C:\Proyecto\Aplicacion\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Torneo\TorIndex.cshtml.g.cs
