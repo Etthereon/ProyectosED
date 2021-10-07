@@ -13,7 +13,5 @@ namespace Dominio
         public string Tipo{get;set;}
         public string Municipio {get;set;}
 
-
-
     }
 }

@@ -12,12 +12,15 @@ namespace Frontend.Pages
     public class DetailsEscModel : PageModel
     {
          private readonly IRepositorioEscenario _repoescenario;
-        public DetailsEscModel(IRepositorioEscenario repoescenario)
+         private readonly IRepositorioTorneo _repotorneo;
+        public DetailsEscModel(IRepositorioEscenario repoescenario, IRepositorioTorneo repotorneo)
         {
             this._repoescenario=repoescenario;
+            this._repotorneo=repotorneo;
         }
         [BindProperty]
         public Escenario Escenario{get;set;}
+        public IEnumerable<Torneo> Torneos{get;set;}
 
         public ActionResult OnGet(int id)
         {
@@ -26,6 +29,7 @@ namespace Frontend.Pages
             {
                 return NotFound();
             }
+            Torneos=_repotorneo.ListarTorneos();
             return Page();
         }
     }

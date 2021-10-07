@@ -93,6 +93,11 @@ namespace Persistencia
             return _appContext.Escenarios;
         }
 
+        List<Escenario> IRepositorioEscenario.ListarEscenarios1()
+        {
+            return _appContext.Escenarios.ToList();
+        }
+
         bool Existe(Escenario esce)
         {
             bool ex=false;

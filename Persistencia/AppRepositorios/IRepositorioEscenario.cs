@@ -10,5 +10,6 @@ namespace Persistencia
         bool ActualizarEscenario(Escenario escenario);
         bool EliminarEscenario(int idEscenario);
         Escenario BuscarEscenario(int idEscenario);
+        List<Escenario> ListarEscenarios1();
     }
 }

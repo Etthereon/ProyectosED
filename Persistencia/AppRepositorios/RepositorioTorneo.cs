@@ -94,6 +94,11 @@ namespace Persistencia
             return _appContext.Torneos;
         }
 
+        List<Torneo> IRepositorioTorneo.ListarTorneos1()
+        {
+            return _appContext.Torneos.ToList();
+        }
+
          bool Existe(Torneo torn)
         {
             bool ex=false;

@@ -10,5 +10,6 @@ namespace Persistencia
         bool ActualizarTorneo(Torneo torneo);
         bool EliminarTorneo(int idTorneo);
         Torneo BuscarTorneo(int idTorneo);
+        List<Torneo> ListarTorneos1();
     }
 }

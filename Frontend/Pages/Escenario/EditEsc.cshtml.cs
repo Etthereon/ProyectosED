@@ -12,16 +12,20 @@ namespace Frontend.Pages
     public class EditEscModel : PageModel
     {
         private readonly IRepositorioEscenario _repoescenario;
-        public EditEscModel(IRepositorioEscenario repoescenario)
+        private readonly IRepositorioTorneo _repotorneo;
+        public EditEscModel(IRepositorioEscenario repoescenario, IRepositorioTorneo repotorneo)
         {
             this._repoescenario=repoescenario;
+            this._repotorneo=repotorneo;
         }
         [BindProperty]
         public Escenario Escenario{get;set;}
+        public IEnumerable<Torneo> Torneos{get;set;}
 
         public ActionResult OnGet(int id)
         {            
             Escenario= _repoescenario.BuscarEscenario(id);
+            Torneos=_repotorneo.ListarTorneos();
             return Page();
         }
 
@@ -35,6 +39,7 @@ namespace Frontend.Pages
             }
             else
             {
+                Torneos=_repotorneo.ListarTorneos();
                 ViewData["Mensaje"]="Se ha presentado un error...";
                 return Page();
             }             

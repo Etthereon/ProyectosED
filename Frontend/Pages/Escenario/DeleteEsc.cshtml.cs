@@ -12,17 +12,22 @@ namespace Frontend.Pages
     public class DeleteEscModel : PageModel
     {
         private readonly IRepositorioEscenario _repoescenario;
-        public DeleteEscModel(IRepositorioEscenario repoescenario)
+        private readonly IRepositorioTorneo _repotorneo;
+
+        public DeleteEscModel(IRepositorioEscenario repoescenario, IRepositorioTorneo repotorneo )
         {
             this._repoescenario=repoescenario;
+            this._repotorneo=repotorneo;
         }
         [BindProperty]
         public Escenario Escenario{get;set;}
+        public IEnumerable<Torneo> Torneos{get;set;}
 
         public ActionResult OnGet(int id)
         {
             ViewData["Mensaje"]="Esta seguro de eliminar el registro?";
             Escenario= _repoescenario.BuscarEscenario(id);
+            Torneos=_repotorneo.ListarTorneos();
             return Page();
         }
 
@@ -35,6 +40,7 @@ namespace Frontend.Pages
              }
              else
              {
+                 Torneos=_repotorneo.ListarTorneos();
                  return Page();
              }
              

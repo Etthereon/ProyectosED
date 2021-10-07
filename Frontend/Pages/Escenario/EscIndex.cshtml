@@ -5,7 +5,7 @@
 }
 <h1>Listado de Escenarios</h1>
 <p>
-    <a asp-page="CreateEsc">Crear Escenario</a>
+    <a asp-page="CreateEsc" class="btn btn-success">Crear Escenario</a>
 </p>
 <table class="table">
     <thead>
@@ -15,11 +15,11 @@
             <th>Direccion</th>
             <th>Telefono</th>
             <th>Horario</th>
-            <th>TorneoId</th>
+            <th>Torneo</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var esc in Model.Escenarios)
+        @foreach (var esc in Model.EscenarioView)
         {
             <tr>
                 <td>@esc.id</td>
@@ -27,11 +27,11 @@
                 <td>@esc.Direccion</td>
                 <td>@esc.Telefono</td>
                 <td>@esc.Horario</td>
-                <td>@esc.TorneoId</td>
+                <td>@esc.Torneo</td>
                 <td>
-                    <a asp-page="./EditEsc" asp-route-id="@esc.id">Editar</a>
-                    <a asp-page="./DeleteEsc" asp-route-id="@esc.id">Eliminar</a>
-                    <a asp-page="./DetailsEsc" asp-route-id="@esc.id">Detalles</a>
+                    <a asp-page="./EditEsc" asp-route-id="@esc.id" class="btn btn-primary">Editar</a>
+                    <a asp-page="./DeleteEsc" asp-route-id="@esc.id" class="btn btn-warning">Eliminar</a>
+                    <a asp-page="./DetailsEsc" asp-route-id="@esc.id" class="btn btn-info">Detalles</a>
                 </td>
             </tr>
         }
