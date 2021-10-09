@@ -19,7 +19,7 @@
                    <input type="hidden" asp-for="Torneo.id" />
                    <div class="form-group">
                     <label asp-for="Torneo.Nombre" class="control-label"></label>
-                    <input asp-for="Torneo.Nombre" class="form-control" />
+                    <input asp-for="Torneo.Nombre" class="form-control" readonly/>
                     <label asp-for="Torneo.Categoria" class="control-label"></label>
                     <input asp-for="Torneo.Categoria" class="form-control" />
                     <label asp-for="Torneo.FechaInicial" class="control-label">Fecha de inicio</label>
@@ -28,7 +28,7 @@
                     <input asp-for="Torneo.FechaFinal" class="form-control" />
                     <label asp-for="Torneo.Tipo" class="control-label"></label>
                     <input asp-for="Torneo.Tipo" class="form-control" />
-                    <label asp-for="Torneo.MunicipioId" class="control-label">Id del Municipio</label>
+                    <label asp-for="Torneo.MunicipioId" class="control-label">Municipio</label>
                     <select asp-for="Torneo.MunicipioId" class="form-control" >
                         <option value="">**Seleccione un Municipio**</option>
                         @foreach (var mun in Model.Municipios)

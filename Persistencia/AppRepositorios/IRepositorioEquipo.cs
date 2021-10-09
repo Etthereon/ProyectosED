@@ -10,5 +10,6 @@ namespace Persistencia
         bool ActualizarEquipo(Equipo equipo);
         bool EliminarEquipo(int idEquipo);
         Equipo BuscarEquipo(int idEquipo);
+        List<Equipo> ListarEquipos1();
     }
 }

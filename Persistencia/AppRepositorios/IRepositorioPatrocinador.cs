@@ -10,5 +10,6 @@ namespace Persistencia
         bool ActualizarPatrocinador(Patrocinador patrocinador);
         bool EliminarPatrocinador(int idPatrocinador);
         Patrocinador BuscarPatrocinador(int idPatrocinador);
+        List<Patrocinador> ListarPatrocinadores1();
     }
 }

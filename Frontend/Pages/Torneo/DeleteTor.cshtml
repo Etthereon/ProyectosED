@@ -21,7 +21,7 @@
                     <input asp-for="Torneo.FechaInicial" class="form-control" readonly/>
                     <label asp-for="Torneo.Tipo" class="control-label"></label>
                     <input asp-for="Torneo.Tipo" class="form-control" readonly/>
-                    <label asp-for="Torneo.MunicipioId" class="control-label">Id del Municipio</label>
+                    <label asp-for="Torneo.MunicipioId" class="control-label">Municipio</label>
                     <select name="" id="" asp-for="Torneo.MunicipioId" class="form-control" disabled>
                         <option value="">**Seleccione un Municipio**</option>
                         @foreach (var mun in Model.Municipios)

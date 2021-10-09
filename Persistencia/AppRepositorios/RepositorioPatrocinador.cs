@@ -93,6 +93,11 @@ namespace Persistencia
             return _appContext.Patrocinadores;
         }
 
+        List<Patrocinador> IRepositorioPatrocinador.ListarPatrocinadores1()
+        {
+            return _appContext.Patrocinadores.ToList();
+        }
+
         bool Existe(Patrocinador patro)
         {
             bool ex=false;

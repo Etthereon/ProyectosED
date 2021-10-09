@@ -5,7 +5,7 @@
 }
 <h1>Listado de Equipos</h1>
 <p>
-    <a asp-page="CreateEqu">Crear Equipo</a>
+    <a asp-page="CreateEqu" class="btn btn-success">Crear Equipo</a>
 </p>
 <table class="table">
     <thead>
@@ -14,22 +14,22 @@
             <th>Nombre</th>
             <th>Cantidad Deportistas</th>
             <th>Disciplina</th>
-            <th>Id del Patrocinador</th>
+            <th>Patrocinador</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var equ in Model.Equipos)
+        @foreach (var equ in Model.EquipoView)
         {
             <tr>
                 <td>@equ.id</td>
                 <td>@equ.Nombre</td>
                 <td>@equ.CantidadDeportistas</td>
                 <td>@equ.Disciplina</td>
-                <td>@equ.PatrocinadorId</td>
+                <td>@equ.Patrocinador</td>
                 <td>
-                    <a asp-page="./EditEqu" asp-route-id="@equ.id">Editar</a>
-                    <a asp-page="./DeleteEqu" asp-route-id="@equ.id">Eliminar</a>
-                    <a asp-page="./DetailsEqu" asp-route-id="@equ.id">Detalles</a>
+                    <a asp-page="./EditEqu" asp-route-id="@equ.id" class="btn btn-primary">Editar</a>
+                    <a asp-page="./DeleteEqu" asp-route-id="@equ.id" class="btn btn-warning">Eliminar </a>
+                    <a asp-page="./DetailsEqu" asp-route-id="@equ.id" class="btn btn-info">Detalles</a>
                 </td>
             </tr>
         }

@@ -92,6 +92,11 @@ namespace Persistencia
             return _appContext.Equipos;
         }
 
+        List<Equipo> IRepositorioEquipo.ListarEquipos1()
+        {
+            return _appContext.Equipos.ToList();
+        }
+
         bool Existe(Equipo equi)
         {
             bool ex=false;

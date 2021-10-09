@@ -18,7 +18,7 @@ namespace Frontend.Pages
         //Modelo u objeto para transportar hacia MunIndex.cshtml
         public IEnumerable<Escenario> Escenarios {get;set;}
         public List<EscenarioView> EscenarioView = new List<EscenarioView>();
-        public Escenario Escenario{get;set;}
+        public Torneo Torneo{get;set;}
 
         //Constructor
         public EscIndexModel(IRepositorioEscenario repoescenario, IRepositorioTorneo repotorneo)

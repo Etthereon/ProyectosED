@@ -6,7 +6,7 @@
 
 <h1>Edit </h1>
 <h4>Equipo</h4>
-<h3>@ViewData["Mensaje"]</h3>
+<h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
 <div class="form-horizontal">
         
@@ -19,13 +19,19 @@
                    <input type="hidden" asp-for="Equipo.id" />
                    <div class="form-group">
                     <label asp-for="Equipo.Nombre" class="control-label"></label>
-                    <input asp-for="Equipo.Nombre" class="form-control" />
+                    <input asp-for="Equipo.Nombre" class="form-control" readonly/>
                     <label asp-for="Equipo.CantidadDeportistas" class="control-label">Cantidad de deportistas</label>
                     <input asp-for="Equipo.CantidadDeportistas" class="form-control" />
                     <label asp-for="Equipo.Disciplina" class="control-label"></label>
                     <input asp-for="Equipo.Disciplina" class="form-control" />
-                    <label asp-for="Equipo.PatrocinadorId" class="control-label">Id del patrocinador</label>
-                    <input asp-for="Equipo.PatrocinadorId" class="form-control" />
+                    <label asp-for="Equipo.PatrocinadorId" class="control-label">Patrocinador</label>
+                    <select asp-for="Equipo.PatrocinadorId" class="form-control"> 
+                        <option value="" >**Selecione un Patrocinador>**</option>
+                        @foreach (var pat in Model.Patrocinador)
+                        {
+                            <option value="@pat.id">@pat.Nombre</option>
+                        }
+                    </select>
                    </div>
                    <div class="form-group">                       
                        <input type="submit" value="Edit" class="btn btn-primary"/>                       

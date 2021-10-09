@@ -19,8 +19,14 @@
                        <input asp-for="Equipo.CantidadDeportistas" readonly class="form-control"/>
                        <label asp-for="Equipo.Disciplina" class="control-label"> </label>
                        <input asp-for="Equipo.Disciplina" readonly class="form-control"/>
-                       <label asp-for="Equipo.PatrocinadorId" class="control-label">Id del patrocinador</label>
-                       <input asp-for="Equipo.PatrocinadorId" readonly class="form-control"/>                      
+                       <label asp-for="Equipo.PatrocinadorId" class="control-label">Patrocinador</label>
+                       <select name="" id="" asp-for="Equipo.PatrocinadorId" class="form-control"disabled> 
+                        <option value="" >**Selecione un Patrocinador>**</option>
+                        @foreach (var pat in Model.Patrocinador)
+                        {
+                            <option value="@pat.id">@pat.Nombre</option>
+                        }                    
+                       </select>                      
                         
                    </div>
                    <div class="form-group">                       

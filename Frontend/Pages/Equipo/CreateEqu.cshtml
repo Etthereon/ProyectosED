@@ -4,7 +4,7 @@
     ViewData["title"]="Create";
 }
 <h1>Crear Equipo</h1>
-<h3>@ViewData["Mensaje"]</h3>
+<h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
 <div class="form-horizontal">
     <hr/>
@@ -19,8 +19,14 @@
                     <input asp-for="Equipo.CantidadDeportistas" class="form-control" />
                     <label asp-for="Equipo.Disciplina" class="control-label"></label>
                     <input asp-for="Equipo.Disciplina" class="form-control" />
-                    <label asp-for="Equipo.PatrocinadorId" class="control-label">Id del patrocinador</label>
-                    <input asp-for="Equipo.PatrocinadorId" class="form-control" />
+                    <label asp-for="Equipo.PatrocinadorId" class="control-label">Patrocinador</label>
+                    <select asp-for="Equipo.PatrocinadorId" class="form-control"> 
+                        <option value="" >**Selecione un Patrocinador**</option>
+                        @foreach (var patro in Model.Patrocinador)
+                        {
+                            <option value="@patro.id">@patro.Nombre</option>
+                        }
+                    </select>
                 </div>
                 <div class="form-group">
                     <br>
@@ -30,7 +36,7 @@
         </div>
     </div>
     <div>
-        <a asp-page="EquIndex">ir a inicio</a>
+        <a asp-page="EquIndex">Ir a inicio</a>
     </div>
 </div>
 @section Scripts

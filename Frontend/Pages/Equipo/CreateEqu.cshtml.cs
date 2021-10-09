@@ -13,18 +13,22 @@ namespace Frontend.Pages
     {
         //Objeto para crear el repositorio
         private readonly IRepositorioEquipo _repoequipo;
+        private readonly IRepositorioPatrocinador _repopatrocinador;
         //Propiedad para transportar al cshtml
         [BindProperty]
         public Equipo Equipo {get;set;}
+        public IEnumerable<Patrocinador> Patrocinador{get;set;} 
 
         //Constructor
-        public CreateEquModel(IRepositorioEquipo repoequipo)
+        public CreateEquModel(IRepositorioEquipo repoequipo, IRepositorioPatrocinador repopatrocinador)
         {
             this._repoequipo=repoequipo;
+            this._repopatrocinador=repopatrocinador;
         }
         
         public ActionResult OnGet()
         {
+            Patrocinador=_repopatrocinador.ListarPatrocinadores();
             return Page();
         }
 
@@ -37,6 +41,7 @@ namespace Frontend.Pages
             }
             else
             {
+                Patrocinador=_repopatrocinador.ListarPatrocinadores();
                 ViewData ["Mensaje"]= "El equipo ya se encuentra registrado";
                 return Page();
             }

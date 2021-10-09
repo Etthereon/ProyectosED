@@ -21,7 +21,7 @@
                         <input asp-for="Escenario.Telefono" class="form-control" readonly/>
                         <label asp-for="Escenario.Horario" class="control-label"></label>
                         <input asp-for="Escenario.Horario" class="form-control" readonly/>
-                        <label asp-for="Escenario.TorneoId" class="control-label"></label>
+                        <label asp-for="Escenario.TorneoId" class="control-label">Torneo</label>
                         <select name="" id="" asp-for="Escenario.TorneoId" class="form-control" disabled>
                             <option value="">**Seleccione un Torneo**</option>
                             @foreach (var tor in Model.Torneos)
