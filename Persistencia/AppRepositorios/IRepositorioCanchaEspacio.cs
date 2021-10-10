@@ -10,5 +10,6 @@ namespace Persistencia
         bool ActualizarCanchaEspacio(CanchaEspacio canchaEspacio);
         bool EliminarCanchaEspacio(int idCanchaEspacio);
         CanchaEspacio BuscarCanchaEspacio(int idCanchaEspacio);
+        List<CanchaEspacio> ListarCanchaEspacios1();
     }
 }

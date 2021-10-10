@@ -5,7 +5,7 @@
 }
 <h1>Listado de Deportistas</h1>
 <p>
-    <a asp-page="CreateDep">Crear Deportista</a>
+    <a asp-page="CreateDep" class="btn btn-success">Crear Deportista</a>
 </p>
 <table class="table">
     <thead>
@@ -21,11 +21,11 @@
             <th>Disciplina</th>
             <th>Direccion</th>
             <th>NumeroEmergencia</th>
-            <th>EquipoId</th>
+            <th>Equipo</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var dep in Model.Deportistas)
+        @foreach (var dep in Model.DeportistaView)
         {
             <tr>
                 <td>@dep.id</td>
@@ -39,11 +39,11 @@
                 <td>@dep.Disciplina</td>
                 <td>@dep.Direccion</td>
                 <td>@dep.NumeroEmergencia</td>
-                <td>@dep.EquipoId</td>
+                <td>@dep.Equipo</td>
                 <td>
-                    <a asp-page="./EditDep" asp-route-id="@dep.id">Editar</a>
-                    <a asp-page="./DeleteDep" asp-route-id="@dep.id">Eliminar</a>
-                    <a asp-page="./DetailsDep" asp-route-id="@dep.id">Detalles</a>
+                    <a asp-page="./EditDep" asp-route-id="@dep.id" class="btn btn-primary">Editar</a>
+                    <a asp-page="./DeleteDep" asp-route-id="@dep.id" class="btn btn-warning">Eliminar</a>
+                    <a asp-page="./DetailsDep" asp-route-id="@dep.id" class="btn btn-info">Detalles</a>
                 </td>
             </tr>
         }

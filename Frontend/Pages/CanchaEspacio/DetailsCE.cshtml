@@ -32,8 +32,14 @@
                        <input asp-for="CanchaEspacio.Estado"  class="form-control" readonly/>
                        <label asp-for="CanchaEspacio.CapacidadEspectadores" class="control-label"> </label>
                        <input asp-for="CanchaEspacio.CapacidadEspectadores"  class="form-control" readonly/>   
-                       <label asp-for="CanchaEspacio.EscenarioId" class="control-label"> </label>
-                       <input asp-for="CanchaEspacio.EscenarioId"  class="form-control" readonly/>                      
+                       <label asp-for="CanchaEspacio.EscenarioId" class="control-label">Escenario</label>
+                       <select name="" id="" asp-for="CanchaEspacio.EscenarioId" class="form-control" disabled>
+                            <option value="" >**Seleccione una CanchaEspacio** </option>
+                            @foreach (var canesp in Model.Escenarios)
+                            {
+                                <option value="@canesp.id">@canesp.Nombre</option>  
+                            } 
+                       </select>                    
                    </div>
                    
                </form>

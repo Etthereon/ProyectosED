@@ -94,6 +94,11 @@ namespace Persistencia
             return _appContext.CanchaEspacios;
         }
 
+        List<CanchaEspacio> IRepositorioCanchaEspacio.ListarCanchaEspacios1()
+        {
+            return _appContext.CanchaEspacios.ToList();
+        }
+
         bool Existe(CanchaEspacio canc)
         {
             bool ex=false;

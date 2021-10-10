@@ -5,7 +5,7 @@
 }
 <h1>Delete</h1>
 <h4>CanchaEspacio</h4>
-<h2>@ViewData["Mensaje"] </h2>
+<h2 class="text-danger">@ViewData["Mensaje"] </h2>
 <div class="form-horizontal">        
         <hr />        
         <div class="row">
@@ -14,17 +14,23 @@
                    <input type="hidden" asp-for="CanchaEspacio.id" />
                    <div class="form-group">
                         <label asp-for="CanchaEspacio.Nombre" class="control-label"></label>
-                        <input asp-for="CanchaEspacio.Nombre" class="form-control" />
+                        <input asp-for="CanchaEspacio.Nombre" class="form-control" readonly/>
                         <label asp-for="CanchaEspacio.Disciplina" class="control-label"></label>
-                        <input asp-for="CanchaEspacio.Disciplina" class="form-control" />
+                        <input asp-for="CanchaEspacio.Disciplina" class="form-control" readonly/>
                         <label asp-for="CanchaEspacio.Estado" class="control-label"></label>
-                        <input asp-for="CanchaEspacio.Estado" class="form-control" />
+                        <input asp-for="CanchaEspacio.Estado" class="form-control" readonly/>
                         <label asp-for="CanchaEspacio.CapacidadEspectadores" class="control-label"></label>
-                        <input asp-for="CanchaEspacio.CapacidadEspectadores" class="form-control" />
+                        <input asp-for="CanchaEspacio.CapacidadEspectadores" class="form-control" readonly/>
                         <label asp-for="CanchaEspacio.Medidas" class="control-label"></label>
-                        <input asp-for="CanchaEspacio.Medidas" class="form-control" />
-                        <label asp-for="CanchaEspacio.EscenarioId" class="control-label"></label>
-                        <input asp-for="CanchaEspacio.EscenarioId" class="form-control" />                    
+                        <input asp-for="CanchaEspacio.Medidas" class="form-control" readonly/>
+                        <label asp-for="CanchaEspacio.EscenarioId" class="control-label">Escenario</label>
+                        <select name="" id="" asp-for="CanchaEspacio.EscenarioId" class="form-control" disabled>
+                            <option value="" >**Seleccione una CanchaEspacio** </option>
+                                @foreach (var canesc in Model.Escenarios)
+                                {
+                                    <option value="@canesc.id">@canesc.Nombre</option>   
+                                }
+                        </select>                    
                             
                    </div>
                    <div class="form-group">                       

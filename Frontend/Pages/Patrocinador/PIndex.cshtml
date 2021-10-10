@@ -5,7 +5,7 @@
 }
 <h1>Listado de Patrocinadores</h1> 
 <p>
-    <a asp-page="CreatePatrocinador">Crear Patrocinador</a> 
+    <a asp-page="CreatePatrocinador" class="btn btn-success">Crear Patrocinador</a> 
 </p>
 <table class="table"> 
    <thead> 
@@ -28,9 +28,9 @@
         <td>  @patro.Direccion </td>
         <td>  @patro.Telefono </td>
         <td>
-             <a asp-page="./EditPatrocinador" asp-route-id= "@patro.id"> Editar </a> 
-             <a asp-page="./DeletePatrocinador" asp-route-id= "@patro.id"> Eliminar </a>
-             <a asp-page="./DetailsPatrocinador" asp-route-id= "@patro.id"> Detalles </a>
+             <a asp-page="./EditPatrocinador" asp-route-id= "@patro.id" class="btn btn-primary"> Editar </a> 
+             <a asp-page="./DeletePatrocinador" asp-route-id= "@patro.id" class="btn btn-warning"> Eliminar </a>
+             <a asp-page="./DetailsPatrocinador" asp-route-id= "@patro.id" class="btn btn-info"> Detalles </a>
         </td>
     </tr>
    }

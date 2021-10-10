@@ -5,7 +5,7 @@
 }
 <h1>Listado de Entrenadores</h1>
 <p>
-    <a asp-page="CreateCE">Crear CanchaEspacio</a>
+    <a asp-page="CreateCE" class="btn btn-success">Crear CanchaEspacio</a>
 </p>
 <table class="table">
     <thead>
@@ -16,11 +16,11 @@
             <th>Estado</th>
             <th>CapacidadEspectadores</th>
             <th>Medidas</th>
-            <th>EscenarioId</th>
+            <th>Escenario</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var canesp in Model.CanchaEspacios)
+        @foreach (var canesp in Model.CanchaEspacioView)
         {
             <tr>
                 <td>@canesp.id</td>
@@ -29,11 +29,11 @@
                 <td>@canesp.Estado</td>
                 <td>@canesp.CapacidadEspectadores</td>
                 <td>@canesp.Medidas</td>
-                <td>@canesp.EscenarioId</td>
+                <td>@canesp.Escenario</td>
                 <td>
-                    <a asp-page="./EditCE" asp-route-id="@canesp.id">Editar</a>
-                    <a asp-page="./DeleteCE" asp-route-id="@canesp.id">Eliminar</a>
-                    <a asp-page="./DetailsCE" asp-route-id="@canesp.id">Detalles</a>
+                    <a asp-page="./EditCE" asp-route-id="@canesp.id" class="btn btn-primary">Editar</a>
+                    <a asp-page="./DeleteCE" asp-route-id="@canesp.id" class="btn btn-warning">Eliminar</a>
+                    <a asp-page="./DetailsCE" asp-route-id="@canesp.id" class="btn btn-info">Detalles</a>
                 </td>
             </tr>
         }

@@ -5,7 +5,7 @@
 }
 <h1>Listado de Municipios</h1>
 <p>
-    <a asp-page="Create">Crear Municipio</a>
+    <a asp-page="Create" class="btn btn-success">Crear Municipio</a>
 </p>
 <table class="table">
     <thead>
@@ -21,9 +21,9 @@
                 <td>@mun.id</td>
                 <td>@mun.Nombre</td>
                 <td>
-                    <a asp-page="./Edit" asp-route-id="@mun.id">Editar</a>
-                    <a asp-page="./Delete" asp-route-id="@mun.id">Eliminar</a>
-                    <a asp-page="./Details" asp-route-id="@mun.id">Detalles</a>
+                    <a asp-page="./Edit" asp-route-id="@mun.id" class="btn btn-primary">Editar</a>
+                    <a asp-page="./Delete" asp-route-id="@mun.id" class="btn btn-warning">Eliminar</a>
+                    <a asp-page="./Details" asp-route-id="@mun.id" class="btn btn-info">Detalles</a>
                 </td>
             </tr>
         }

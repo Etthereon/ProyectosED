@@ -12,16 +12,21 @@ namespace Frontend.Pages
     public class EditCEModel : PageModel
     {
         private readonly IRepositorioCanchaEspacio _repocanchaespacio;
-        public EditCEModel(IRepositorioCanchaEspacio repocanchaespacio)
+        private readonly IRepositorioEscenario _repoescenario;
+
+        public EditCEModel(IRepositorioCanchaEspacio repocanchaespacio, IRepositorioEscenario repoescenario)
         {
             this._repocanchaespacio=repocanchaespacio;
+            this._repoescenario=repoescenario;
         }
         [BindProperty]
         public CanchaEspacio CanchaEspacio{get;set;}
+        public IEnumerable<Escenario> Escenarios{get;set;}
 
         public ActionResult OnGet(int id)
         {            
             CanchaEspacio= _repocanchaespacio.BuscarCanchaEspacio(id);
+            Escenarios=_repoescenario.ListarEscenarios();
             return Page();
         }
 
@@ -35,6 +40,7 @@ namespace Frontend.Pages
             }
             else
             {
+                Escenarios=_repoescenario.ListarEscenarios();
                 ViewData["Mensaje"]="Se ha presentado un error...";
                 return Page();
             }             

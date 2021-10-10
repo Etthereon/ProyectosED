@@ -12,12 +12,16 @@ namespace Frontend.Pages
     public class DetailsCEModel : PageModel
     {
         private readonly IRepositorioCanchaEspacio _repocanchaespacio;
-        public DetailsCEModel(IRepositorioCanchaEspacio repocanchaespacio)
+        private readonly IRepositorioEscenario _repoescenario;
+
+        public DetailsCEModel(IRepositorioCanchaEspacio repocanchaespacio, IRepositorioEscenario repoescenario)
         {
             this._repocanchaespacio=repocanchaespacio;
+            this._repoescenario=repoescenario;
         }
         [BindProperty]
         public CanchaEspacio CanchaEspacio{get;set;}
+        public IEnumerable<Escenario> Escenarios{get;set;}
 
         public ActionResult OnGet(int id)
         {
@@ -26,6 +30,7 @@ namespace Frontend.Pages
             {
                 return NotFound();
             }
+            Escenarios=_repoescenario.ListarEscenarios();
             return Page();
         }
     }

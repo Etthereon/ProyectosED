@@ -12,17 +12,22 @@ namespace Frontend.Pages
     public class DeleteCEModel : PageModel
     {
        private readonly IRepositorioCanchaEspacio _repocanchaespacio;
-        public DeleteCEModel(IRepositorioCanchaEspacio repocanchaespacio)
+       private readonly IRepositorioEscenario _repoescenario;
+
+        public DeleteCEModel(IRepositorioCanchaEspacio repocanchaespacio, IRepositorioEscenario repoescenario)
         {
             this._repocanchaespacio=repocanchaespacio;
+            this._repoescenario=repoescenario;
         }
         [BindProperty]
         public CanchaEspacio CanchaEspacio{get;set;}
+        public IEnumerable<Escenario> Escenarios{get;set;}
 
         public ActionResult OnGet(int id)
         {
             ViewData["Mensaje"]="Esta seguro de eliminar el registro?";
             CanchaEspacio= _repocanchaespacio.BuscarCanchaEspacio(id);
+            Escenarios=_repoescenario.ListarEscenarios();
             return Page();
         }
 
@@ -35,6 +40,7 @@ namespace Frontend.Pages
              }
              else
              {
+                 Escenarios=_repoescenario.ListarEscenarios();
                  return Page();
              }
              

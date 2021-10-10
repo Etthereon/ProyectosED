@@ -13,18 +13,22 @@ namespace Frontend.Pages
     {
         //Objeto para crear el repositorio
         private readonly IRepositorioDeportista _repodeportista;
+        private readonly IRepositorioEquipo _repoequipo;
         //Propiedad para transportar al cshtml
         [BindProperty]
         public Deportista Deportista {get;set;}
+        public IEnumerable<Equipo> Equipo{get;set;} 
 
         //Constructor
-        public CreateDepModel(IRepositorioDeportista repodeportista)
+        public CreateDepModel(IRepositorioDeportista repodeportista, IRepositorioEquipo repoequipo)
         {
             this._repodeportista=repodeportista;
+            this._repoequipo=repoequipo;
         }
         
         public ActionResult OnGet()
         {
+            Equipo=_repoequipo.ListarEquipos();
             return Page();
         }
 
@@ -37,6 +41,7 @@ namespace Frontend.Pages
             }
             else
             {
+                Equipo=_repoequipo.ListarEquipos();
                 ViewData ["Mensaje"]= "El deportista ya se encuentra registrado";
                 return Page();
             }

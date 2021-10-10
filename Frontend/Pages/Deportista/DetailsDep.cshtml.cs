@@ -12,16 +12,21 @@ namespace Frontend.Pages
     public class DetailsDepModel : PageModel
     {
         private readonly IRepositorioDeportista _repodeportista;
-        public DetailsDepModel(IRepositorioDeportista repodeportista)
+        private readonly IRepositorioEquipo _repoequipo;
+
+        public DetailsDepModel(IRepositorioDeportista repodeportista, IRepositorioEquipo repoequipo)
         {
             this._repodeportista=repodeportista;
+            this._repoequipo=repoequipo;
         }
         [BindProperty]
         public Deportista Deportista{get;set;}
+        public IEnumerable<Equipo> Equipo {get;set;}
 
         public ActionResult OnGet(int id)
         {
             Deportista= _repodeportista.BuscarDeportista(id);
+            Equipo= _repoequipo.ListarEquipos();
             if (Deportista==null)
             {
                 return NotFound();
