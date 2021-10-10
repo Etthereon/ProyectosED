@@ -7263,19 +7263,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Javier Fernando\\.nuget\\packages\\": {}
+    "/Users/javierfernando/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyecto\\Aplicacion\\persistencia\\Persistencia.csproj",
+      "projectUniqueName": "/Users/javierfernando/C#/ProyectosED/Persistencia/Persistencia.csproj",
       "projectName": "Persistencia",
-      "projectPath": "C:\\Proyecto\\Aplicacion\\persistencia\\Persistencia.csproj",
-      "packagesPath": "C:\\Users\\Javier Fernando\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyecto\\Aplicacion\\persistencia\\obj\\",
+      "projectPath": "/Users/javierfernando/C#/ProyectosED/Persistencia/Persistencia.csproj",
+      "packagesPath": "/Users/javierfernando/.nuget/packages/",
+      "outputPath": "/Users/javierfernando/C#/ProyectosED/Persistencia/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Javier Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/javierfernando/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -7286,8 +7286,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Proyecto\\Aplicacion\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Proyecto\\Aplicacion\\Dominio\\Dominio.csproj"
+            "/Users/javierfernando/C#/ProyectosED/Dominio/Dominio.csproj": {
+              "projectPath": "/Users/javierfernando/C#/ProyectosED/Dominio/Dominio.csproj"
             }
           }
         }
@@ -7337,7 +7337,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.412/RuntimeIdentifierGraph.json"
       }
     }
   }

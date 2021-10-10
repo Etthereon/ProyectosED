@@ -1,27 +1,36 @@
-C:\Users\Felip\Documents\Desarrollo de software\Proyecto\Aplicacion\Dominio\obj\Debug\netstandard2.0\Dominio.csprojAssemblyReference.cache
-C:\Users\Felip\Documents\Desarrollo de software\Proyecto\Aplicacion\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfoInputs.cache
-C:\Users\Felip\Documents\Desarrollo de software\Proyecto\Aplicacion\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs
-C:\Users\Felip\Documents\Desarrollo de software\Proyecto\Aplicacion\Dominio\obj\Debug\netstandard2.0\Dominio.csproj.CoreCompileInputs.cache
-C:\Users\Felip\Documents\Desarrollo de software\Proyecto\Aplicacion\Dominio\bin\Debug\netstandard2.0\Dominio.deps.json
-C:\Users\Felip\Documents\Desarrollo de software\Proyecto\Aplicacion\Dominio\bin\Debug\netstandard2.0\Dominio.dll
-C:\Users\Felip\Documents\Desarrollo de software\Proyecto\Aplicacion\Dominio\bin\Debug\netstandard2.0\Dominio.pdb
-C:\Users\Felip\Documents\Desarrollo de software\Proyecto\Aplicacion\Dominio\obj\Debug\netstandard2.0\Dominio.dll
-C:\Users\Felip\Documents\Desarrollo de software\Proyecto\Aplicacion\Dominio\obj\Debug\netstandard2.0\Dominio.pdb
-C:\Users\Javier Fernando\Downloads\V3\Aplicacion\dominio\bin\Debug\netstandard2.0\Dominio.deps.json
-C:\Users\Javier Fernando\Downloads\V3\Aplicacion\dominio\bin\Debug\netstandard2.0\Dominio.dll
-C:\Users\Javier Fernando\Downloads\V3\Aplicacion\dominio\bin\Debug\netstandard2.0\Dominio.pdb
-C:\Users\Javier Fernando\Downloads\V3\Aplicacion\dominio\obj\Debug\netstandard2.0\Dominio.csprojAssemblyReference.cache
-C:\Users\Javier Fernando\Downloads\V3\Aplicacion\dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfoInputs.cache
-C:\Users\Javier Fernando\Downloads\V3\Aplicacion\dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs
-C:\Users\Javier Fernando\Downloads\V3\Aplicacion\dominio\obj\Debug\netstandard2.0\Dominio.csproj.CoreCompileInputs.cache
-C:\Users\Javier Fernando\Downloads\V3\Aplicacion\dominio\obj\Debug\netstandard2.0\Dominio.dll
-C:\Users\Javier Fernando\Downloads\V3\Aplicacion\dominio\obj\Debug\netstandard2.0\Dominio.pdb
-C:\Proyecto\Aplicacion\dominio\bin\Debug\netstandard2.0\Dominio.deps.json
-C:\Proyecto\Aplicacion\dominio\bin\Debug\netstandard2.0\Dominio.dll
-C:\Proyecto\Aplicacion\dominio\bin\Debug\netstandard2.0\Dominio.pdb
-C:\Proyecto\Aplicacion\dominio\obj\Debug\netstandard2.0\Dominio.csprojAssemblyReference.cache
-C:\Proyecto\Aplicacion\dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfoInputs.cache
-C:\Proyecto\Aplicacion\dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs
-C:\Proyecto\Aplicacion\dominio\obj\Debug\netstandard2.0\Dominio.csproj.CoreCompileInputs.cache
-C:\Proyecto\Aplicacion\dominio\obj\Debug\netstandard2.0\Dominio.dll
-C:\Proyecto\Aplicacion\dominio\obj\Debug\netstandard2.0\Dominio.pdb
+C:/Users/Felip/Documents/Desarrollo de software/Proyecto/Aplicacion/Dominio/obj/Debug/netstandard2.0/Dominio.csprojAssemblyReference.cache
+C:/Users/Felip/Documents/Desarrollo de software/Proyecto/Aplicacion/Dominio/obj/Debug/netstandard2.0/Dominio.AssemblyInfoInputs.cache
+C:/Users/Felip/Documents/Desarrollo de software/Proyecto/Aplicacion/Dominio/obj/Debug/netstandard2.0/Dominio.AssemblyInfo.cs
+C:/Users/Felip/Documents/Desarrollo de software/Proyecto/Aplicacion/Dominio/obj/Debug/netstandard2.0/Dominio.csproj.CoreCompileInputs.cache
+C:/Users/Felip/Documents/Desarrollo de software/Proyecto/Aplicacion/Dominio/bin/Debug/netstandard2.0/Dominio.deps.json
+C:/Users/Felip/Documents/Desarrollo de software/Proyecto/Aplicacion/Dominio/bin/Debug/netstandard2.0/Dominio.dll
+C:/Users/Felip/Documents/Desarrollo de software/Proyecto/Aplicacion/Dominio/bin/Debug/netstandard2.0/Dominio.pdb
+C:/Users/Felip/Documents/Desarrollo de software/Proyecto/Aplicacion/Dominio/obj/Debug/netstandard2.0/Dominio.dll
+C:/Users/Felip/Documents/Desarrollo de software/Proyecto/Aplicacion/Dominio/obj/Debug/netstandard2.0/Dominio.pdb
+C:/Users/Javier Fernando/Downloads/V3/Aplicacion/dominio/bin/Debug/netstandard2.0/Dominio.deps.json
+C:/Users/Javier Fernando/Downloads/V3/Aplicacion/dominio/bin/Debug/netstandard2.0/Dominio.dll
+C:/Users/Javier Fernando/Downloads/V3/Aplicacion/dominio/bin/Debug/netstandard2.0/Dominio.pdb
+C:/Users/Javier Fernando/Downloads/V3/Aplicacion/dominio/obj/Debug/netstandard2.0/Dominio.csprojAssemblyReference.cache
+C:/Users/Javier Fernando/Downloads/V3/Aplicacion/dominio/obj/Debug/netstandard2.0/Dominio.AssemblyInfoInputs.cache
+C:/Users/Javier Fernando/Downloads/V3/Aplicacion/dominio/obj/Debug/netstandard2.0/Dominio.AssemblyInfo.cs
+C:/Users/Javier Fernando/Downloads/V3/Aplicacion/dominio/obj/Debug/netstandard2.0/Dominio.csproj.CoreCompileInputs.cache
+C:/Users/Javier Fernando/Downloads/V3/Aplicacion/dominio/obj/Debug/netstandard2.0/Dominio.dll
+C:/Users/Javier Fernando/Downloads/V3/Aplicacion/dominio/obj/Debug/netstandard2.0/Dominio.pdb
+C:/Proyecto/Aplicacion/dominio/bin/Debug/netstandard2.0/Dominio.deps.json
+C:/Proyecto/Aplicacion/dominio/bin/Debug/netstandard2.0/Dominio.dll
+C:/Proyecto/Aplicacion/dominio/bin/Debug/netstandard2.0/Dominio.pdb
+C:/Proyecto/Aplicacion/dominio/obj/Debug/netstandard2.0/Dominio.csprojAssemblyReference.cache
+C:/Proyecto/Aplicacion/dominio/obj/Debug/netstandard2.0/Dominio.AssemblyInfoInputs.cache
+C:/Proyecto/Aplicacion/dominio/obj/Debug/netstandard2.0/Dominio.AssemblyInfo.cs
+C:/Proyecto/Aplicacion/dominio/obj/Debug/netstandard2.0/Dominio.csproj.CoreCompileInputs.cache
+C:/Proyecto/Aplicacion/dominio/obj/Debug/netstandard2.0/Dominio.dll
+C:/Proyecto/Aplicacion/dominio/obj/Debug/netstandard2.0/Dominio.pdb
+/Users/javierfernando/C#/ProyectosED/Dominio/bin/Debug/netstandard2.0/Dominio.deps.json
+/Users/javierfernando/C#/ProyectosED/Dominio/bin/Debug/netstandard2.0/Dominio.dll
+/Users/javierfernando/C#/ProyectosED/Dominio/bin/Debug/netstandard2.0/Dominio.pdb
+/Users/javierfernando/C#/ProyectosED/Dominio/obj/Debug/netstandard2.0/Dominio.csprojAssemblyReference.cache
+/Users/javierfernando/C#/ProyectosED/Dominio/obj/Debug/netstandard2.0/Dominio.AssemblyInfoInputs.cache
+/Users/javierfernando/C#/ProyectosED/Dominio/obj/Debug/netstandard2.0/Dominio.AssemblyInfo.cs
+/Users/javierfernando/C#/ProyectosED/Dominio/obj/Debug/netstandard2.0/Dominio.csproj.CoreCompileInputs.cache
+/Users/javierfernando/C#/ProyectosED/Dominio/obj/Debug/netstandard2.0/Dominio.dll
+/Users/javierfernando/C#/ProyectosED/Dominio/obj/Debug/netstandard2.0/Dominio.pdb
