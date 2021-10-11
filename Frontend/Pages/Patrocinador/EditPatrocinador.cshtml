@@ -3,7 +3,7 @@
 @{
     ViewData["Title"]="Edit";
 }
-<h1>Edit Patrocinador </h1>
+<h1>Editar Patrocinadores </h1>
 <h4>Patrocinador</h4>
 <h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
@@ -15,7 +15,7 @@
                    <input type="hidden" asp-for="Patrocinador.id" />
                    <div class="form-group">
                     <label asp-for="Patrocinador.Identificacion" class="control-label"> </label>
-                    <input asp-for="Patrocinador.Identificacion" class="form-control" />
+                    <input asp-for="Patrocinador.Identificacion" class="form-control" readonly/>
                     <label asp-for="Patrocinador.Nombre" class="control-label"> </label>
                     <input asp-for="Patrocinador.Nombre" class="form-control" />
                     <label asp-for="Patrocinador.tipoPersona" class="control-label"> </label>
@@ -33,7 +33,7 @@
         </div>
 
         <div>
-            <a asp-page="PIndex"> Back to List</a>
+            <a asp-page="PIndex"> Ir a Inicio</a>
         </div> 
 </div>
 

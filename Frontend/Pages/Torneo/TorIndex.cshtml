@@ -3,14 +3,14 @@
 @{
     ViewData ["Title"]="TorIndex";
 }
-<h1>Listado de torneos</h1>
+<h1>Listado de Torneos</h1>
 <p>
     <a asp-page="CreateTor" class="btn btn-success">Crear Torneos</a>
 </p>
 <table class="table">
     <thead>
         <tr>
-            <th>id</th>
+            <!-- <th>id</th> -->
             <th>Nombre</th>
             <th>Categoria</th>
             <th>FechaInicial</th>
@@ -24,7 +24,7 @@
         @foreach (var tor in Model.TorneoView)
         {
             <tr>
-                <td>@tor.id</td>
+                <!-- <td>@tor.id</td> -->
                 <td>@tor.Nombre</td>
                 <td>@tor.Categoria</td>
                 <td>@tor.FechaInicial</td>

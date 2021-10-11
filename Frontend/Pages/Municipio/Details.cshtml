@@ -2,7 +2,7 @@
 @model Frontend.Pages.DetailsModel
 @{
 }
-<h1>Details</h1>
+<h1>Detalles del Municipios</h1>
 <h4>Municipio</h4>
 
 <div class="form-horizontal">
@@ -14,11 +14,11 @@
                <form method="post">
                    
                    <input type="hidden" asp-for="Municipio.id" />
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                        <label asp-for="Municipio.id" class="control-label"> </label>
                        <input asp-for="Municipio.id"  class="form-control" readonly/>                       
                       
-                   </div>
+                   </div>-->
 
                    <div class="form-group">
                        <label asp-for="Municipio.Nombre" class="control-label"> </label>
@@ -31,7 +31,7 @@
         </div>
 
         <div>
-            <a asp-page="MunIndex"> Back to List</a>
+            <a asp-page="MunIndex"> Ir al Inicio</a>
         </div> 
 </div>
 

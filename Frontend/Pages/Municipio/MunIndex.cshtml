@@ -10,7 +10,7 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Id</th>
+            <!-- <th>Id</th> -->
             <th>Nombre</th>
         </tr>
     </thead>
@@ -18,7 +18,7 @@
         @foreach (var mun in Model.Municipios)
         {
             <tr>
-                <td>@mun.id</td>
+                <!--  <td>@mun.id</td> -->
                 <td>@mun.Nombre</td>
                 <td>
                     <a asp-page="./Edit" asp-route-id="@mun.id" class="btn btn-primary">Editar</a>
