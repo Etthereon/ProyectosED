@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "v3eBHSkVv4irpDIrLaEQag1vSTENOInaFHW2qd0jJxZcv2wOdh3JWW1JRt7u2YWc9Dcsyyaw7lAnR4dGhEAaDg==",
+  "dgSpecHash": "Py7I/u5f81HKsz7DLuEmKHMXtemVgPVzS99hOqPViolVn0FRpk077lOOU2nfXYPLZNhhUxjwku3iO86Lm1pn4w==",
   "success": true,
-  "projectFilePath": "/Users/javierfernando/C#/ProyectosED/Dominio/Dominio.csproj",
+  "projectFilePath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\dominio\\Dominio.csproj",
   "expectedPackageFiles": [
-    "/Users/javierfernando/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "/Users/javierfernando/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Javier Fernando\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Javier Fernando\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Javier Fernando\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

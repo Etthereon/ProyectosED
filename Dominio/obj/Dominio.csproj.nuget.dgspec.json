@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/javierfernando/C#/ProyectosED/Dominio/Dominio.csproj": {}
+    "C:\\Proyecto\\Aplicacion\\ProyectosED\\dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "/Users/javierfernando/C#/ProyectosED/Dominio/Dominio.csproj": {
+    "C:\\Proyecto\\Aplicacion\\ProyectosED\\dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/javierfernando/C#/ProyectosED/Dominio/Dominio.csproj",
+        "projectUniqueName": "C:\\Proyecto\\Aplicacion\\ProyectosED\\dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "/Users/javierfernando/C#/ProyectosED/Dominio/Dominio.csproj",
-        "packagesPath": "/Users/javierfernando/.nuget/packages/",
-        "outputPath": "/Users/javierfernando/C#/ProyectosED/Dominio/obj/",
+        "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\Javier Fernando\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/javierfernando/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Javier Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -41,6 +41,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -53,7 +57,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.412/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -34,3 +34,12 @@ C:/Proyecto/Aplicacion/dominio/obj/Debug/netstandard2.0/Dominio.pdb
 /Users/javierfernando/C#/ProyectosED/Dominio/obj/Debug/netstandard2.0/Dominio.csproj.CoreCompileInputs.cache
 /Users/javierfernando/C#/ProyectosED/Dominio/obj/Debug/netstandard2.0/Dominio.dll
 /Users/javierfernando/C#/ProyectosED/Dominio/obj/Debug/netstandard2.0/Dominio.pdb
+C:\Proyecto\Aplicacion\ProyectosED\Dominio\bin\Debug\netstandard2.0\Dominio.deps.json
+C:\Proyecto\Aplicacion\ProyectosED\Dominio\bin\Debug\netstandard2.0\Dominio.dll
+C:\Proyecto\Aplicacion\ProyectosED\Dominio\bin\Debug\netstandard2.0\Dominio.pdb
+C:\Proyecto\Aplicacion\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.csprojAssemblyReference.cache
+C:\Proyecto\Aplicacion\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfoInputs.cache
+C:\Proyecto\Aplicacion\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs
+C:\Proyecto\Aplicacion\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Proyecto\Aplicacion\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.dll
+C:\Proyecto\Aplicacion\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.pdb
