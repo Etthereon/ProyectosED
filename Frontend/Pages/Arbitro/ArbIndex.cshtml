@@ -5,7 +5,7 @@
 }
 <h1>Listado de Arbitros</h1>
 <p>
-    <a asp-page="CreateArb">Crear Arbitro</a>
+    <a asp-page="CreateArb" class="btn btn-success">Crear Arbitro</a>
 </p>
 <table class="table">
     <thead>
@@ -16,12 +16,12 @@
             <th>Apellidos</th>
             <th>Genero</th>
             <th>Disciplina</th>
-            <th>TorneoId</th>
-            <th>EscuelaArbitroId</th>
+            <th>Torneo</th>
+            <th>EscuelaArbitro</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var arb in Model.Arbitros)
+        @foreach (var arb in Model.ArbitroView)
         {
             <tr>
                 <!-- <td>@arb.id</td> -->
@@ -30,12 +30,12 @@
                 <td>@arb.Apellidos</td>
                 <td>@arb.Genero</td>
                 <td>@arb.Disciplina</td>
-                <td>@arb.TorneoId</td>
-                <td>@arb.EscuelaArbitroId</td>
+                <td>@arb.Torneo</td>
+                <td>@arb.EscuelaArbitro</td>
                 <td>
-                    <a asp-page="./EditArb" asp-route-id="@arb.id">Editar</a>
-                    <a asp-page="./DeleteArb" asp-route-id="@arb.id">Eliminar</a>
-                    <a asp-page="./DetailsArb" asp-route-id="@arb.id">Detalles</a>
+                    <a asp-page="./EditArb" asp-route-id="@arb.id" class="btn btn-primary">Editar</a>
+                    <a asp-page="./DeleteArb" asp-route-id="@arb.id" class="btn btn-warning">Eliminar</a>
+                    <a asp-page="./DetailsArb" asp-route-id="@arb.id" class="btn btn-info">Detalles</a>
                 </td>
             </tr>
         }

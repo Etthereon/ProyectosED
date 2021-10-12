@@ -4,7 +4,7 @@
     ViewData["title"]="Create";
 }
 <h1>Crear arbitro</h1>
-<h3>@ViewData["Mensaje"]</h3>
+<h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
 <div class="form-horizontal">
     <hr/>
@@ -26,7 +26,13 @@
                     <label asp-for="Arbitro.TorneoId" class="control-label">Torneo</label>
                     <input asp-for="Arbitro.TorneoId" class="form-control" />
                     <label asp-for="Arbitro.EscuelaArbitroId" class="control-label">EscuelaArbitro</label>
-                    <input asp-for="Arbitro.EscuelaArbitroId" class="form-control" />
+                    <select asp-for="Arbitro.EscuelaArbitroId" class="form-control"> 
+                        <option value="" >**Selecione una Escuela>**</option>
+                        @foreach (var EA in Model.EscuelaArbitro)
+                        {
+                            <option value="@EA.id">@EA.Nombre</option>
+                        }
+                    </select>
                 </div>
                 <div class="form-group">
                     <br>

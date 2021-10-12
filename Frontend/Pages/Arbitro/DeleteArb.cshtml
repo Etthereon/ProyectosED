@@ -5,7 +5,7 @@
 }
 <h1>Borrar Arbitros</h1>
 <h4>Arbitro</h4>
-<h2>@ViewData["Mensaje"] </h2>
+<h2 class="text-danger">@ViewData["Mensaje"] </h2>
 <div class="form-horizontal">        
         <hr />        
         <div class="row">
@@ -24,9 +24,21 @@
                         <label asp-for="Arbitro.Disciplina" class="control-label"></label>
                         <input asp-for="Arbitro.Disciplina" class="form-control" />
                         <label asp-for="Arbitro.TorneoId" class="control-label">id del torneo</label>
-                        <input asp-for="Arbitro.TorneoId" class="form-control" />
+                        <select asp-for="Arbitro.TorneoId" class="form-control"disabled> 
+                             <option value="" >**Selecione un Torneo>**</option>
+                             @foreach (var tor in Model.Torneo)
+                              {
+                                   <option value="@tor.id">@tor.Nombre</option>
+                              }
+                         </select>
                         <label asp-for="Arbitro.EscuelaArbitroId" class="control-label">Id de la escuela</label>
-                        <input asp-for="Arbitro.EscuelaArbitroId" class="form-control" />                      
+                        <select asp-for="Arbitro.EscuelaArbitroId" class="form-control"disabled> 
+                              <option value="" >**Selecione una Escuela**</option>
+                                @foreach (var EA in Model.EscuelaArbitro)
+                                 {
+                                      <option value="@EA.id">@EA.Nombre</option>
+                                 }
+                         </select>                     
                         
                    </div>
                    <div class="form-group">                       

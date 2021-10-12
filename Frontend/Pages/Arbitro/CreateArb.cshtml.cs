@@ -13,18 +13,27 @@ namespace Frontend.Pages
     {
         //Objeto para crear el repositorio
         private readonly IRepositorioArbitro _repoarbitro;
+        private readonly IRepositorioTorneo _repotorneo;
+        private readonly IRepositorioEscuelaArbitro _repoescuelaarbitro;
+
         //Propiedad para transportar al cshtml
         [BindProperty]
         public Arbitro Arbitro {get;set;}
+        public IEnumerable<Torneo> Torneo {get;set;} 
+        public IEnumerable <EscuelaArbitro> EscuelaArbitro {get;set;}
 
         //Constructor
-        public CreateArbModel(IRepositorioArbitro repoarbitro)
+        public CreateArbModel(IRepositorioArbitro repoarbitro, IRepositorioTorneo repotorneo, IRepositorioEscuelaArbitro repoescuelaarbitro)
         {
             this._repoarbitro=repoarbitro;
+            this._repotorneo=repotorneo;
+            this._repoescuelaarbitro=repoescuelaarbitro;
         }
         
         public ActionResult OnGet()
         {
+            Torneo= _repotorneo.ListarTorneos();
+            EscuelaArbitro= _repoescuelaarbitro.ListarEscuelaArbitros();
             return Page();
         }
 
@@ -37,6 +46,8 @@ namespace Frontend.Pages
             }
             else
             {
+                Torneo= _repotorneo.ListarTorneos();
+                EscuelaArbitro= _repoescuelaarbitro.ListarEscuelaArbitros();
                 ViewData ["Mensaje"]= "El arbitro ya se encuentra registrado";
                 return Page();
             }

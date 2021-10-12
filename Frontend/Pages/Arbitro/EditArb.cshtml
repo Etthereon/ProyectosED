@@ -6,7 +6,7 @@
 
 <h1>Editar Arbitros </h1>
 <h4>Arbitro</h4>
-<h3>@ViewData["Mensaje"]</h3>
+<h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
 <div class="form-horizontal">
         
@@ -19,7 +19,7 @@
                    <input type="hidden" asp-for="Arbitro.id" />
                    <div class="form-group">
                     <label asp-for="Arbitro.Documento" class="control-label"></label>
-                    <input asp-for="Arbitro.Documento" class="form-control" />
+                    <input asp-for="Arbitro.Documento" class="form-control" readonly/>
                     <label asp-for="Arbitro.Nombres" class="control-label"></label>
                     <input asp-for="Arbitro.Nombres" class="form-control" />
                     <label asp-for="Arbitro.Apellidos" class="control-label"></label>
@@ -28,14 +28,26 @@
                     <input asp-for="Arbitro.Genero" class="form-control" />
                     <label asp-for="Arbitro.Disciplina" class="control-label"></label>
                     <input asp-for="Arbitro.Disciplina" class="form-control" />
-                    <label asp-for="Arbitro.TorneoId" class="control-label">id del torneo</label>
-                    <input asp-for="Arbitro.TorneoId" class="form-control" />
-                    <label asp-for="Arbitro.EscuelaArbitroId" class="control-label">Id de la escuela</label>
-                    <input asp-for="Arbitro.EscuelaArbitroId" class="form-control" />                    
+                    <label asp-for="Arbitro.TorneoId" class="control-label">Torneo</label>
+                    <select asp-for="Arbitro.TorneoId" class="form-control"> 
+                             <option value="" >**Selecione un Torneo**</option>
+                             @foreach (var tor in Model.Torneo)
+                              {
+                                   <option value="@tor.id">@tor.Nombre</option>
+                              }
+                         </select> 
+                    <label asp-for="Arbitro.EscuelaArbitroId" class="control-label">Escuela Arbitro</label>
+                    <select asp-for="Arbitro.EscuelaArbitroId" class="form-control"> 
+                              <option value="" >**Selecione una Escuela>**</option>
+                                @foreach (var EA in Model.EscuelaArbitro)
+                                 {
+                                      <option value="@EA.id">@EA.Nombre</option>
+                                 }
+                         </select>                
                        
                    </div>
                    <div class="form-group">                       
-                       <input type="submit" value="Edit" class="btn btn-primary"/>                       
+                       <input type="submit" value="Editar" class="btn btn-primary"/>                       
                    </div>
                </form>
            </div>

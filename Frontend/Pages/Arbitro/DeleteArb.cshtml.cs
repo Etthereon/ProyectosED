@@ -12,17 +12,26 @@ namespace Frontend.Pages
     public class DeleteArbModel : PageModel
     {
         private readonly IRepositorioArbitro _repoarbitro;
-        public DeleteArbModel(IRepositorioArbitro repoarbitro)
+        private readonly IRepositorioTorneo _repotorneo;
+        private readonly IRepositorioEscuelaArbitro _repoescuelaarbitro;
+
+        public DeleteArbModel(IRepositorioArbitro repoarbitro, IRepositorioTorneo repotorneo, IRepositorioEscuelaArbitro repoescuelaarbitro)
         {
             this._repoarbitro=repoarbitro;
+            this._repotorneo=repotorneo;
+            this._repoescuelaarbitro=repoescuelaarbitro;
         }
         [BindProperty]
         public Arbitro Arbitro{get;set;}
+        public IEnumerable<Torneo> Torneo {get;set;} 
+        public IEnumerable <EscuelaArbitro> EscuelaArbitro {get;set;}
 
         public ActionResult OnGet(int id)
         {
             ViewData["Mensaje"]="Esta seguro de eliminar el registro?";
             Arbitro= _repoarbitro.BuscarArbitro(id);
+            Torneo= _repotorneo.ListarTorneos();
+            EscuelaArbitro= _repoescuelaarbitro.ListarEscuelaArbitros();
             return Page();
         }
 
@@ -35,7 +44,9 @@ namespace Frontend.Pages
              }
              else
              {
-                 return Page();
+                Torneo= _repotorneo.ListarTorneos();
+                EscuelaArbitro= _repoescuelaarbitro.ListarEscuelaArbitros();
+                return Page();
              }
              
          }

@@ -93,6 +93,11 @@ namespace Persistencia
             return _appContext.EscuelaArbitros;
         }
 
+        List<EscuelaArbitro> IRepositorioEscuelaArbitro.ListarEscuelaArbitros1()
+        {
+            return _appContext.EscuelaArbitros.ToList();
+        }
+
         bool Existe(EscuelaArbitro esc)
         {
             bool ex=false;

@@ -10,5 +10,6 @@ namespace Persistencia
         bool ActualizarEscuelaArbitro(EscuelaArbitro escuelaArbitro);
         bool EliminarEscuelaArbitro(int idEscuelaArbitro);
         EscuelaArbitro BuscarEscuelaArbitro(int idEscuelaArbitro);
+        List<EscuelaArbitro> ListarEscuelaArbitros1();
     }
 }

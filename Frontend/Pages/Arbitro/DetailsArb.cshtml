@@ -38,9 +38,21 @@
                        <label asp-for="Arbitro.Disciplina" class="control-label"> </label>
                        <input asp-for="Arbitro.Disciplina"  class="form-control" readonly/>   
                        <label asp-for="Arbitro.TorneoId" class="control-label"> </label>
-                       <input asp-for="Arbitro.TorneoId"  class="form-control" readonly/>      
+                       <select asp-for="Arbitro.TorneoId" class="form-control"disabled> 
+                             <option value="" >**Selecione un Torneo>**</option>
+                             @foreach (var tor in Model.Torneo)
+                              {
+                                   <option value="@tor.id">@tor.Nombre</option>
+                              }
+                         </select>      
                        <label asp-for="Arbitro.EscuelaArbitroId" class="control-label"> </label>
-                       <input asp-for="Arbitro.EscuelaArbitroId"  class="form-control" readonly/>                
+                       <select asp-for="Arbitro.EscuelaArbitroId" class="form-control"disabled> 
+                              <option value="" >**Selecione una Escuela>**</option>
+                                @foreach (var EA in Model.EscuelaArbitro)
+                                 {
+                                      <option value="@EA.id">@EA.Nombre</option>
+                                 }
+                         </select>                 
                    </div>
                    
                </form>

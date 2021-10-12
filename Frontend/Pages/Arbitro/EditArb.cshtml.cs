@@ -12,16 +12,25 @@ namespace Frontend.Pages
     public class EditArbModel : PageModel
     {
         private readonly IRepositorioArbitro _repoarbitro;
-        public EditArbModel(IRepositorioArbitro repoarbitro)
+        private readonly IRepositorioTorneo _repotorneo;
+        private readonly IRepositorioEscuelaArbitro _repoescuelaarbitro;
+
+        public EditArbModel(IRepositorioArbitro repoarbitro, IRepositorioTorneo repotorneo, IRepositorioEscuelaArbitro repoescuelaarbitro)
         {
             this._repoarbitro=repoarbitro;
+            this._repotorneo=repotorneo;
+            this._repoescuelaarbitro=repoescuelaarbitro;
         }
         [BindProperty]
         public Arbitro Arbitro{get;set;}
+        public IEnumerable<Torneo> Torneo {get;set;} 
+        public IEnumerable <EscuelaArbitro> EscuelaArbitro {get;set;}
 
         public ActionResult OnGet(int id)
         {            
             Arbitro= _repoarbitro.BuscarArbitro(id);
+            Torneo= _repotorneo.ListarTorneos();
+            EscuelaArbitro= _repoescuelaarbitro.ListarEscuelaArbitros();
             return Page();
         }
 
@@ -35,6 +44,8 @@ namespace Frontend.Pages
             }
             else
             {
+                Torneo= _repotorneo.ListarTorneos();
+                EscuelaArbitro= _repoescuelaarbitro.ListarEscuelaArbitros();
                 ViewData["Mensaje"]="Se ha presentado un error...";
                 return Page();
             }             
