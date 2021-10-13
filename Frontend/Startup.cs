@@ -46,8 +46,10 @@ namespace Frontend
             services.AddScoped<IRepositorioEscenario, RepositorioEscenario>();
             //Inyeccion de dependencia para canchaEspacio
             services.AddScoped<IRepositorioCanchaEspacio, RepositorioCanchaEspacio>();
-            //Inyeccion de dependencia para Torneo
+            //Inyeccion de dependencia para torneo
             services.AddScoped<IRepositorioTorneo, RepositorioTorneo>();
+            //Inyeccion de dependencia para torneoEquipo
+            services.AddScoped<IRepositorioTorneoEquipo, RepositorioTorneoEquipo>();
            
         }
 
