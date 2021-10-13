@@ -20,6 +20,6 @@ namespace Dominio
         public int EquipoId{get;set;}
 
         //pripiedad navigacional con Torneo
-        public List<Torneo> Torneos{get;set;}
+        public List<Torneo> Torneos{get;set;} //Esta propiedad no existe
     }
 }
