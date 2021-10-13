@@ -390,3 +390,6 @@ C:\Proyecto\Aplicacion\ProyectosED\frontend\obj\Debug\netcoreapp3.1\staticwebass
 C:\Proyecto\Aplicacion\ProyectosED\frontend\obj\Debug\netcoreapp3.1\Frontend.dll
 C:\Proyecto\Aplicacion\ProyectosED\frontend\obj\Debug\netcoreapp3.1\Frontend.pdb
 C:\Proyecto\Aplicacion\ProyectosED\frontend\obj\Debug\netcoreapp3.1\Frontend.genruntimeconfig.cache
+C:\Proyecto\Aplicacion\ProyectosED\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\IncribirEquipo\TorEquCreate.cshtml.g.cs
+C:\Proyecto\Aplicacion\ProyectosED\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\IncribirEquipo\TorEquDelete.cshtml.g.cs
+C:\Proyecto\Aplicacion\ProyectosED\frontend\obj\Debug\netcoreapp3.1\Razor\Pages\IncribirEquipo\TorEquIndex.cshtml.g.cs

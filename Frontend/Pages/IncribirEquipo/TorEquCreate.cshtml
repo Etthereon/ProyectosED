@@ -1,0 +1,54 @@
+﻿@page
+@model Frontend.Pages.TorEquCreateModel
+@{
+     ViewData["title"]="Create";
+}
+<h1>Crear Equipo en Torneo</h1>
+<h3 class="text-danger">@ViewData["Error"]</h3>
+
+<div class="form-horizontal">
+    <hr/>
+    <div class="row">
+        <div class=col-md-4>
+            <form method="POST">
+                <div> </div>
+                <div class="form-group">
+                   
+                    <label asp-for="TorneoEquipo.TorneoId" class="control-label">Torneo</label>
+                    <select asp-for="TorneoEquipo.TorneoId" class="form-control" >
+                        <option value="">**Seleccione un Torneo**</option>
+                        @foreach (var tor in Model.Torneos)
+                        {
+                            <option value="@tor.id">@tor.Nombre</option>
+                        }
+                    </select>
+
+                    <label asp-for="TorneoEquipo.EquipoId" class="control-label">Equipo</label>
+                    <select asp-for="TorneoEquipo.EquipoId" class="form-control" >
+                        <option value="">**Seleccione un Equipo**</option>
+                        @foreach (var equ in Model.Equipos)
+                        {
+                            <option value="@equ.id">@equ.Nombre</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <br>
+                    <input type="submit" value="Registrar" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <a asp-page="TorEquIndex">Ir a Inicio</a>
+    </div>
+</div>
+@section Scripts
+{
+    @{
+       await Html.RenderPartialAsync("_ValidationScriptsPartial"); 
+    }
+}
+
+
+

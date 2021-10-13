@@ -17,21 +17,25 @@ namespace Persistencia
         bool IRepositorioTorneoEquipo.CrearTorneoEquipo(TorneoEquipo torneoEquipo)
         {
             bool creado=false;
-            try
+            bool ex = Existe(torneoEquipo);
+            if(!ex)
             {
-                 _appContext.TorneoEquipos.Add(torneoEquipo);
-                 _appContext.SaveChanges();
-                 creado=true;
+                try
+                {
+                    _appContext.TorneoEquipos.Add(torneoEquipo);
+                    _appContext.SaveChanges();
+                    creado=true;
+                }
+                catch (System.Exception)
+                {
+                    return creado;
+                    //throw;
+                }
             }
-            catch (System.Exception)
-            {
                 return creado;
-                //throw;
-            }
-            return creado;
         }
 
-        bool IRepositorioTorneoEquipo.ActualizarTorneoEquipo(TorneoEquipo torneoEquipo)
+        /*bool IRepositorioTorneoEquipo.ActualizarTorneoEquipo(TorneoEquipo torneoEquipo)
         {
             bool actualizado=false;
             var torneoeq=_appContext.TorneoEquipos.Find(4);
@@ -50,7 +54,7 @@ namespace Persistencia
                 }
             }
             return actualizado;
-        }
+        }*/
         
         bool IRepositorioTorneoEquipo.EliminarTorneoEquipo(int idTorneoEquipo)
         {
@@ -83,6 +87,17 @@ namespace Persistencia
         IEnumerable<TorneoEquipo> IRepositorioTorneoEquipo.ListarTorneoEquipos()
         {
             return _appContext.TorneoEquipos;
+        }
+
+        bool Existe(TorneoEquipo torequ)
+        {
+            bool ex=false;
+            var te=_appContext.TorneoEquipos.FirstOrDefault(t=> t.TorneoId==torequ.TorneoId && t.EquipoId==torequ.EquipoId);
+            if(te!=null)
+            {
+                ex=true;
+            }
+            return ex;
         }
 
     }

@@ -1,0 +1,31 @@
+﻿@page
+@model Frontend.Pages.TorEquIndexModel
+@{
+    ViewData ["Title"]="TorEquIndex";
+}
+<h1>Equipos Inscritos</h1>
+<p>
+    <a asp-page="TorEquCreate" class="btn btn-success">Registrar Equipos</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Torneo</th>
+            <th>Equipo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var torequ in Model.TorneoEquipoView)
+        {
+            <tr>
+                <td>@torequ.Torneo</td>
+                <td>@torequ.Equipo</td>
+                <td>
+                    <a asp-page="./TorEquDelete" asp-route-id="@torequ.Torneo" class="btn btn-warning">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+    
+</table>
+
