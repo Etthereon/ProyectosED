@@ -56,10 +56,10 @@ namespace Persistencia
             return actualizado;
         }*/
         
-        bool IRepositorioTorneoEquipo.EliminarTorneoEquipo(int idTorneoEquipo)
+        bool IRepositorioTorneoEquipo.EliminarTorneoEquipo(int TorneoId, int EquipoId)
         {
             bool eliminado=false;
-            var TorneoEquipo = _appContext.TorneoEquipos.Find(idTorneoEquipo);
+            var TorneoEquipo = _appContext.TorneoEquipos.Find(TorneoId, EquipoId);
             if (TorneoEquipo!=null)
             {
                 try
@@ -78,9 +78,9 @@ namespace Persistencia
                 return eliminado;
 
         }
-        TorneoEquipo IRepositorioTorneoEquipo.BuscarTorneoEquipo(int idTorneoEquipo)
+        TorneoEquipo IRepositorioTorneoEquipo.BuscarTorneoEquipo(int TorneoId, int EquipoId)
         {
-            TorneoEquipo TorneoEquipo= _appContext.TorneoEquipos.Find(idTorneoEquipo);
+            TorneoEquipo TorneoEquipo= _appContext.TorneoEquipos.Find(TorneoId, EquipoId);
             return TorneoEquipo;
         }
 

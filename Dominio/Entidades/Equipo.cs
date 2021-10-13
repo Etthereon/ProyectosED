@@ -10,8 +10,8 @@ namespace Dominio
         public int CantidadDeportistas {get;set;}
         public string Disciplina{get;set;}
 
-        //pripiedad navigacional
-        public List<Entrenador> Entrenador{get;set;}
+        //propiedad navigacional
+        public List<Entrenador> Entrenador{get;set;} //public Entrenador Entrenador {get;set;}
         public List<TorneoEquipo> TorneoEquipos{get;set;}
         public List<Deportista> Deportistas{get;set;}
 
