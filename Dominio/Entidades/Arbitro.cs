@@ -14,5 +14,6 @@ namespace Dominio
         //llave foranea
         public int TorneoId{get;set;}
         public int EscuelaArbitroId{get;set;}
+        //ddddd
     }
 }
