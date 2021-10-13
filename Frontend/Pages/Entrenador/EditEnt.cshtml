@@ -6,7 +6,7 @@
 
 <h1>Editar Entrenadores </h1>
 <h4>Entrenador</h4>
-<h3>@ViewData["Mensaje"]</h3>
+<h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
 <div class="form-horizontal">
         
@@ -19,7 +19,7 @@
                    <input type="hidden" asp-for="Entrenador.id" />
                    <div class="form-group">
                     <label asp-for="Entrenador.Documento" class="control-label"></label>
-                    <input asp-for="Entrenador.Documento" class="form-control" />
+                    <input asp-for="Entrenador.Documento" class="form-control" readonly/>
                     <label asp-for="Entrenador.Nombres" class="control-label"></label>
                     <input asp-for="Entrenador.Nombres" class="form-control" />
                     <label asp-for="Entrenador.Apellidos" class="control-label"></label>
@@ -29,11 +29,17 @@
                     <label asp-for="Entrenador.DisciplinaDeportiva" class="control-label"></label>
                     <input asp-for="Entrenador.DisciplinaDeportiva" class="form-control" />
                     <label asp-for="Entrenador.EquipoId" class="control-label"></label>
-                    <input asp-for="Entrenador.EquipoId" class="form-control" />                     
+                    <select asp-for="Entrenador.EquipoId" class="form-control"> 
+                        <option value="" >**Selecione un Equipo**</option>
+                        @foreach (var equi in Model.Equipo)
+                        {
+                            <option value="@equi.id">@equi.Nombre</option>
+                        }
+                    </select>                    
                        
                    </div>
                    <div class="form-group">                       
-                       <input type="submit" value="Edit" class="btn btn-primary"/>                       
+                       <input type="submit" value="Editar" class="btn btn-primary"/>                       
                    </div>
                </form>
            </div>

@@ -33,7 +33,13 @@
                        <label asp-for="Entrenador.DisciplinaDeportiva" class="control-label"> </label>
                        <input asp-for="Entrenador.DisciplinaDeportiva"  class="form-control" readonly/>   
                        <label asp-for="Entrenador.EquipoId" class="control-label"> </label>
-                       <input asp-for="Entrenador.EquipoId"  class="form-control" readonly/>                      
+                       <select name="" id="" asp-for="Entrenador.EquipoId" class="form-control"disabled> 
+                        <option value="" >**Selecione un Equipo**</option>
+                        @foreach (var patro in Model.Equipo)
+                        {
+                            <option value="@patro.id">@patro.Nombre</option>
+                        }                               
+                        </select>                       
                    </div>
                    
                </form>

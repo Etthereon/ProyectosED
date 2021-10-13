@@ -12,16 +12,21 @@ namespace Frontend.Pages
     public class DetailsEntModel : PageModel
     {
         private readonly IRepositorioEntrenador _repoentrenador;
-        public DetailsEntModel(IRepositorioEntrenador repoentrenador)
+        private readonly IRepositorioEquipo _repoequipo;
+
+        public DetailsEntModel(IRepositorioEntrenador repoentrenador, IRepositorioEquipo repoequipo)
         {
             this._repoentrenador=repoentrenador;
+            this._repoequipo=repoequipo;
         }
         [BindProperty]
         public Entrenador Entrenador{get;set;}
+        public IEnumerable<Equipo> Equipo {get;set;}
 
         public ActionResult OnGet(int id)
         {
             Entrenador= _repoentrenador.BuscarEntrenador(id);
+            Equipo= _repoequipo.ListarEquipos();
             if (Entrenador==null)
             {
                 return NotFound();

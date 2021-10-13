@@ -12,17 +12,22 @@ namespace Frontend.Pages
     public class DeleteEntModel : PageModel
     {
         private readonly IRepositorioEntrenador _repoentrenador;
-        public DeleteEntModel(IRepositorioEntrenador repoentrenador)
+        private readonly IRepositorioEquipo _repoequipo;
+
+        public DeleteEntModel(IRepositorioEntrenador repoentrenador, IRepositorioEquipo repoequipo)
         {
             this._repoentrenador=repoentrenador;
+            this._repoequipo=repoequipo;
         }
         [BindProperty]
         public Entrenador Entrenador{get;set;}
+        public IEnumerable<Equipo> Equipo{get;set;} 
 
         public ActionResult OnGet(int id)
         {
             ViewData["Mensaje"]="Esta seguro de eliminar el registro?";
             Entrenador= _repoentrenador.BuscarEntrenador(id);
+            Equipo =_repoequipo.ListarEquipos();
             return Page();
         }
 
@@ -35,6 +40,7 @@ namespace Frontend.Pages
              }
              else
              {
+                 Equipo =_repoequipo.ListarEquipos();
                  return Page();
              }
              

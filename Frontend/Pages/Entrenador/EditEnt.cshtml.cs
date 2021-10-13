@@ -12,16 +12,22 @@ namespace Frontend.Pages
     public class EditEntModel : PageModel
     {
        private readonly IRepositorioEntrenador _repoentrenador;
-        public EditEntModel(IRepositorioEntrenador repoentrenador)
+       private readonly IRepositorioEquipo _repoequipo;
+       
+        public EditEntModel(IRepositorioEntrenador repoentrenador, IRepositorioEquipo repoequipo)
         {
             this._repoentrenador=repoentrenador;
+            this._repoequipo=repoequipo;
         }
         [BindProperty]
         public Entrenador Entrenador{get;set;}
+        public IEnumerable<Equipo> Equipo{get;set;} 
+        
 
         public ActionResult OnGet(int id)
         {            
             Entrenador= _repoentrenador.BuscarEntrenador(id);
+            Equipo=_repoequipo.ListarEquipos();
             return Page();
         }
 
@@ -35,6 +41,7 @@ namespace Frontend.Pages
             }
             else
             {
+                Equipo=_repoequipo.ListarEquipos();
                 ViewData["Mensaje"]="Se ha presentado un error...";
                 return Page();
             }             

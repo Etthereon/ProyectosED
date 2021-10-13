@@ -5,7 +5,7 @@
 }
 <h1>Listado de Entrenadores</h1>
 <p>
-    <a asp-page="CreateEnt">Crear Entrenador</a>
+    <a asp-page="CreateEnt" class="btn btn-success">Crear Entrenador</a>
 </p>
 <table class="table">
     <thead>
@@ -15,11 +15,11 @@
             <th>Nombres</th>
             <th>Apellidos</th>
             <th>Genero</th>
-            <th>EquipoId</th>
+            <th>Equipo</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var ent in Model.Entrenadores)
+        @foreach (var ent in Model.EntrenadorView)
         {
             <tr>
                 <!-- <td>@ent.id</td> -->
@@ -28,11 +28,11 @@
                 <td>@ent.Apellidos</td>
                 <td>@ent.Genero</td>
                 <td>@ent.DisciplinaDeportiva</td>
-                <td>@ent.EquipoId</td>
+                <td>@ent.Equipo</td>
                 <td>
-                    <a asp-page="./EditEnt" asp-route-id="@ent.id">Editar</a>
-                    <a asp-page="./DeleteEnt" asp-route-id="@ent.id">Eliminar</a>
-                    <a asp-page="./DetailsEnt" asp-route-id="@ent.id">Detalles</a>
+                    <a asp-page="./EditEnt" asp-route-id="@ent.id" class="btn btn-primary">Editar</a>
+                    <a asp-page="./DeleteEnt" asp-route-id="@ent.id" class="btn btn-warning">Eliminar</a>
+                    <a asp-page="./DetailsEnt" asp-route-id="@ent.id" class="btn btn-info">Detalles</a>
                 </td>
             </tr>
         }
