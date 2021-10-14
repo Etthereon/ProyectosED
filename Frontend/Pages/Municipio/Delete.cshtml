@@ -3,9 +3,14 @@
 @{
     ViewData["Title"]="Delete";
 }
+<br>
+<br>
+<br>
+<br>
 <h1>Borrar Municipios</h1>
+<br>
 <h4>Municipio</h4>
-<h2 class="text-danger">@ViewData["Mensaje"] </h2>
+
 <div class="form-horizontal">        
         <hr />        
         <div class="row">
@@ -17,16 +22,18 @@
                        <input asp-for="Municipio.Nombre" readonly class="form-control"/>                    
                         
                    </div>
+                   <h5 class="text-danger">@ViewData["Mensaje"] </h5>
                    <div class="form-group">                       
-                       <input type="submit" value="Eliminar" class="btn btn-primary"/>                       
+                       <input type="submit" value="Eliminar" class="btn btn-success"/>                       
                    </div>
                </form>
            </div>
         </div>
-
+        <br>
         <div>
-            <a asp-page="MunIndex"> Ir al Inicio</a>
+            <a asp-page="MunIndex">Volver</a>
         </div> 
+        
 </div>
 
 @section Scripts {

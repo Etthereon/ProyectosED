@@ -2,9 +2,13 @@
 @model Frontend.Pages.DetailsDepModel
 @{
 }
-
+<br>
+<br>
+<br>
+<br>
 <h1>Detalles de los Deportistas</h1>
 <h4>Deportista</h4>
+<br>
 
 <div class="form-horizontal">
         
@@ -36,16 +40,16 @@
                        <input asp-for="Deportista.Rh"  class="form-control" readonly/>  
                        <label asp-for="Deportista.EPS" class="control-label"> </label>
                        <input asp-for="Deportista.EPS"  class="form-control" readonly/>
-                       <label asp-for="Deportista.NumeroEmergencia" class="control-label"> </label>
+                       <label asp-for="Deportista.NumeroEmergencia" class="control-label">Numero de emergencia</label>
                        <input asp-for="Deportista.NumeroEmergencia"  class="form-control" readonly/>
-                       <label asp-for="Deportista.FechaNac" class="control-label"> </label>
+                       <label asp-for="Deportista.FechaNac" class="control-label">Fecha de nacimiento</label>
                        <input asp-for="Deportista.FechaNac"  class="form-control" readonly/>
                    </div>
 
                    <div class="form-group">
                        <label asp-for="Deportista.Disciplina" class="control-label"> </label>
                        <input asp-for="Deportista.Disciplina"  class="form-control" readonly/>   
-                       <label asp-for="Deportista.EquipoId" class="control-label">Deportista</label>
+                       <label asp-for="Deportista.EquipoId" class="control-label">Equipo</label>
                        <select name="" id="" asp-for="Deportista.EquipoId" class="form-control"disabled> 
                         <option value="" >**Selecione un Equipo**</option>
                         @foreach (var patro in Model.Equipo)
@@ -58,9 +62,9 @@
                </form>
            </div>
         </div>
-
+        <br>
         <div>
-            <a asp-page="DepIndex"> Ir a Inicio</a>
+            <a asp-page="DepIndex">Volver</a>
         </div> 
 </div>
 

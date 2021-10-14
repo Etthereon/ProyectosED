@@ -3,11 +3,14 @@
 @{
     ViewData["Title"]="Edit";
 }
-
+<br>
+<br>
+<br>
+<br>
 <h1>Editar Municipios </h1>
 <h4>Municipio</h4>
 <h3 class="text-danger">@ViewData["Mensaje"]</h3>
-
+<br>
 <div class="form-horizontal">
         
         <hr />
@@ -30,15 +33,15 @@
                     <input asp-for="Deportista.Rh" class="form-control" />
                     <label asp-for="Deportista.EPS" class="control-label"></label>
                     <input asp-for="Deportista.EPS" class="form-control" />
-                    <label asp-for="Deportista.FechaNac" class="control-label"></label>
+                    <label asp-for="Deportista.FechaNac" class="control-label">Fecha de nacimiento</label>
                     <input asp-for="Deportista.FechaNac" class="form-control" />
                     <label asp-for="Deportista.Disciplina" class="control-label"></label>
                     <input asp-for="Deportista.Disciplina" class="form-control" />
                     <label asp-for="Deportista.Direccion" class="control-label"></label>
                     <input asp-for="Deportista.Direccion" class="form-control" />
-                    <label asp-for="Deportista.NumeroEmergencia" class="control-label"></label>
+                    <label asp-for="Deportista.NumeroEmergencia" class="control-label">Numero de emergencia</label>
                     <input asp-for="Deportista.NumeroEmergencia" class="form-control" />
-                    <label asp-for="Deportista.EquipoId" class="control-label">Deportista</label>
+                    <label asp-for="Deportista.EquipoId" class="control-label">Equipo</label>
                     <select asp-for="Deportista.EquipoId" class="form-control"> 
                         <option value="" >**Selecione un Equipo**</option>
                         @foreach (var equi in Model.Equipo)
@@ -48,15 +51,16 @@
                     </select>                      
                        
                    </div>
+                   <br>
                    <div class="form-group">                       
-                       <input type="submit" value="Edit" class="btn btn-primary"/>                       
+                       <input type="submit" value="Editar" class="btn btn-success"/>                       
                    </div>
                </form>
            </div>
         </div>
-
+        <br>
         <div>
-            <a asp-page="DepIndex"> Ir a Inicio</a>
+            <a asp-page="DepIndex">Volver</a>
         </div> 
 </div>
 
