@@ -14402,63 +14402,98 @@
   "RootNamespace": "Frontend",
   "Documents": [
     {
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDDeportista\\DetailsDep.cshtml",
+      "TargetPath": "Pages\\PEDDeportista\\DetailsDep.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Patrocinador\\EditPatrocinador.cshtml",
-      "TargetPath": "Pages\\Patrocinador\\EditPatrocinador.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDPatrocinador\\EditPatrocinador.cshtml",
+      "TargetPath": "Pages\\PEDPatrocinador\\EditPatrocinador.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Deportista\\CreateDep.cshtml",
-      "TargetPath": "Pages\\Deportista\\CreateDep.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEquipo\\CreateEqu.cshtml",
+      "TargetPath": "Pages\\PEDEquipo\\CreateEqu.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Arbitro\\DeleteArb.cshtml",
-      "TargetPath": "Pages\\Arbitro\\DeleteArb.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDIncribirEquipo\\TorEquDelete.cshtml",
+      "TargetPath": "Pages\\PEDIncribirEquipo\\TorEquDelete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Equipo\\DetailsEqu.cshtml",
-      "TargetPath": "Pages\\Equipo\\DetailsEqu.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDDeportista\\DeleteDep.cshtml",
+      "TargetPath": "Pages\\PEDDeportista\\DeleteDep.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Equipo\\CreateEqu.cshtml",
-      "TargetPath": "Pages\\Equipo\\CreateEqu.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDCanchaEspacio\\CreateCE.cshtml",
+      "TargetPath": "Pages\\PEDCanchaEspacio\\CreateCE.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Equipo\\EditEqu.cshtml",
-      "TargetPath": "Pages\\Equipo\\EditEqu.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEscenario\\CreateEsc.cshtml",
+      "TargetPath": "Pages\\PEDEscenario\\CreateEsc.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Patrocinador\\PIndex.cshtml",
-      "TargetPath": "Pages\\Patrocinador\\PIndex.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDArbitro\\EditArb.cshtml",
+      "TargetPath": "Pages\\PEDArbitro\\EditArb.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\IncribirEquipo\\TorEquCreate.cshtml",
-      "TargetPath": "Pages\\IncribirEquipo\\TorEquCreate.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDMunicipio\\Create.cshtml",
+      "TargetPath": "Pages\\PEDMunicipio\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Entrenador\\DetailsEnt.cshtml",
-      "TargetPath": "Pages\\Entrenador\\DetailsEnt.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDPatrocinador\\CreatePatrocinador.cshtml",
+      "TargetPath": "Pages\\PEDPatrocinador\\CreatePatrocinador.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Municipio\\MunIndex.cshtml",
-      "TargetPath": "Pages\\Municipio\\MunIndex.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDTorneo\\EditTor.cshtml",
+      "TargetPath": "Pages\\PEDTorneo\\EditTor.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Escenario\\EditEsc.cshtml",
-      "TargetPath": "Pages\\Escenario\\EditEsc.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEscuelaArbitro\\DeleteEscuelaArbitro.cshtml",
+      "TargetPath": "Pages\\PEDEscuelaArbitro\\DeleteEscuelaArbitro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEscuelaArbitro\\CreateEscuelaArbitro.cshtml",
+      "TargetPath": "Pages\\PEDEscuelaArbitro\\CreateEscuelaArbitro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDDeportista\\DepIndex.cshtml",
+      "TargetPath": "Pages\\PEDDeportista\\DepIndex.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDArbitro\\DeleteArb.cshtml",
+      "TargetPath": "Pages\\PEDArbitro\\DeleteArb.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDArbitro\\CreateArb.cshtml",
+      "TargetPath": "Pages\\PEDArbitro\\CreateArb.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDIncribirEquipo\\TorEquIndex.cshtml",
+      "TargetPath": "Pages\\PEDIncribirEquipo\\TorEquIndex.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEscuelaArbitro\\DetailEscuelaArbitro.cshtml",
+      "TargetPath": "Pages\\PEDEscuelaArbitro\\DetailEscuelaArbitro.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14467,23 +14502,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Patrocinador\\CreatePatrocinador.cshtml",
-      "TargetPath": "Pages\\Patrocinador\\CreatePatrocinador.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEquipo\\DetailsEqu.cshtml",
+      "TargetPath": "Pages\\PEDEquipo\\DetailsEqu.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\CanchaEspacio1\\DetailsCE.cshtml",
-      "TargetPath": "Pages\\CanchaEspacio1\\DetailsCE.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Deportista\\DeleteDep.cshtml",
-      "TargetPath": "Pages\\Deportista\\DeleteDep.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\EscuelaArbitro\\CreateEscuelaArbitro.cshtml",
-      "TargetPath": "Pages\\EscuelaArbitro\\CreateEscuelaArbitro.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDIncribirEquipo\\TorEquCreate.cshtml",
+      "TargetPath": "Pages\\PEDIncribirEquipo\\TorEquCreate.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14492,68 +14517,48 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Entrenador\\CreateEnt.cshtml",
-      "TargetPath": "Pages\\Entrenador\\CreateEnt.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEscenario\\EscIndex.cshtml",
+      "TargetPath": "Pages\\PEDEscenario\\EscIndex.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Entrenador\\EntIndex.cshtml",
-      "TargetPath": "Pages\\Entrenador\\EntIndex.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDPatrocinador\\DetailsPatrocinador.cshtml",
+      "TargetPath": "Pages\\PEDPatrocinador\\DetailsPatrocinador.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Arbitro\\DetailsArb.cshtml",
-      "TargetPath": "Pages\\Arbitro\\DetailsArb.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDMunicipio\\Details.cshtml",
+      "TargetPath": "Pages\\PEDMunicipio\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Municipio\\Details.cshtml",
-      "TargetPath": "Pages\\Municipio\\Details.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDArbitro\\DetailsArb.cshtml",
+      "TargetPath": "Pages\\PEDArbitro\\DetailsArb.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Patrocinador\\DetailsPatrocinador.cshtml",
-      "TargetPath": "Pages\\Patrocinador\\DetailsPatrocinador.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEscenario\\EditEsc.cshtml",
+      "TargetPath": "Pages\\PEDEscenario\\EditEsc.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Torneo\\DeleteTor.cshtml",
-      "TargetPath": "Pages\\Torneo\\DeleteTor.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDArbitro\\ArbIndex.cshtml",
+      "TargetPath": "Pages\\PEDArbitro\\ArbIndex.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Municipio\\Delete.cshtml",
-      "TargetPath": "Pages\\Municipio\\Delete.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDDeportista\\CreateDep.cshtml",
+      "TargetPath": "Pages\\PEDDeportista\\CreateDep.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Arbitro\\EditArb.cshtml",
-      "TargetPath": "Pages\\Arbitro\\EditArb.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDDeportista\\EditDep.cshtml",
+      "TargetPath": "Pages\\PEDDeportista\\EditDep.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\EscuelaArbitro\\DeleteEscuelaArbitro.cshtml",
-      "TargetPath": "Pages\\EscuelaArbitro\\DeleteEscuelaArbitro.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Municipio\\Create.cshtml",
-      "TargetPath": "Pages\\Municipio\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\CanchaEspacio1\\CreateCE.cshtml",
-      "TargetPath": "Pages\\CanchaEspacio1\\CreateCE.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\EscuelaArbitro\\EditEscuelaArbitro.cshtml",
-      "TargetPath": "Pages\\EscuelaArbitro\\EditEscuelaArbitro.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Escenario\\CreateEsc.cshtml",
-      "TargetPath": "Pages\\Escenario\\CreateEsc.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDTorneo\\DeleteTor.cshtml",
+      "TargetPath": "Pages\\PEDTorneo\\DeleteTor.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14562,113 +14567,103 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Equipo\\EquIndex.cshtml",
-      "TargetPath": "Pages\\Equipo\\EquIndex.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEquipo\\EditEqu.cshtml",
+      "TargetPath": "Pages\\PEDEquipo\\EditEqu.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Torneo\\TorIndex.cshtml",
-      "TargetPath": "Pages\\Torneo\\TorIndex.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDCanchaEspacio\\CEIndex.cshtml",
+      "TargetPath": "Pages\\PEDCanchaEspacio\\CEIndex.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\IncribirEquipo\\TorEquIndex.cshtml",
-      "TargetPath": "Pages\\IncribirEquipo\\TorEquIndex.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEscuelaArbitro\\EditEscuelaArbitro.cshtml",
+      "TargetPath": "Pages\\PEDEscuelaArbitro\\EditEscuelaArbitro.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\CanchaEspacio1\\EditCE.cshtml",
-      "TargetPath": "Pages\\CanchaEspacio1\\EditCE.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDTorneo\\DetailsTor.cshtml",
+      "TargetPath": "Pages\\PEDTorneo\\DetailsTor.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Arbitro\\ArbIndex.cshtml",
-      "TargetPath": "Pages\\Arbitro\\ArbIndex.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEntrenador\\EditEnt.cshtml",
+      "TargetPath": "Pages\\PEDEntrenador\\EditEnt.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Municipio\\Edit.cshtml",
-      "TargetPath": "Pages\\Municipio\\Edit.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDMunicipio\\MunIndex.cshtml",
+      "TargetPath": "Pages\\PEDMunicipio\\MunIndex.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Deportista\\DetailsDep.cshtml",
-      "TargetPath": "Pages\\Deportista\\DetailsDep.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEscenario\\DeleteEsc.cshtml",
+      "TargetPath": "Pages\\PEDEscenario\\DeleteEsc.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Deportista\\DepIndex.cshtml",
-      "TargetPath": "Pages\\Deportista\\DepIndex.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEquipo\\DeleteEqu.cshtml",
+      "TargetPath": "Pages\\PEDEquipo\\DeleteEqu.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Torneo\\EditTor.cshtml",
-      "TargetPath": "Pages\\Torneo\\EditTor.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDCanchaEspacio\\DeleteCE.cshtml",
+      "TargetPath": "Pages\\PEDCanchaEspacio\\DeleteCE.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Equipo\\DeleteEqu.cshtml",
-      "TargetPath": "Pages\\Equipo\\DeleteEqu.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDMunicipio\\Delete.cshtml",
+      "TargetPath": "Pages\\PEDMunicipio\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Entrenador\\EditEnt.cshtml",
-      "TargetPath": "Pages\\Entrenador\\EditEnt.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEntrenador\\CreateEnt.cshtml",
+      "TargetPath": "Pages\\PEDEntrenador\\CreateEnt.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Escenario\\DeleteEsc.cshtml",
-      "TargetPath": "Pages\\Escenario\\DeleteEsc.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEquipo\\EquIndex.cshtml",
+      "TargetPath": "Pages\\PEDEquipo\\EquIndex.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Escenario\\DetailsEsc.cshtml",
-      "TargetPath": "Pages\\Escenario\\DetailsEsc.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDPatrocinador\\PIndex.cshtml",
+      "TargetPath": "Pages\\PEDPatrocinador\\PIndex.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\EscuelaArbitro\\EAIndex.cshtml",
-      "TargetPath": "Pages\\EscuelaArbitro\\EAIndex.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDMunicipio\\Edit.cshtml",
+      "TargetPath": "Pages\\PEDMunicipio\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\EscuelaArbitro\\DetailEscuelaArbitro.cshtml",
-      "TargetPath": "Pages\\EscuelaArbitro\\DetailEscuelaArbitro.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEntrenador\\DeleteEnt.cshtml",
+      "TargetPath": "Pages\\PEDEntrenador\\DeleteEnt.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Escenario\\EscIndex.cshtml",
-      "TargetPath": "Pages\\Escenario\\EscIndex.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDTorneo\\TorIndex.cshtml",
+      "TargetPath": "Pages\\PEDTorneo\\TorIndex.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Torneo\\CreateTor.cshtml",
-      "TargetPath": "Pages\\Torneo\\CreateTor.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEntrenador\\DetailsEnt.cshtml",
+      "TargetPath": "Pages\\PEDEntrenador\\DetailsEnt.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\CanchaEspacio1\\DeleteCE.cshtml",
-      "TargetPath": "Pages\\CanchaEspacio1\\DeleteCE.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEscenario\\DetailsEsc.cshtml",
+      "TargetPath": "Pages\\PEDEscenario\\DetailsEsc.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Deportista\\EditDep.cshtml",
-      "TargetPath": "Pages\\Deportista\\EditDep.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEntrenador\\EntIndex.cshtml",
+      "TargetPath": "Pages\\PEDEntrenador\\EntIndex.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\CanchaEspacio1\\CEIndex.cshtml",
-      "TargetPath": "Pages\\CanchaEspacio1\\CEIndex.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Patrocinador\\DeletePatrocinador.cshtml",
-      "TargetPath": "Pages\\Patrocinador\\DeletePatrocinador.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Entrenador\\DeleteEnt.cshtml",
-      "TargetPath": "Pages\\Entrenador\\DeleteEnt.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDPatrocinador\\DeletePatrocinador.cshtml",
+      "TargetPath": "Pages\\PEDPatrocinador\\DeletePatrocinador.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14682,23 +14677,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDCanchaEspacio\\EditCE.cshtml",
+      "TargetPath": "Pages\\PEDCanchaEspacio\\EditCE.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Torneo\\DetailsTor.cshtml",
-      "TargetPath": "Pages\\Torneo\\DetailsTor.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDEscuelaArbitro\\EAIndex.cshtml",
+      "TargetPath": "Pages\\PEDEscuelaArbitro\\EAIndex.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\IncribirEquipo\\TorEquDelete.cshtml",
-      "TargetPath": "Pages\\IncribirEquipo\\TorEquDelete.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDTorneo\\CreateTor.cshtml",
+      "TargetPath": "Pages\\PEDTorneo\\CreateTor.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\Arbitro\\CreateArb.cshtml",
-      "TargetPath": "Pages\\Arbitro\\CreateArb.cshtml",
+      "FilePath": "c:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Pages\\PEDCanchaEspacio\\DetailsCE.cshtml",
+      "TargetPath": "Pages\\PEDCanchaEspacio\\DetailsCE.cshtml",
       "FileKind": "mvc"
     }
   ],
