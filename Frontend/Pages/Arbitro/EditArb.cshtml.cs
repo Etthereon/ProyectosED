@@ -17,39 +17,43 @@ namespace Frontend.Pages
 
         public EditArbModel(IRepositorioArbitro repoarbitro, IRepositorioTorneo repotorneo, IRepositorioEscuelaArbitro repoescuelaarbitro)
         {
-            this._repoarbitro=repoarbitro;
-            this._repotorneo=repotorneo;
-            this._repoescuelaarbitro=repoescuelaarbitro;
+            this._repoarbitro = repoarbitro;
+            this._repotorneo = repotorneo;
+            this._repoescuelaarbitro = repoescuelaarbitro;
         }
         [BindProperty]
-        public Arbitro Arbitro{get;set;}
-        public IEnumerable<Torneo> Torneo {get;set;} 
-        public IEnumerable <EscuelaArbitro> EscuelaArbitro {get;set;}
+        public Arbitro Arbitro { get; set; }
+        public IEnumerable<Torneo> Torneo { get; set; }
+        public IEnumerable<EscuelaArbitro> EscuelaArbitro { get; set; }
 
         public ActionResult OnGet(int id)
-        {            
-            Arbitro= _repoarbitro.BuscarArbitro(id);
-            Torneo= _repotorneo.ListarTorneos();
-            EscuelaArbitro= _repoescuelaarbitro.ListarEscuelaArbitros();
+        {
+            Arbitro = _repoarbitro.BuscarArbitro(id);
+            Torneo = _repotorneo.ListarTorneos();
+            EscuelaArbitro = _repoescuelaarbitro.ListarEscuelaArbitros();
             return Page();
         }
 
-         public ActionResult OnPost()
-         {
-                       
-            bool funciono=_repoarbitro.ActualizarArbitro(Arbitro);
-            if(funciono)
+        public ActionResult OnPost()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            bool funciono = _repoarbitro.ActualizarArbitro(Arbitro);
+            if (funciono)
             {
                 return RedirectToPage("./ArbIndex");
             }
             else
             {
-                Torneo= _repotorneo.ListarTorneos();
-                EscuelaArbitro= _repoescuelaarbitro.ListarEscuelaArbitros();
-                ViewData["Mensaje"]="Se ha presentado un error...";
+                Torneo = _repotorneo.ListarTorneos();
+                EscuelaArbitro = _repoescuelaarbitro.ListarEscuelaArbitros();
+                ViewData["Mensaje"] = "Se ha presentado un error...";
                 return Page();
-            }             
-            
-         }
+            }
+
+        }
     }
 }

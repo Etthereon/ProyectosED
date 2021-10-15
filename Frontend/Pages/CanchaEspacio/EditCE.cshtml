@@ -17,17 +17,22 @@
                <form method="post">
                   
                    <input type="hidden" asp-for="CanchaEspacio.id" />
+                   <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
                    <div class="form-group">
                     <label asp-for="CanchaEspacio.Nombre" class="control-label"></label>
                     <input asp-for="CanchaEspacio.Nombre" class="form-control" readonly />
                     <label asp-for="CanchaEspacio.Disciplina" class="control-label"></label>
                     <input asp-for="CanchaEspacio.Disciplina" class="form-control" />
+                    <span asp-validation-for="CanchaEspacio.Disciplina" class="text-danger"></span>
                     <label asp-for="CanchaEspacio.Estado" class="control-label"></label>
                     <input asp-for="CanchaEspacio.Estado" class="form-control" />
+                    <span asp-validation-for="CanchaEspacio.Estado" class="text-danger"></span>
                     <label asp-for="CanchaEspacio.CapacidadEspectadores" class="control-label"></label>
                     <input asp-for="CanchaEspacio.CapacidadEspectadores" class="form-control" />
+                    <span asp-validation-for="CanchaEspacio.CapacidadEspectadores" class="text-danger"></span>
                     <label asp-for="CanchaEspacio.Medidas" class="control-label"></label>
                     <input asp-for="CanchaEspacio.Medidas" class="form-control" />
+                    <span asp-validation-for="CanchaEspacio.Medidas" class="text-danger"></span>
                     <label asp-for="CanchaEspacio.EscenarioId" class="control-label">Escenario</label>
                     <select asp-for="CanchaEspacio.EscenarioId" class="form-control" >
                         <option value="">**Seleccione una CanchaEspacio**</option>
@@ -37,10 +42,10 @@
                             
                         }
                     </select>                    
-                       
+                    <span asp-validation-for="CanchaEspacio.EscenarioId" class="text-danger"></span>
                    </div>
                    <div class="form-group">                       
-                       <input type="submit" value="Edit" class="btn btn-primary"/>                       
+                       <input type="submit" value="Editar" class="btn btn-primary"/>                       
                    </div>
                </form>
            </div>

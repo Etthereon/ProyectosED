@@ -16,33 +16,38 @@ namespace Frontend.Pages
         private readonly IRepositorioPatrocinador _repopatrocinador;
         //Propiedad para transportar al cshtml
         [BindProperty]
-        public Equipo Equipo {get;set;}
-        public IEnumerable<Patrocinador> Patrocinador{get;set;} 
+        public Equipo Equipo { get; set; }
+        public IEnumerable<Patrocinador> Patrocinador { get; set; }
 
         //Constructor
         public CreateEquModel(IRepositorioEquipo repoequipo, IRepositorioPatrocinador repopatrocinador)
         {
-            this._repoequipo=repoequipo;
-            this._repopatrocinador=repopatrocinador;
+            this._repoequipo = repoequipo;
+            this._repopatrocinador = repopatrocinador;
         }
-        
+
         public ActionResult OnGet()
         {
-            Patrocinador=_repopatrocinador.ListarPatrocinadores();
+            Patrocinador = _repopatrocinador.ListarPatrocinadores();
             return Page();
         }
 
         public ActionResult OnPost()
         {
-            bool creado =_repoequipo.CrearEquipo(Equipo);
-            if(creado)
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            bool creado = _repoequipo.CrearEquipo(Equipo);
+            if (creado)
             {
                 return RedirectToPage("./EquIndex");
             }
             else
             {
-                Patrocinador=_repopatrocinador.ListarPatrocinadores();
-                ViewData ["Mensaje"]= "El equipo ya se encuentra registrado";
+                Patrocinador = _repopatrocinador.ListarPatrocinadores();
+                ViewData["Mensaje"] = "El equipo ya se encuentra registrado";
                 return Page();
             }
         }

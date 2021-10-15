@@ -11,18 +11,23 @@
     <div class="row">
         <div class=col-md-4> 
             <form method="post">
-                <div> </div>
+                <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
                 <div class="form-group"> 
                     <label asp-for="EscuelaArbitro.Nombre" class="control-label"> </label>
                     <input asp-for="EscuelaArbitro.Nombre" class="form-control" />
+                    <span asp-validation-for="EscuelaArbitro.Nombre" class="text-danger"></span>
                     <label asp-for="EscuelaArbitro.Resolucion" class="control-label"> </label>
                     <input asp-for="EscuelaArbitro.Resolucion" class="form-control" />
+                    <span asp-validation-for="EscuelaArbitro.Resolucion" class="text-danger"></span>
                     <label asp-for="EscuelaArbitro.Direccion" class="control-label"> </label>
                     <input asp-for="EscuelaArbitro.Direccion" class="form-control" />
+                    <span asp-validation-for="EscuelaArbitro.Direccion" class="text-danger"></span>
                     <label asp-for="EscuelaArbitro.Telefono" class="control-label"> </label>
                     <input asp-for="EscuelaArbitro.Telefono" class="form-control" />
+                    <span asp-validation-for="EscuelaArbitro.Telefono" class="text-danger"></span>
                     <label asp-for="EscuelaArbitro.Correo" class="control-label"> </label>
                     <input asp-for="EscuelaArbitro.Correo" class="form-control" />
+                    <span asp-validation-for="EscuelaArbitro.Correo" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                      <input type="submit" value="Crear" class="btn btn-secondary" />

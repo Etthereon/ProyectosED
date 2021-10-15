@@ -30,6 +30,11 @@ namespace Frontend.Pages
 
         public ActionResult OnPost()
         {
+             if(!ModelState.IsValid)
+            {
+                return Page();
+            }
+            
             bool creado =_repomunicipio.CrearMunicipio(Municipio);
             if(creado)
             {

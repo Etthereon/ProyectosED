@@ -17,13 +17,16 @@
                <form method="post">
                   
                    <input type="hidden" asp-for="Equipo.id" />
+                   <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
                    <div class="form-group">
                     <label asp-for="Equipo.Nombre" class="control-label"></label>
                     <input asp-for="Equipo.Nombre" class="form-control" readonly/>
                     <label asp-for="Equipo.CantidadDeportistas" class="control-label">Cantidad de deportistas</label>
                     <input asp-for="Equipo.CantidadDeportistas" class="form-control" />
+                    <span asp-validation-for="Equipo.CantidadDeportistas" class="text-danger"></span>
                     <label asp-for="Equipo.Disciplina" class="control-label"></label>
                     <input asp-for="Equipo.Disciplina" class="form-control" />
+                    <span asp-validation-for="Equipo.Disciplina" class="text-danger"></span>
                     <label asp-for="Equipo.PatrocinadorId" class="control-label">Patrocinador</label>
                     <select asp-for="Equipo.PatrocinadorId" class="form-control"> 
                         <option value="" >**Selecione un Patrocinador>**</option>
@@ -32,9 +35,10 @@
                             <option value="@pat.id">@pat.Nombre</option>
                         }
                     </select>
+                    <span asp-validation-for="Equipo.PatrocinadorId" class="text-danger"></span>
                    </div>
                    <div class="form-group">                       
-                       <input type="submit" value="Edit" class="btn btn-primary"/>                       
+                       <input type="submit" value="Editar" class="btn btn-primary"/>                       
                    </div>
                </form>
            </div>

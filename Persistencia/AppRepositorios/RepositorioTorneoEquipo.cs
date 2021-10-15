@@ -35,36 +35,15 @@ namespace Persistencia
                 return creado;
         }
 
-        /*bool IRepositorioTorneoEquipo.ActualizarTorneoEquipo(TorneoEquipo torneoEquipo)
-        {
-            bool actualizado=false;
-            var torneoeq=_appContext.TorneoEquipos.Find(4);
-            if (torneoeq!=null)
-            {
-                try
-                {
-                     torneoeq.TorneoId=torneoEquipo.TorneoId;
-                     _appContext.SaveChanges();
-                     actualizado=true;
-                }
-                catch (System.Exception)
-                {
-                    
-                    return actualizado;
-                }
-            }
-            return actualizado;
-        }*/
-        
-        bool IRepositorioTorneoEquipo.EliminarTorneoEquipo(int TorneoId, int EquipoId)
+        public bool EliminarTorneoEquipo(int IdTor, int IdEqu)
         {
             bool eliminado=false;
-            var TorneoEquipo = _appContext.TorneoEquipos.Find(TorneoId, EquipoId);
-            if (TorneoEquipo!=null)
+            var torequ=_appContext.TorneoEquipos.FirstOrDefault(t=> t.TorneoId==IdTor && t.EquipoId==IdEqu);
+            if (torequ!=null)
             {
                 try
                 {
-                     _appContext.TorneoEquipos.Remove(TorneoEquipo);
+                     _appContext.TorneoEquipos.Remove(torequ);
                      _appContext.SaveChanges();
                      eliminado=true;
                 }
@@ -74,13 +53,12 @@ namespace Persistencia
                     return eliminado;
                 }
             }
-
-                return eliminado;
-
+            return eliminado;
         }
-        TorneoEquipo IRepositorioTorneoEquipo.BuscarTorneoEquipo(int TorneoId, int EquipoId)
+
+        TorneoEquipo IRepositorioTorneoEquipo.BuscarTorneoEquipo(int IdTor, int IdEqu)
         {
-            TorneoEquipo TorneoEquipo= _appContext.TorneoEquipos.Find(TorneoId, EquipoId);
+            TorneoEquipo TorneoEquipo= _appContext.TorneoEquipos.FirstOrDefault(t=> t.TorneoId==IdTor && t.EquipoId==IdEqu);
             return TorneoEquipo;
         }
 
@@ -99,6 +77,5 @@ namespace Persistencia
             }
             return ex;
         }
-
     }
 }

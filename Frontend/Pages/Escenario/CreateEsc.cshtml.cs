@@ -16,33 +16,38 @@ namespace Frontend.Pages
         private readonly IRepositorioTorneo _repotorneo;
         //Propiedad para transportar al cshtml
         [BindProperty]
-        public Escenario Escenario {get;set;}
-        public IEnumerable<Torneo> Torneos{get;set;}
+        public Escenario Escenario { get; set; }
+        public IEnumerable<Torneo> Torneos { get; set; }
 
         //Constructor
         public CreateEscModel(IRepositorioEscenario repoescenario, IRepositorioTorneo repotorneo)
         {
-            this._repoescenario=repoescenario;
-            this._repotorneo=repotorneo;
+            this._repoescenario = repoescenario;
+            this._repotorneo = repotorneo;
         }
-        
+
         public ActionResult OnGet()
         {
-            Torneos=_repotorneo.ListarTorneos();
+            Torneos = _repotorneo.ListarTorneos();
             return Page();
         }
 
         public ActionResult OnPost()
         {
-            bool creado =_repoescenario.CrearEscenario(Escenario);
-            if(creado)
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            bool creado = _repoescenario.CrearEscenario(Escenario);
+            if (creado)
             {
                 return RedirectToPage("./EscIndex");
             }
             else
             {
-                Torneos=_repotorneo.ListarTorneos();
-                ViewData ["Error"]= "El escenario ya se encuentra registrado";
+                Torneos = _repotorneo.ListarTorneos();
+                ViewData["Error"] = "El escenario ya se encuentra registrado";
                 return Page();
             }
         }

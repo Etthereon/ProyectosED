@@ -16,33 +16,38 @@ namespace Frontend.Pages
         private readonly IRepositorioEquipo _repoequipo;
         //Propiedad para transportar al cshtml
         [BindProperty]
-        public Entrenador Entrenador {get;set;}
-        public IEnumerable<Equipo> Equipo{get;set;} 
+        public Entrenador Entrenador { get; set; }
+        public IEnumerable<Equipo> Equipo { get; set; }
 
         //Constructor
         public CreateEntModel(IRepositorioEntrenador repoentrenador, IRepositorioEquipo repoequipo)
         {
-            this._repoentrenador=repoentrenador;
-            this._repoequipo=repoequipo;
+            this._repoentrenador = repoentrenador;
+            this._repoequipo = repoequipo;
         }
-        
+
         public ActionResult OnGet()
         {
-            Equipo=_repoequipo.ListarEquipos();
+            Equipo = _repoequipo.ListarEquipos();
             return Page();
         }
 
         public ActionResult OnPost()
         {
-            bool creado =_repoentrenador.CrearEntrenador(Entrenador);
-            if(creado)
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            bool creado = _repoentrenador.CrearEntrenador(Entrenador);
+            if (creado)
             {
                 return RedirectToPage("./EntIndex");
             }
             else
             {
-                Equipo=_repoequipo.ListarEquipos();
-                ViewData ["Mensaje"]= "El entrenador ya se encuentra registrado";
+                Equipo = _repoequipo.ListarEquipos();
+                ViewData["Mensaje"] = "El entrenador ya se encuentra registrado";
                 return Page();
             }
         }

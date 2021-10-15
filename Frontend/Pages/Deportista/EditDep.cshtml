@@ -17,27 +17,37 @@
                <form method="post">
                   
                    <input type="hidden" asp-for="Deportista.id" />
+                   <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
                    <div class="form-group">
                     <label asp-for="Deportista.Documento" class="control-label" ></label>
                     <input asp-for="Deportista.Documento" class="form-control" readonly/>
                     <label asp-for="Deportista.Nombres" class="control-label"></label>
                     <input asp-for="Deportista.Nombres" class="form-control" />
+                    <span asp-validation-for="Deportista.Nombres" class="text-danger"></span>
                     <label asp-for="Deportista.Apellidos" class="control-label"></label>
                     <input asp-for="Deportista.Apellidos" class="form-control" />
+                    <span asp-validation-for="Deportista.Apellidos" class="text-danger"></span>
                     <label asp-for="Deportista.Genero" class="control-label"></label>
                     <input asp-for="Deportista.Genero" class="form-control" />
+                    <span asp-validation-for="Deportista.Genero" class="text-danger"></span>
                     <label asp-for="Deportista.Rh" class="control-label"></label>
                     <input asp-for="Deportista.Rh" class="form-control" />
+                    <span asp-validation-for="Deportista.Rh" class="text-danger"></span>
                     <label asp-for="Deportista.EPS" class="control-label"></label>
                     <input asp-for="Deportista.EPS" class="form-control" />
+                    <span asp-validation-for="Deportista.EPS" class="text-danger"></span>
                     <label asp-for="Deportista.FechaNac" class="control-label"></label>
                     <input asp-for="Deportista.FechaNac" class="form-control" />
+                    <span asp-validation-for="Deportista.FechaNac" class="text-danger"></span>
                     <label asp-for="Deportista.Disciplina" class="control-label"></label>
                     <input asp-for="Deportista.Disciplina" class="form-control" />
+                    <span asp-validation-for="Deportista.Disciplina" class="text-danger"></span>
                     <label asp-for="Deportista.Direccion" class="control-label"></label>
                     <input asp-for="Deportista.Direccion" class="form-control" />
+                    <span asp-validation-for="Deportista.Direccion" class="text-danger"></span>
                     <label asp-for="Deportista.NumeroEmergencia" class="control-label"></label>
                     <input asp-for="Deportista.NumeroEmergencia" class="form-control" />
+                    <span asp-validation-for="Deportista.NumeroEmergencia" class="text-danger"></span>
                     <label asp-for="Deportista.EquipoId" class="control-label">Deportista</label>
                     <select asp-for="Deportista.EquipoId" class="form-control"> 
                         <option value="" >**Selecione un Equipo**</option>
@@ -46,10 +56,10 @@
                             <option value="@equi.id">@equi.Nombre</option>
                         }
                     </select>                      
-                       
+                    <span asp-validation-for="Deportista.EquipoId" class="text-danger"></span>
                    </div>
                    <div class="form-group">                       
-                       <input type="submit" value="Edit" class="btn btn-primary"/>                       
+                       <input type="submit" value="Editar" class="btn btn-primary"/>                       
                    </div>
                </form>
            </div>

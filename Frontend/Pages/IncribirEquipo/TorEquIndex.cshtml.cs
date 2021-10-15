@@ -43,6 +43,7 @@ namespace Frontend.Pages
                     if (te.TorneoId==tor.id)
                     {
                         torequView.Torneo=tor.Nombre;
+                        torequView.TorneoId=tor.id;
                     } 
                 }
 
@@ -51,6 +52,7 @@ namespace Frontend.Pages
                     if(te.EquipoId==equ.id)
                     {
                         torequView.Equipo= equ.Nombre;
+                        torequView.EquipoId=equ.id;
                     }
                 }
                 TorneoEquipoView.Add(torequView);

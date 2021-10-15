@@ -15,11 +15,11 @@ namespace Frontend.Pages
         private readonly IRepositorioEscuelaArbitro _repoescuelaarbitro;
         //Crear propiedad para trasportar al cshtml
         [BindProperty] //Se tiene que crear un uso directo y se debe etiquetar, se hace asi, Como propiedad principal.
-        public EscuelaArbitro EscuelaArbitro {get;set;}
+        public EscuelaArbitro EscuelaArbitro { get; set; }
         //Constructor 
-        public CreateEscuelaArbitroModel (IRepositorioEscuelaArbitro repoescuelaarbitro)
+        public CreateEscuelaArbitroModel(IRepositorioEscuelaArbitro repoescuelaarbitro)
         {
-            this._repoescuelaarbitro=repoescuelaarbitro;
+            this._repoescuelaarbitro = repoescuelaarbitro;
         }
         //Retornar usuario. 
         public ActionResult OnGet() //retornar algo al usuario, no puede ser void, por ese se pone un ActionResult.
@@ -28,17 +28,22 @@ namespace Frontend.Pages
         }
         public ActionResult OnPost()
         {
-           bool creado= _repoescuelaarbitro.CrearEscuelaArbitro(EscuelaArbitro);
-           if (creado)
-           {
-               return RedirectToPage("./EAIndex");
-           }
-           else 
-           {
-               ViewData["Mensaje"]= "La Escuela ya se encuntra registrada"; //Identificador. 
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
 
-               return Page();
-           }
+            bool creado = _repoescuelaarbitro.CrearEscuelaArbitro(EscuelaArbitro);
+            if (creado)
+            {
+                return RedirectToPage("./EAIndex");
+            }
+            else
+            {
+                ViewData["Mensaje"] = "La Escuela ya se encuntra registrada"; //Identificador. 
+
+                return Page();
+            }
         }
     }
 }

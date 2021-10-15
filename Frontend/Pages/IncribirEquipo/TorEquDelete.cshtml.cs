@@ -24,16 +24,24 @@ namespace Frontend.Pages
 
         [BindProperty]
         public TorneoEquipo TorneoEquipo {get;set;}
-        public IEnumerable<Torneo> Torneos {get;set;}
-        public IEnumerable<Equipo> Equipos {get;set;}
+        public Torneo Torneo {get;set;}
+        public Equipo Equipo {get;set;}
 
-        public ActionResult OnGet(int TorneoId, int EquipoId)
+        public ActionResult OnGet(int IdTor, int IdEqu)
         {
-            ViewData["Mensaje"]="Esta seguro de eliminar el registro?";
-            TorneoEquipo= _repotorneoequipo.BuscarTorneoEquipo(TorneoId, EquipoId);
-            Torneos=_repotorneo.ListarTorneos();
-            Equipos=_repoequipo.ListarEquipos();
-            return Page();
+            
+            TorneoEquipo= _repotorneoequipo.BuscarTorneoEquipo(IdTor, IdEqu);
+            Torneo=_repotorneo.BuscarTorneo(IdTor);
+            Equipo=_repoequipo.BuscarEquipo(IdEqu);
+            if(TorneoEquipo!=null)
+            {
+                ViewData["Mensaje"]="Esta seguro de eliminar el equipo del torneo?";
+                return Page();
+            }
+            else
+            {
+                return RedirectToPage("./TorEquIndex");
+            }
         }
 
          public ActionResult OnPost()
@@ -45,8 +53,7 @@ namespace Frontend.Pages
              }
              else
              {
-                Torneos=_repotorneo.ListarTorneos();
-                Equipos=_repoequipo.ListarEquipos();
+                ViewData["Error"]="No es posible retirar el equipo del torneo";
                 return Page();
              }
              

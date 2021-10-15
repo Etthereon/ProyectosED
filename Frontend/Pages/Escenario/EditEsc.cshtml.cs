@@ -15,35 +15,39 @@ namespace Frontend.Pages
         private readonly IRepositorioTorneo _repotorneo;
         public EditEscModel(IRepositorioEscenario repoescenario, IRepositorioTorneo repotorneo)
         {
-            this._repoescenario=repoescenario;
-            this._repotorneo=repotorneo;
+            this._repoescenario = repoescenario;
+            this._repotorneo = repotorneo;
         }
         [BindProperty]
-        public Escenario Escenario{get;set;}
-        public IEnumerable<Torneo> Torneos{get;set;}
+        public Escenario Escenario { get; set; }
+        public IEnumerable<Torneo> Torneos { get; set; }
 
         public ActionResult OnGet(int id)
-        {            
-            Escenario= _repoescenario.BuscarEscenario(id);
-            Torneos=_repotorneo.ListarTorneos();
+        {
+            Escenario = _repoescenario.BuscarEscenario(id);
+            Torneos = _repotorneo.ListarTorneos();
             return Page();
         }
 
-         public ActionResult OnPost()
-         {
-                       
-            bool funciono=_repoescenario.ActualizarEscenario(Escenario);
-            if(funciono)
+        public ActionResult OnPost()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            bool funciono = _repoescenario.ActualizarEscenario(Escenario);
+            if (funciono)
             {
                 return RedirectToPage("./EscIndex");
             }
             else
             {
-                Torneos=_repotorneo.ListarTorneos();
-                ViewData["Mensaje"]="Se ha presentado un error...";
+                Torneos = _repotorneo.ListarTorneos();
+                ViewData["Mensaje"] = "Se ha presentado un error...";
                 return Page();
-            }             
-            
-         }
+            }
+
+        }
     }
 }

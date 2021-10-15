@@ -18,37 +18,42 @@ namespace Frontend.Pages
 
         //Propiedad para transportar al cshtml
         [BindProperty]
-        public Arbitro Arbitro {get;set;}
-        public IEnumerable<Torneo> Torneo {get;set;} 
-        public IEnumerable <EscuelaArbitro> EscuelaArbitro {get;set;}
+        public Arbitro Arbitro { get; set; }
+        public IEnumerable<Torneo> Torneo { get; set; }
+        public IEnumerable<EscuelaArbitro> EscuelaArbitro { get; set; }
 
         //Constructor
         public CreateArbModel(IRepositorioArbitro repoarbitro, IRepositorioTorneo repotorneo, IRepositorioEscuelaArbitro repoescuelaarbitro)
         {
-            this._repoarbitro=repoarbitro;
-            this._repotorneo=repotorneo;
-            this._repoescuelaarbitro=repoescuelaarbitro;
+            this._repoarbitro = repoarbitro;
+            this._repotorneo = repotorneo;
+            this._repoescuelaarbitro = repoescuelaarbitro;
         }
-        
+
         public ActionResult OnGet()
         {
-            Torneo= _repotorneo.ListarTorneos();
-            EscuelaArbitro= _repoescuelaarbitro.ListarEscuelaArbitros();
+            Torneo = _repotorneo.ListarTorneos();
+            EscuelaArbitro = _repoescuelaarbitro.ListarEscuelaArbitros();
             return Page();
         }
 
         public ActionResult OnPost()
         {
-            bool creado =_repoarbitro.CrearArbitro(Arbitro);
-            if(creado)
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            bool creado = _repoarbitro.CrearArbitro(Arbitro);
+            if (creado)
             {
                 return RedirectToPage("./ArbIndex");
             }
             else
             {
-                Torneo= _repotorneo.ListarTorneos();
-                EscuelaArbitro= _repoescuelaarbitro.ListarEscuelaArbitros();
-                ViewData ["Mensaje"]= "El arbitro ya se encuentra registrado";
+                Torneo = _repotorneo.ListarTorneos();
+                EscuelaArbitro = _repoescuelaarbitro.ListarEscuelaArbitros();
+                ViewData["Mensaje"] = "El arbitro ya se encuentra registrado";
                 return Page();
             }
         }

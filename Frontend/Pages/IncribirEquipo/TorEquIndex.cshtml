@@ -21,7 +21,7 @@
                 <td>@torequ.Torneo</td>
                 <td>@torequ.Equipo</td>
                 <td>
-                    <a asp-page="./TorEquDelete" asp-route-id="@torequ.Torneo" class="btn btn-warning">Eliminar</a>
+                    <a asp-page="./TorEquDelete" asp-route-IdTor="@torequ.TorneoId" asp-route-IdEqu="@torequ.EquipoId"class="btn btn-warning">Eliminar</a>
                 </td>
             </tr>
         }

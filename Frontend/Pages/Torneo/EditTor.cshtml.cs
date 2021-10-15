@@ -31,6 +31,10 @@ namespace Frontend.Pages
 
          public ActionResult OnPost()
          {
+             if(!ModelState.IsValid)
+            {
+                return Page();
+            }
                        
             bool funciono=_repotorneo.ActualizarTorneo(Torneo);
             if(funciono)

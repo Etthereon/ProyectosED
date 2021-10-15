@@ -11,18 +11,23 @@
     <div class="row">
         <div class=col-md-4>
             <form method="POST">
-                <div> </div>
+                <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
                 <div class="form-group">
                     <label asp-for="Torneo.Nombre" class="control-label"></label>
                     <input asp-for="Torneo.Nombre" class="form-control" />
+                    <span asp-validation-for="Torneo.Nombre" class="text-danger"></span>
                     <label asp-for="Torneo.Categoria" class="control-label"></label>
                     <input asp-for="Torneo.Categoria" class="form-control" />
+                    <span asp-validation-for="Torneo.Categoria" class="text-danger"></span>
                     <label asp-for="Torneo.FechaInicial" class="control-label">Fecha de inicio</label>
                     <input asp-for="Torneo.FechaInicial" class="form-control" />
+                    <span asp-validation-for="Torneo.FechaInicial" class="text-danger"></span>
                     <label asp-for="Torneo.FechaFinal" class="control-label">Fecha final</label>
                     <input asp-for="Torneo.FechaFinal" class="form-control" />
+                    <span asp-validation-for="Torneo.FechaFinal" class="text-danger"></span>
                     <label asp-for="Torneo.Tipo" class="control-label"></label>
                     <input asp-for="Torneo.Tipo" class="form-control" />
+                    <span asp-validation-for="Torneo.Tipo" class="text-danger"></span>
                     <label asp-for="Torneo.MunicipioId" class="control-label">Municipio</label>
                     <select asp-for="Torneo.MunicipioId" class="form-control" >
                         <option value="">**Seleccione un Municipio**</option>
@@ -32,6 +37,7 @@
                             
                         }
                     </select>
+                    <span asp-validation-for="Torneo.MunicipioId" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <br>

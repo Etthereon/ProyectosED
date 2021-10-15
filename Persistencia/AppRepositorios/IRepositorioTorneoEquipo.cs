@@ -7,7 +7,7 @@ namespace Persistencia
     {
         IEnumerable<TorneoEquipo> ListarTorneoEquipos();
         bool CrearTorneoEquipo(TorneoEquipo torneoEquipo);
-        bool EliminarTorneoEquipo(int TorneoId, int EquipoId);
-        TorneoEquipo BuscarTorneoEquipo(int TorneoId, int EquipoId);
+        bool EliminarTorneoEquipo(int IdTor, int IdEqu);
+        TorneoEquipo BuscarTorneoEquipo(int IdTor, int IdEqu);
     }
 }

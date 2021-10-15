@@ -30,6 +30,10 @@ namespace Frontend.Pages
 
          public ActionResult OnPost()
          {
+             if(!ModelState.IsValid)
+            {
+                return Page();
+            }
                        
             bool funciono=_repopatrocinador.ActualizarPatrocinador(Patrocinador);
             if(funciono)

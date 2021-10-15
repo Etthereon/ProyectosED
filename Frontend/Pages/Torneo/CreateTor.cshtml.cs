@@ -34,6 +34,10 @@ namespace Frontend.Pages
 
         public ActionResult OnPost()
         {
+            if(!ModelState.IsValid)
+            {
+                return Page();
+            }
             bool creado =_repotorneo.CrearTorneo(Torneo);
             if(creado)
             {

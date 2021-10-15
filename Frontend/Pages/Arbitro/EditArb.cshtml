@@ -17,17 +17,22 @@
                <form method="post">
                   
                    <input type="hidden" asp-for="Arbitro.id" />
+                   <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
                    <div class="form-group">
                     <label asp-for="Arbitro.Documento" class="control-label"></label>
                     <input asp-for="Arbitro.Documento" class="form-control" readonly/>
                     <label asp-for="Arbitro.Nombres" class="control-label"></label>
                     <input asp-for="Arbitro.Nombres" class="form-control" />
+                    <span asp-validation-for="Arbitro.Nombres" class="text-danger"></span>
                     <label asp-for="Arbitro.Apellidos" class="control-label"></label>
                     <input asp-for="Arbitro.Apellidos" class="form-control" />
+                    <span asp-validation-for="Arbitro.Apellidos" class="text-danger"></span>
                     <label asp-for="Arbitro.Genero" class="control-label"></label>
                     <input asp-for="Arbitro.Genero" class="form-control" />
+                    <span asp-validation-for="Arbitro.Genero" class="text-danger"></span>
                     <label asp-for="Arbitro.Disciplina" class="control-label"></label>
                     <input asp-for="Arbitro.Disciplina" class="form-control" />
+                    <span asp-validation-for="Arbitro.Disciplina" class="text-danger"></span>
                     <label asp-for="Arbitro.TorneoId" class="control-label">Torneo</label>
                     <select asp-for="Arbitro.TorneoId" class="form-control"> 
                              <option value="" >**Selecione un Torneo**</option>
@@ -36,6 +41,7 @@
                                    <option value="@tor.id">@tor.Nombre</option>
                               }
                          </select> 
+                         <span asp-validation-for="Arbitro.TorneoId" class="text-danger"></span>
                     <label asp-for="Arbitro.EscuelaArbitroId" class="control-label">Escuela Arbitro</label>
                     <select asp-for="Arbitro.EscuelaArbitroId" class="form-control"> 
                               <option value="" >**Selecione una Escuela>**</option>
@@ -43,7 +49,8 @@
                                  {
                                       <option value="@EA.id">@EA.Nombre</option>
                                  }
-                         </select>                
+                         </select>   
+                         <span asp-validation-for="Arbitro.EscuelaArbitroId" class="text-danger"></span>             
                        
                    </div>
                    <div class="form-group">                       

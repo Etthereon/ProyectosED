@@ -11,28 +11,41 @@
     <div class="row">
         <div class=col-md-4>
             <form method="POST">
-                <div> </div>
+                <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
                 <div class="form-group">
                     <label asp-for="Arbitro.Documento" class="control-label"></label>
                     <input asp-for="Arbitro.Documento" class="form-control" />
+                    <span asp-validation-for="Arbitro.Documento" class="text-danger"></span>
                     <label asp-for="Arbitro.Nombres" class="control-label"></label>
                     <input asp-for="Arbitro.Nombres" class="form-control" />
+                    <span asp-validation-for="Arbitro.Nombres" class="text-danger"></span>
                     <label asp-for="Arbitro.Apellidos" class="control-label"></label>
                     <input asp-for="Arbitro.Apellidos" class="form-control" />
+                    <span asp-validation-for="Arbitro.Apellidos" class="text-danger"></span>
                     <label asp-for="Arbitro.Genero" class="control-label"></label>
                     <input asp-for="Arbitro.Genero" class="form-control" />
+                    <span asp-validation-for="Arbitro.Genero" class="text-danger"></span>
                     <label asp-for="Arbitro.Disciplina" class="control-label"></label>
                     <input asp-for="Arbitro.Disciplina" class="form-control" />
+                    <span asp-validation-for="Arbitro.Disciplina" class="text-danger"></span>
                     <label asp-for="Arbitro.TorneoId" class="control-label">Torneo</label>
-                    <input asp-for="Arbitro.TorneoId" class="form-control" />
+                    <select asp-for="Arbitro.TorneoId" class="form-control"> 
+                        <option value="" >**Selecione un Torneo**</option>
+                        @foreach (var tor in Model.Torneo)
+                        {
+                            <option value="@tor.id">@tor.Nombre</option>
+                        }
+                    </select>
+                    <span asp-validation-for="Arbitro.TorneoId" class="text-danger"></span>
                     <label asp-for="Arbitro.EscuelaArbitroId" class="control-label">EscuelaArbitro</label>
                     <select asp-for="Arbitro.EscuelaArbitroId" class="form-control"> 
-                        <option value="" >**Selecione una Escuela>**</option>
+                        <option value="" >**Selecione una Escuela**</option>
                         @foreach (var EA in Model.EscuelaArbitro)
                         {
                             <option value="@EA.id">@EA.Nombre</option>
                         }
                     </select>
+                    <span asp-validation-for="Arbitro.EscuelaArbitroId" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <br>
