@@ -3,8 +3,13 @@
 @{
     ViewData["Title"]="Edit";
 }
+<br>
+<br>
+<br>
+<br>
 
 <h1>Editar Arbitros </h1>
+<br>
 <h4>Arbitro</h4>
 <h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
@@ -26,8 +31,12 @@
                     <span asp-validation-for="Arbitro.Nombres" class="text-danger"></span>
                     <label asp-for="Arbitro.Apellidos" class="control-label"></label>
                     <input asp-for="Arbitro.Apellidos" class="form-control" />
+<<<<<<< HEAD:Frontend/Pages/PEDArbitro/EditArb.cshtml
                     <span asp-validation-for="Arbitro.Apellidos" class="text-danger"></span>
                     <label asp-for="Arbitro.Genero" class="control-label"></label>
+=======
+                    <label asp-for="Arbitro.Genero" class="control-label">Género</label>
+>>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Arbitro/EditArb.cshtml
                     <input asp-for="Arbitro.Genero" class="form-control" />
                     <span asp-validation-for="Arbitro.Genero" class="text-danger"></span>
                     <label asp-for="Arbitro.Disciplina" class="control-label"></label>
@@ -41,8 +50,12 @@
                                    <option value="@tor.id">@tor.Nombre</option>
                               }
                          </select> 
+<<<<<<< HEAD:Frontend/Pages/PEDArbitro/EditArb.cshtml
                          <span asp-validation-for="Arbitro.TorneoId" class="text-danger"></span>
                     <label asp-for="Arbitro.EscuelaArbitroId" class="control-label">Escuela Arbitro</label>
+=======
+                    <label asp-for="Arbitro.EscuelaArbitroId" class="control-label">Escuela de arbitros</label>
+>>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Arbitro/EditArb.cshtml
                     <select asp-for="Arbitro.EscuelaArbitroId" class="form-control"> 
                               <option value="" >**Selecione una Escuela>**</option>
                                 @foreach (var EA in Model.EscuelaArbitro)
@@ -53,15 +66,16 @@
                          <span asp-validation-for="Arbitro.EscuelaArbitroId" class="text-danger"></span>             
                        
                    </div>
+                   <br>
                    <div class="form-group">                       
-                       <input type="submit" value="Editar" class="btn btn-primary"/>                       
+                       <input type="submit" value="Editar" class="btn btn-success"/>                       
                    </div>
                </form>
            </div>
         </div>
-
+<br>
         <div>
-            <a asp-page="ArbIndex"> Ir a Inicio</a>
+            <a asp-page="ArbIndex">Volver</a>
         </div> 
 </div>
 

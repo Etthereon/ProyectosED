@@ -3,6 +3,11 @@
 @{
     ViewData["Titulo"]="Create"; // Sirven para el manejo de directivas. 
 }
+<br>
+<br>
+<br>
+<br>
+
 <h1>Crear Escuela de Arbitros</h1> 
 <h3 class="text-danger">@ViewData["Mensaje"] </h3>
 
@@ -15,6 +20,7 @@
                 <div class="form-group"> 
                     <label asp-for="EscuelaArbitro.Nombre" class="control-label"> </label>
                     <input asp-for="EscuelaArbitro.Nombre" class="form-control" />
+<<<<<<< HEAD:Frontend/Pages/PEDEscuelaArbitro/CreateEscuelaArbitro.cshtml
                     <span asp-validation-for="EscuelaArbitro.Nombre" class="text-danger"></span>
                     <label asp-for="EscuelaArbitro.Resolucion" class="control-label"> </label>
                     <input asp-for="EscuelaArbitro.Resolucion" class="form-control" />
@@ -26,17 +32,28 @@
                     <input asp-for="EscuelaArbitro.Telefono" class="form-control" />
                     <span asp-validation-for="EscuelaArbitro.Telefono" class="text-danger"></span>
                     <label asp-for="EscuelaArbitro.Correo" class="control-label"> </label>
+=======
+                    <label asp-for="EscuelaArbitro.Resolucion" class="control-label">Resolución</label>
+                    <input asp-for="EscuelaArbitro.Resolucion" class="form-control" />
+                    <label asp-for="EscuelaArbitro.Direccion" class="control-label">Dirección</label>
+                    <input asp-for="EscuelaArbitro.Direccion" class="form-control" />
+                    <label asp-for="EscuelaArbitro.Telefono" class="control-label">Teléfono</label>
+                    <input asp-for="EscuelaArbitro.Telefono" class="form-control" />
+                    <label asp-for="EscuelaArbitro.Correo" class="control-label">Escuela</label>
+>>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/EscuelaArbitro/CreateEscuelaArbitro.cshtml
                     <input asp-for="EscuelaArbitro.Correo" class="form-control" />
                     <span asp-validation-for="EscuelaArbitro.Correo" class="text-danger"></span>
                 </div>
+                <br>
                 <div class="form-group">
-                     <input type="submit" value="Crear" class="btn btn-secondary" />
+                     <input type="submit" value="Crear" class="btn btn-success" />
                 </div>
             </form>
         </div>
     </div>
+    <br>
     <div>
-        <a asp-page="EAIndex">Ir al Inicio</a>
+        <a asp-page="EAIndex">Volver</a>
     </div>
 </div>
 @section Scripts {

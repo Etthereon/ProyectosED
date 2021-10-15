@@ -3,9 +3,13 @@
 @{
     ViewData["Title"]="Edit";
 }
-
-<h1>Editar Municipios </h1>
-<h4>Municipio</h4>
+<br>
+<br>
+<br>
+<br>
+<h1>Editar Deportistas </h1>
+<br>
+<h4>Deportista</h4>
 <h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
 <div class="form-horizontal">
@@ -35,8 +39,12 @@
                     <span asp-validation-for="Deportista.Rh" class="text-danger"></span>
                     <label asp-for="Deportista.EPS" class="control-label"></label>
                     <input asp-for="Deportista.EPS" class="form-control" />
+<<<<<<< HEAD:Frontend/Pages/PEDDeportista/EditDep.cshtml
                     <span asp-validation-for="Deportista.EPS" class="text-danger"></span>
                     <label asp-for="Deportista.FechaNac" class="control-label"></label>
+=======
+                    <label asp-for="Deportista.FechaNac" class="control-label">Fecha de nacimiento</label>
+>>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Deportista/EditDep.cshtml
                     <input asp-for="Deportista.FechaNac" class="form-control" />
                     <span asp-validation-for="Deportista.FechaNac" class="text-danger"></span>
                     <label asp-for="Deportista.Disciplina" class="control-label"></label>
@@ -44,11 +52,17 @@
                     <span asp-validation-for="Deportista.Disciplina" class="text-danger"></span>
                     <label asp-for="Deportista.Direccion" class="control-label"></label>
                     <input asp-for="Deportista.Direccion" class="form-control" />
+<<<<<<< HEAD:Frontend/Pages/PEDDeportista/EditDep.cshtml
                     <span asp-validation-for="Deportista.Direccion" class="text-danger"></span>
                     <label asp-for="Deportista.NumeroEmergencia" class="control-label"></label>
                     <input asp-for="Deportista.NumeroEmergencia" class="form-control" />
                     <span asp-validation-for="Deportista.NumeroEmergencia" class="text-danger"></span>
                     <label asp-for="Deportista.EquipoId" class="control-label">Deportista</label>
+=======
+                    <label asp-for="Deportista.NumeroEmergencia" class="control-label">Numero de emergencia</label>
+                    <input asp-for="Deportista.NumeroEmergencia" class="form-control" />
+                    <label asp-for="Deportista.EquipoId" class="control-label">Equipo</label>
+>>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Deportista/EditDep.cshtml
                     <select asp-for="Deportista.EquipoId" class="form-control"> 
                         <option value="" >**Selecione un Equipo**</option>
                         @foreach (var equi in Model.Equipo)
@@ -58,15 +72,20 @@
                     </select>                      
                     <span asp-validation-for="Deportista.EquipoId" class="text-danger"></span>
                    </div>
+                   <br>
                    <div class="form-group">                       
+<<<<<<< HEAD:Frontend/Pages/PEDDeportista/EditDep.cshtml
                        <input type="submit" value="Editar" class="btn btn-primary"/>                       
+=======
+                       <input type="submit" value="Editar" class="btn btn-success"/>                       
+>>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Deportista/EditDep.cshtml
                    </div>
                </form>
            </div>
         </div>
-
+        <br>
         <div>
-            <a asp-page="DepIndex"> Ir a Inicio</a>
+            <a asp-page="DepIndex">Volver</a>
         </div> 
 </div>
 

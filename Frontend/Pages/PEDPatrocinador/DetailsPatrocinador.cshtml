@@ -3,8 +3,15 @@
 @{
     ViewData["Title"]="Details";
 }
+<br>
+<br>
+<br>
+<br>
+
 <h1>Detalles del Patrocinadores</h1>
+<br>
 <h4>Patrocinador</h4>
+
 
 <div class="form-horizontal">
         <hr />
@@ -20,7 +27,7 @@
                    </div> -->
 
                    <div class="form-group">
-                    <label asp-for="Patrocinador.Identificacion" class="control-label"> </label>
+                    <label asp-for="Patrocinador.Identificacion" class="control-label">Identificación</label>
                     <input asp-for="Patrocinador.Identificacion" class="form-control" readonly/>                     
                    </div>
 
@@ -30,26 +37,26 @@
                    </div>
 
                     <div class="form-group">
-                    <label asp-for="Patrocinador.tipoPersona" class="control-label"> </label>
+                    <label asp-for="Patrocinador.tipoPersona" class="control-label">Tipo de persona</label>
                     <input asp-for="Patrocinador.tipoPersona" class="form-control" readonly/>                   
                     </div>
 
                     <div class="form-group">
-                    <label asp-for="Patrocinador.Direccion" class="control-label"> </label>
+                    <label asp-for="Patrocinador.Direccion" class="control-label">Dirección</label>
                     <input asp-for="Patrocinador.Direccion" class="form-control" readonly/>                   
                     </div>
                    
                     <div class="form-group">
-                    <label asp-for="Patrocinador.Telefono" class="control-label"> </label>
+                    <label asp-for="Patrocinador.Telefono" class="control-label">Teléfono</label>
                     <input asp-for="Patrocinador.Telefono" class="form-control" readonly/>                  
                     </div>
 
                </form>
            </div>
         </div>
-
+<br>
         <div>
-            <a asp-page="PIndex"> Ir a Inicio</a>
+            <a asp-page="PIndex">Volver</a>
         </div> 
 </div>
 

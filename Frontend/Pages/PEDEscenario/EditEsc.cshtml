@@ -3,8 +3,14 @@
 @{
     ViewData["Title"]="Edit";
 }
+<br>
+<br>
+<br>
+<br>
 
 <h1>Editar Escenarios </h1>
+<br>
+
 <h4>Escenario</h4>
 <h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
@@ -21,10 +27,14 @@
                    <div class="form-group">
                     <label asp-for="Escenario.Nombre" class="control-label"></label>
                     <input asp-for="Escenario.Nombre" class="form-control" readonly/>
-                    <label asp-for="Escenario.Direccion" class="control-label"></label>
+                    <label asp-for="Escenario.Direccion" class="control-label">Dirección</label>
                     <input asp-for="Escenario.Direccion" class="form-control" />
+<<<<<<< HEAD:Frontend/Pages/PEDEscenario/EditEsc.cshtml
                     <span asp-validation-for="Escenario.Direccion" class="text-danger"></span>
                     <label asp-for="Escenario.Telefono" class="control-label"></label>
+=======
+                    <label asp-for="Escenario.Telefono" class="control-label">Teléfono</label>
+>>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Escenario/EditEsc.cshtml
                     <input asp-for="Escenario.Telefono" class="form-control" />
                     <span asp-validation-for="Escenario.Telefono" class="text-danger"></span>
                     <label asp-for="Escenario.Horario" class="control-label"></label>
@@ -41,15 +51,20 @@
                     </select>                  
                     <span asp-validation-for="Escenario.TorneoId" class="text-danger"></span> 
                    </div>
+                   <br>
                    <div class="form-group">                       
+<<<<<<< HEAD:Frontend/Pages/PEDEscenario/EditEsc.cshtml
                        <input type="submit" value="Editar" class="btn btn-primary"/>                       
+=======
+                       <input type="submit" value="Editar" class="btn btn-success"/>                       
+>>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Escenario/EditEsc.cshtml
                    </div>
                </form>
            </div>
         </div>
-
+<br>
         <div>
-            <a asp-page="EscIndex"> Ir a Inicio</a>
+            <a asp-page="EscIndex">Volver</a>
         </div> 
 </div>
 

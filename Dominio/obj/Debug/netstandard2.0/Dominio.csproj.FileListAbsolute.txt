@@ -43,3 +43,12 @@ C:\Proyecto\Aplicacion\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.Asse
 C:\Proyecto\Aplicacion\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.csproj.CoreCompileInputs.cache
 C:\Proyecto\Aplicacion\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.dll
 C:\Proyecto\Aplicacion\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.pdb
+C:\Users\Felip\Documents\Desarrollo de software\Proyecto\ProyectosED\Dominio\bin\Debug\netstandard2.0\Dominio.deps.json
+C:\Users\Felip\Documents\Desarrollo de software\Proyecto\ProyectosED\Dominio\bin\Debug\netstandard2.0\Dominio.dll
+C:\Users\Felip\Documents\Desarrollo de software\Proyecto\ProyectosED\Dominio\bin\Debug\netstandard2.0\Dominio.pdb
+C:\Users\Felip\Documents\Desarrollo de software\Proyecto\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.csprojAssemblyReference.cache
+C:\Users\Felip\Documents\Desarrollo de software\Proyecto\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\Felip\Documents\Desarrollo de software\Proyecto\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs
+C:\Users\Felip\Documents\Desarrollo de software\Proyecto\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Felip\Documents\Desarrollo de software\Proyecto\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.dll
+C:\Users\Felip\Documents\Desarrollo de software\Proyecto\ProyectosED\Dominio\obj\Debug\netstandard2.0\Dominio.pdb
