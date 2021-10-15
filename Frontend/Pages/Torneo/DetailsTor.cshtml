@@ -2,8 +2,14 @@
 @model Frontend.Pages.DetailsTorModel
 @{
 }
+<br>
+<br>
+<br>
+<br>
+
 
 <h1>Detalles de Torneos</h1>
+<br>
 <h4>Torneo</h4>
 
 <div class="form-horizontal">
@@ -23,7 +29,7 @@
                    <div class="form-group">
                         <label asp-for="Torneo.Nombre" class="control-label"></label>
                         <input asp-for="Torneo.Nombre" class="form-control" readonly/>
-                        <label asp-for="Torneo.Categoria" class="control-label"></label>
+                        <label asp-for="Torneo.Categoria" class="control-label">Categoría</label>
                         <input asp-for="Torneo.Categoria" class="form-control" readonly/>
                    </div>
 
@@ -48,9 +54,9 @@
                </form>
            </div>
         </div>
-
+<br>
         <div>
-            <a asp-page="TorIndex"> Ir a Inicio</a>
+            <a asp-page="TorIndex">Volver</a>
         </div> 
 </div>
 

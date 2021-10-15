@@ -3,9 +3,16 @@
 @{
     ViewData["Title"]="Edit";
 }
+<br>
+<b>
+<br>
+<br>
 
-<h1>Editar Equipos </h1>
+</b>
+<h1>Editar equipos </h1>
+<br>
 <h4>Equipo</h4>
+
 <h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
 <div class="form-horizontal">
@@ -33,15 +40,17 @@
                         }
                     </select>
                    </div>
+                   <br>
+
                    <div class="form-group">                       
-                       <input type="submit" value="Edit" class="btn btn-primary"/>                       
+                       <input type="submit" value="Editar" class="btn btn-success"/>                       
                    </div>
                </form>
            </div>
         </div>
-
+<br>
         <div>
-            <a asp-page="EquIndex"> Ir a Inicio</a>
+            <a asp-page="EquIndex">Volver</a>
         </div> 
 </div>
 
