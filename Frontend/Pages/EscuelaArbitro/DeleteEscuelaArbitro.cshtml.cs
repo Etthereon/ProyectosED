@@ -23,7 +23,7 @@ namespace Frontend.Pages
 
         public ActionResult OnGet(int Id)
         {
-            ViewData["Mensaje"]="Esta seguro de eliminar el registro?";
+            ViewData["Mensaje"]="¿Esta seguro de eliminar el registro?";
             EscuelaArbitro= _repoescuelaarbitro.BuscarEscuelaArbitro(Id);
             return Page();
         }
