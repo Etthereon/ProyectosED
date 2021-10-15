@@ -30,6 +30,8 @@ namespace Dominio
         public int CapacidadEspectadores { get; set; }
 
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
+        //[MaxLength(20, ErrorMessage = "No puede superar los 20 caracteres.")]
+        //[MinLength(3, ErrorMessage = "No puede ser menor de los 3 caracteres.")]
         public double Medidas { get; set; }
 
         //llave foranea

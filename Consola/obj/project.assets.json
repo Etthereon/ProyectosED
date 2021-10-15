@@ -1512,6 +1512,9 @@
       "Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "compile": {
           "bin/placeholder/Dominio.dll": {}
         },
@@ -5801,11 +5804,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyecto\\Aplicacion\\consola\\Consola.csproj",
+      "projectUniqueName": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Consola\\Consola.csproj",
       "projectName": "Consola",
-      "projectPath": "C:\\Proyecto\\Aplicacion\\consola\\Consola.csproj",
+      "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Consola\\Consola.csproj",
       "packagesPath": "C:\\Users\\Javier Fernando\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyecto\\Aplicacion\\consola\\obj\\",
+      "outputPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Javier Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5819,8 +5822,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Proyecto\\Aplicacion\\Persistencia\\Persistencia.csproj": {
-              "projectPath": "C:\\Proyecto\\Aplicacion\\Persistencia\\Persistencia.csproj"
+            "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\Persistencia.csproj": {
+              "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\Persistencia.csproj"
             }
           }
         }

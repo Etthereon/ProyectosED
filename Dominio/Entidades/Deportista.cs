@@ -69,5 +69,6 @@ namespace Dominio
 
         //pripiedad navigacional con Torneo
         public List<Torneo> Torneos{get;set;} //Esta propiedad no existe
+
     }
 }

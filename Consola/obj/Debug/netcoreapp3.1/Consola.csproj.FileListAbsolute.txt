@@ -202,3 +202,9 @@ C:\Proyecto\Aplicacion\consola\obj\Debug\netcoreapp3.1\Consola.csproj.CopyComple
 C:\Proyecto\Aplicacion\consola\obj\Debug\netcoreapp3.1\Consola.dll
 C:\Proyecto\Aplicacion\consola\obj\Debug\netcoreapp3.1\Consola.pdb
 C:\Proyecto\Aplicacion\consola\obj\Debug\netcoreapp3.1\Consola.genruntimeconfig.cache
+C:\Proyecto\Aplicacion\ProyectosED\Consola\obj\Debug\netcoreapp3.1\Consola.csprojAssemblyReference.cache
+C:\Proyecto\Aplicacion\ProyectosED\Consola\obj\Debug\netcoreapp3.1\Consola.AssemblyInfoInputs.cache
+C:\Proyecto\Aplicacion\ProyectosED\Consola\obj\Debug\netcoreapp3.1\Consola.AssemblyInfo.cs
+C:\Proyecto\Aplicacion\ProyectosED\Consola\obj\Debug\netcoreapp3.1\Consola.csproj.CoreCompileInputs.cache
+C:\Proyecto\Aplicacion\ProyectosED\Consola\obj\Debug\netcoreapp3.1\Consola.dll
+C:\Proyecto\Aplicacion\ProyectosED\Consola\obj\Debug\netcoreapp3.1\Consola.pdb

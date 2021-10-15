@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyecto\\Aplicacion\\consola\\Consola.csproj": {}
+    "C:\\Proyecto\\Aplicacion\\ProyectosED\\Consola\\Consola.csproj": {}
   },
   "projects": {
-    "C:\\Proyecto\\Aplicacion\\consola\\Consola.csproj": {
+    "C:\\Proyecto\\Aplicacion\\ProyectosED\\Consola\\Consola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto\\Aplicacion\\consola\\Consola.csproj",
+        "projectUniqueName": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Consola\\Consola.csproj",
         "projectName": "Consola",
-        "projectPath": "C:\\Proyecto\\Aplicacion\\consola\\Consola.csproj",
+        "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Consola\\Consola.csproj",
         "packagesPath": "C:\\Users\\Javier Fernando\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto\\Aplicacion\\consola\\obj\\",
+        "outputPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Consola\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Javier Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -25,8 +25,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Proyecto\\Aplicacion\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "C:\\Proyecto\\Aplicacion\\Persistencia\\Persistencia.csproj"
+              "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\Proyecto\\Aplicacion\\Dominio\\Dominio.csproj": {
+    "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto\\Aplicacion\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Proyecto\\Aplicacion\\Dominio\\Dominio.csproj",
+        "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\Javier Fernando\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto\\Aplicacion\\Dominio\\obj\\",
+        "outputPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Javier Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -103,6 +103,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -119,14 +123,14 @@
         }
       }
     },
-    "C:\\Proyecto\\Aplicacion\\Persistencia\\Persistencia.csproj": {
+    "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto\\Aplicacion\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "C:\\Proyecto\\Aplicacion\\Persistencia\\Persistencia.csproj",
+        "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\Javier Fernando\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto\\Aplicacion\\Persistencia\\obj\\",
+        "outputPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Javier Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -140,8 +144,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Proyecto\\Aplicacion\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Proyecto\\Aplicacion\\Dominio\\Dominio.csproj"
+              "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj"
               }
             }
           }
