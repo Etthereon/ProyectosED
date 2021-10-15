@@ -26,7 +26,7 @@ namespace Dominio
         public string Disciplina{get;set;}
 
         //propiedad navigacional
-        public List<Entrenador> Entrenador{get;set;} //public Entrenador Entrenador {get;set;}
+        public Entrenador Entrenador {get;set;} //public Entrenador Entrenador {get;set;}
         public List<TorneoEquipo> TorneoEquipos{get;set;}
         public List<Deportista> Deportistas{get;set;}
 

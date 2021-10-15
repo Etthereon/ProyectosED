@@ -27,32 +27,38 @@ namespace Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Apellidos")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Disciplina")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<string>("Documento")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(12)
+                        .HasColumnType("nvarchar(12)");
 
-                    b.Property<int>("EscuelaArbitro")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("EscuelaArbitroid")
+                    b.Property<int>("EscuelaArbitroId")
                         .HasColumnType("int");
 
                     b.Property<string>("Genero")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<string>("Nombres")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<int>("TorneoId")
                         .HasColumnType("int");
 
                     b.HasKey("id");
 
-                    b.HasIndex("EscuelaArbitroid");
+                    b.HasIndex("EscuelaArbitroId");
 
                     b.HasIndex("TorneoId");
 
@@ -70,21 +76,33 @@ namespace Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Disciplina")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<int?>("Entrenadorid")
+                        .HasColumnType("int");
 
                     b.Property<int>("EscenarioId")
                         .HasColumnType("int");
 
                     b.Property<string>("Estado")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
-                    b.Property<double>("Medidas")
-                        .HasColumnType("float");
+                    b.Property<string>("Medidas")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasKey("id");
+
+                    b.HasIndex("Entrenadorid");
 
                     b.HasIndex("EscenarioId");
 
@@ -99,19 +117,28 @@ namespace Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Apellidos")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Direccion")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Disciplina")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Documento")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<string>("EPS")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<int>("EquipoId")
                         .HasColumnType("int");
@@ -120,16 +147,23 @@ namespace Persistencia.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Genero")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<string>("Nombres")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("NumeroEmergencia")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(12)
+                        .HasColumnType("nvarchar(12)");
 
                     b.Property<string>("Rh")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(5)
+                        .HasColumnType("nvarchar(5)");
 
                     b.HasKey("id");
 
@@ -146,26 +180,36 @@ namespace Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Apellidos")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("DisciplinaDeportiva")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Documento")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(12)
+                        .HasColumnType("nvarchar(12)");
 
                     b.Property<int>("EquipoId")
                         .HasColumnType("int");
 
                     b.Property<string>("Genero")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<string>("Nombres")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasKey("id");
 
-                    b.HasIndex("EquipoId");
+                    b.HasIndex("EquipoId")
+                        .IsUnique();
 
                     b.ToTable("Entrenadores");
                 });
@@ -181,10 +225,14 @@ namespace Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Disciplina")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<int>("PatrocinadorId")
                         .HasColumnType("int");
@@ -204,16 +252,22 @@ namespace Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Direccion")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Horario")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Telefono")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(12)
+                        .HasColumnType("nvarchar(12)");
 
                     b.Property<int>("TorneoId")
                         .HasColumnType("int");
@@ -233,19 +287,26 @@ namespace Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Correo")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("Direccion")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("Resolucion")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(12)
+                        .HasColumnType("nvarchar(12)");
 
                     b.Property<string>("Telefono")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.HasKey("id");
 
@@ -260,7 +321,9 @@ namespace Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.HasKey("id");
 
@@ -275,19 +338,27 @@ namespace Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Direccion")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("Identificacion")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<string>("Telefono")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<string>("tipoPersona")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.HasKey("id");
 
@@ -302,10 +373,9 @@ namespace Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Categoria")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("Deportistaid")
-                        .HasColumnType("int");
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.Property<DateTime>("FechaFinal")
                         .HasColumnType("datetime2");
@@ -317,14 +387,16 @@ namespace Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Tipo")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
 
                     b.HasKey("id");
-
-                    b.HasIndex("Deportistaid");
 
                     b.HasIndex("MunicipioId");
 
@@ -350,7 +422,9 @@ namespace Persistencia.Migrations
                 {
                     b.HasOne("Dominio.EscuelaArbitro", null)
                         .WithMany("Arbitros")
-                        .HasForeignKey("EscuelaArbitroid");
+                        .HasForeignKey("EscuelaArbitroId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Dominio.Torneo", null)
                         .WithMany("Arbitros")
@@ -361,11 +435,17 @@ namespace Persistencia.Migrations
 
             modelBuilder.Entity("Dominio.CanchaEspacio", b =>
                 {
+                    b.HasOne("Dominio.Entrenador", "Entrenador")
+                        .WithMany()
+                        .HasForeignKey("Entrenadorid");
+
                     b.HasOne("Dominio.Escenario", null)
                         .WithMany("CanchaEspacios")
                         .HasForeignKey("EscenarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Entrenador");
                 });
 
             modelBuilder.Entity("Dominio.Deportista", b =>
@@ -380,8 +460,8 @@ namespace Persistencia.Migrations
             modelBuilder.Entity("Dominio.Entrenador", b =>
                 {
                     b.HasOne("Dominio.Equipo", null)
-                        .WithMany("Entrenador")
-                        .HasForeignKey("EquipoId")
+                        .WithOne("Entrenador")
+                        .HasForeignKey("Dominio.Entrenador", "EquipoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -406,10 +486,6 @@ namespace Persistencia.Migrations
 
             modelBuilder.Entity("Dominio.Torneo", b =>
                 {
-                    b.HasOne("Dominio.Deportista", null)
-                        .WithMany("Torneos")
-                        .HasForeignKey("Deportistaid");
-
                     b.HasOne("Dominio.Municipio", null)
                         .WithMany("Torneos")
                         .HasForeignKey("MunicipioId")
@@ -434,11 +510,6 @@ namespace Persistencia.Migrations
                     b.Navigation("Equipo");
 
                     b.Navigation("Torneo");
-                });
-
-            modelBuilder.Entity("Dominio.Deportista", b =>
-                {
-                    b.Navigation("Torneos");
                 });
 
             modelBuilder.Entity("Dominio.Equipo", b =>

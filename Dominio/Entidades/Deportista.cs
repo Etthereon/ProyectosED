@@ -67,8 +67,5 @@ namespace Dominio
         [Required(ErrorMessage = "El campo Equipo es obligatorio, seleccione una opcion o vaya a la tabla y creela previamente")]
         public int EquipoId{get;set;}
 
-        //pripiedad navigacional con Torneo
-        public List<Torneo> Torneos{get;set;} //Esta propiedad no existe
-
     }
 }

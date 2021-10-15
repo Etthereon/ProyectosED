@@ -10,7 +10,7 @@ namespace Dominio
         public string Disciplina{get;set;}
         public string Estado{get;set;}
         public int CapacidadEspectadores{get;set;}
-        public double Medidas{get;set;}
+        public string Medidas{get;set;}
         public string Escenario{get;set;}
 
     }

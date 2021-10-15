@@ -32,8 +32,8 @@ namespace Dominio
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         //[MaxLength(20, ErrorMessage = "No puede superar los 20 caracteres.")]
         //[MinLength(3, ErrorMessage = "No puede ser menor de los 3 caracteres.")]
-        public double Medidas { get; set; }
-
+        public string Medidas { get; set; }
+        public Entrenador Entrenador { get; set; }
         //llave foranea
         [Required(ErrorMessage = "El campo Escenario es obligatorio, seleccione una opcion o vaya a la tabla y creela previamente")]
         public int EscenarioId { get; set; }

@@ -829,7 +829,7 @@ namespace Consola
             }
         }
 
-        private static bool eliminarTorneoEquipo()
+        /*private static bool eliminarTorneoEquipo()
         {
             bool funciono=_repotorneoequipo.EliminarTorneoEquipo(5);
             if (funciono)
@@ -840,30 +840,6 @@ namespace Consola
                 {
                 Console.WriteLine("Se ha presentado una falla en el proceso.");
                 }
-            return funciono;
-        }
-
-        private static bool actualizarTorneoEquipo()
-        {
-            var torneoequipo = new TorneoEquipo
-            {
-                
-            };
-            bool funciono =_repotorneoequipo.ActualizarTorneoEquipo(torneoequipo);
-
-            if (funciono)
-            {
-                Console.WriteLine("Torneo-Equipo actualizado con exito.");
-                Console.WriteLine("Lista actualizada");
-                listarTorneoEquipos();
-
-            }
-            else
-            {
-                Console.WriteLine("Se ha presentado una falla en el proceso.");
-            }
-
-
             return funciono;
         }
 
@@ -880,7 +856,7 @@ namespace Consola
                 Console.WriteLine("TorneoEquipo no encontrado.");
                 
             }
-        }
+        }*/
 
         //-------------------------------------------------------
 
