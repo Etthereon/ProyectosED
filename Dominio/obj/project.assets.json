@@ -285,11 +285,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyecto\\Aplicacion\\ProyectosED\\dominio\\Dominio.csproj",
+      "projectUniqueName": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj",
       "projectName": "Dominio",
-      "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\dominio\\Dominio.csproj",
+      "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj",
       "packagesPath": "C:\\Users\\Javier Fernando\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\dominio\\obj\\",
+      "outputPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Javier Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -3,8 +3,13 @@
 @{
     ViewData["Title"]="Edit";
 }
+<br>
+<br>
+<br>
+<br>
 
 <h1>Editar Torneos</h1>
+<br>
 <h4>Torneo</h4>
 <h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
@@ -21,7 +26,7 @@
                    <div class="form-group">
                     <label asp-for="Torneo.Nombre" class="control-label"></label>
                     <input asp-for="Torneo.Nombre" class="form-control" readonly/>
-                    <label asp-for="Torneo.Categoria" class="control-label"></label>
+                    <label asp-for="Torneo.Categoria" class="control-label">Categoría</label>
                     <input asp-for="Torneo.Categoria" class="form-control" />
                     <span asp-validation-for="Torneo.Categoria" class="text-danger"></span>
                     <label asp-for="Torneo.FechaInicial" class="control-label">Fecha de inicio</label>
@@ -44,15 +49,20 @@
                     </select>                     
                        
                    </div>
+                   <br>
                    <div class="form-group">                       
+<<<<<<< HEAD:Frontend/Pages/PEDTorneo/EditTor.cshtml
                        <input type="submit" value="Editar" class="btn btn-primary"/>                       
+=======
+                       <input type="submit" value="Editar" class="btn btn-success"/>                       
+>>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Torneo/EditTor.cshtml
                    </div>
                </form>
            </div>
         </div>
-
+<br>
         <div>
-            <a asp-page="TorIndex">Ir a Inicio</a>
+            <a asp-page="TorIndex">Volver</a>
         </div> 
 </div>
 

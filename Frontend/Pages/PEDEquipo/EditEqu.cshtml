@@ -3,9 +3,16 @@
 @{
     ViewData["Title"]="Edit";
 }
+<br>
+<b>
+<br>
+<br>
 
-<h1>Editar Equipos </h1>
+</b>
+<h1>Editar equipos </h1>
+<br>
 <h4>Equipo</h4>
+
 <h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
 <div class="form-horizontal">
@@ -37,15 +44,21 @@
                     </select>
                     <span asp-validation-for="Equipo.PatrocinadorId" class="text-danger"></span>
                    </div>
+                   <br>
+
                    <div class="form-group">                       
+<<<<<<< HEAD:Frontend/Pages/PEDEquipo/EditEqu.cshtml
                        <input type="submit" value="Editar" class="btn btn-primary"/>                       
+=======
+                       <input type="submit" value="Editar" class="btn btn-success"/>                       
+>>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Equipo/EditEqu.cshtml
                    </div>
                </form>
            </div>
         </div>
-
+<br>
         <div>
-            <a asp-page="EquIndex"> Ir a Inicio</a>
+            <a asp-page="EquIndex">Volver</a>
         </div> 
 </div>
 

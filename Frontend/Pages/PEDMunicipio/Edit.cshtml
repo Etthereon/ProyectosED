@@ -4,7 +4,13 @@
     ViewData["Title"]="Edit";
 }
 
+<br>
+<br>
+<br>
+<br>
+
 <h1>Editar Municipios </h1>
+<br>
 <h4>Municipio</h4>
 <h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
@@ -22,15 +28,20 @@
                        <input asp-for="Municipio.Nombre"  class="form-control" readonly/>                      
                        
                    </div>
+                   <br>
                    <div class="form-group">                       
+<<<<<<< HEAD:Frontend/Pages/PEDMunicipio/Edit.cshtml
                        <input type="submit" value="Editar" class="btn btn-primary"/>                       
+=======
+                       <input type="submit" value="Editar" class="btn btn-success"/>                       
+>>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Municipio/Edit.cshtml
                    </div>
                </form>
            </div>
         </div>
-
+        <br>
         <div>
-            <a asp-page="MunIndex"> Ir al Inicio</a>
+            <a asp-page="MunIndex">Volver</a>
         </div> 
 </div>
 

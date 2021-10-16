@@ -3,9 +3,17 @@
 @{
     ViewData["Title"]="Delete";
 }
-<h1>Borrar Patrocinadores</h1>
+<br>
+<br>
+<br>
+<br>
+
+<h1>Borrar Patrocinador</h1>
+<br>
 <h4>Patrocinador</h4>
-<h2 class="text-danger">@ViewData["Mensaje"] </h2>
+
+
+
 <div class="form-horizontal">        
         <hr />        
         <div class="row">
@@ -13,26 +21,27 @@
                <form method="post">                   
                    <input type="hidden" asp-for="Patrocinador.id" />
                    <div class="form-group">
-                    <label asp-for="Patrocinador.Identificacion" class="control-label"> </label>
+                    <label asp-for="Patrocinador.Identificacion" class="control-label">Identificación</label>
                     <input asp-for="Patrocinador.Identificacion" class="form-control" readonly/>
                     <label asp-for="Patrocinador.Nombre" class="control-label"> </label>
                     <input asp-for="Patrocinador.Nombre" class="form-control" readonly/>
-                    <label asp-for="Patrocinador.tipoPersona" class="control-label"> </label>
+                    <label asp-for="Patrocinador.tipoPersona" class="control-label">tipo de persona</label>
                     <input asp-for="Patrocinador.tipoPersona" class="form-control" readonly/>
-                    <label asp-for="Patrocinador.Direccion" class="control-label"> </label>
+                    <label asp-for="Patrocinador.Direccion" class="control-label">Dirección</label>
                     <input asp-for="Patrocinador.Direccion" class="form-control" readonly/>
-                    <label asp-for="Patrocinador.Telefono" class="control-label"> </label>
+                    <label asp-for="Patrocinador.Telefono" class="control-label">Teléfono</label>
                     <input asp-for="Patrocinador.Telefono" class="form-control" readonly/>                               
                    </div>
+                   <h5 class="text-danger">@ViewData["Mensaje"] </h5>
                    <div class="form-group">                       
-                       <input type="submit" value="Eliminar" class="btn btn-primary"/>                       
+                       <input type="submit" value="Eliminar" class="btn btn-success"/>                       
                    </div>
                </form>
            </div>
         </div>
-
+<br>
         <div>
-            <a asp-page="PIndex"> Ir a Inicio</a>
+            <a asp-page="PIndex">Volver</a>
         </div> 
 </div>
 

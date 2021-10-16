@@ -3,6 +3,11 @@
 @{
     ViewData["title"]="Create";
 }
+
+<br>
+<br>
+<br>
+<br>
 <h1>Crear Municipio</h1>
 <h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
@@ -11,7 +16,12 @@
     <div class="row">
         <div class=col-md-4>
             <form method="POST">
+<<<<<<< HEAD:Frontend/Pages/PEDMunicipio/Create.cshtml
                 <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
+=======
+                <div> </div>
+                <br>
+>>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Municipio/Create.cshtml
                 <div class="form-group">
                     <label asp-for="Municipio.Nombre" class="control-label"></label>
                     <input asp-for="Municipio.Nombre" class="form-control" />
@@ -19,13 +29,14 @@
                 </div>
                 <div class="form-group">
                     <br>
-                    <input type="submit" value="Crear" class="btn btn-primary" />
+                    <input type="submit" value="Crear" class="btn btn-success" />
                 </div>
             </form>
         </div>
     </div>
+    <br>
     <div>
-        <a asp-page="MunIndex">Ir a Inicio</a>
+        <a asp-page="MunIndex">Volver</a>
     </div>
 </div>
 @section Scripts

@@ -5805,11 +5805,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Frontend.csproj",
+      "projectUniqueName": "C:\\Proyecto\\Aplicacion\\ProyectosED\\frontend\\Frontend.csproj",
       "projectName": "Frontend",
-      "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\Frontend.csproj",
+      "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\frontend\\Frontend.csproj",
       "packagesPath": "C:\\Users\\Javier Fernando\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Frontend\\obj\\",
+      "outputPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\frontend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Javier Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5869,5 +5869,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Proyecto\\Aplicacion\\ProyectosED\\frontend\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

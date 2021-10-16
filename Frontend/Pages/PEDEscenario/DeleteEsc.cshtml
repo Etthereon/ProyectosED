@@ -3,9 +3,16 @@
 @{
     ViewData["Title"]="Delete";
 }
+<br>
+<br>
+<br>
+<br>
+
 <h1>Borrar Escenarios</h1>
+<br>
+
 <h4>Escenario</h4>
-<h2 class="text-danger">@ViewData["Mensaje"] </h2>
+
 <div class="form-horizontal">        
         <hr />        
         <div class="row">
@@ -15,9 +22,9 @@
                    <div class="form-group">
                         <label asp-for="Escenario.Nombre" class="control-label"></label>
                         <input asp-for="Escenario.Nombre" class="form-control" readonly/>
-                        <label asp-for="Escenario.Direccion" class="control-label"></label>
+                        <label asp-for="Escenario.Direccion" class="control-label">Dirección</label>
                         <input asp-for="Escenario.Direccion" class="form-control" readonly/>
-                        <label asp-for="Escenario.Telefono" class="control-label"></label>
+                        <label asp-for="Escenario.Telefono" class="control-label">Teléfono</label>
                         <input asp-for="Escenario.Telefono" class="form-control" readonly/>
                         <label asp-for="Escenario.Horario" class="control-label"></label>
                         <input asp-for="Escenario.Horario" class="form-control" readonly/>
@@ -30,15 +37,16 @@
                             }             
                         </select>
                    </div>
+                   <h5 class="text-danger">@ViewData["Mensaje"] </h5>
                    <div class="form-group">                       
-                       <input type="submit" value="Eliminar" class="btn btn-primary"/>                       
+                       <input type="submit" value="Eliminar" class="btn btn-success"/>                       
                    </div>
                </form>
            </div>
         </div>
-
+<br>
         <div>
-            <a asp-page="EscIndex"> Ir a Inicio</a>
+            <a asp-page="EscIndex">Volver</a>
         </div> 
 </div>
 

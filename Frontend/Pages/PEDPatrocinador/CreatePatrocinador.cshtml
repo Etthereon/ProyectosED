@@ -3,6 +3,10 @@
 @{ 
     ViewData["Titulo"]="Create"; // Sirven para el manejo de directivas. 
 }
+<br>
+<br>
+<br>
+<br>
 <h1>Crear Patrocinador</h1> 
 <h3 class="text-danger">@ViewData["Mensaje"] </h3>
 
@@ -11,13 +15,19 @@
     <div class="row">
         <div class=col-md-4> 
             <form method="post">
+<<<<<<< HEAD:Frontend/Pages/PEDPatrocinador/CreatePatrocinador.cshtml
                 <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
+=======
+                <div> </div>
+                <br>
+>>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Patrocinador/CreatePatrocinador.cshtml
                 <div class="form-group"> 
-                    <label asp-for="Patrocinador.Identificacion" class="control-label"> </label>
+                    <label asp-for="Patrocinador.Identificacion" class="control-label">Identificación</label>
                     <input asp-for="Patrocinador.Identificacion" class="form-control" />
                     <span asp-validation-for="Patrocinador.Identificacion" class="text-danger"></span>
                     <label asp-for="Patrocinador.Nombre" class="control-label"> </label>
                     <input asp-for="Patrocinador.Nombre" class="form-control" />
+<<<<<<< HEAD:Frontend/Pages/PEDPatrocinador/CreatePatrocinador.cshtml
                     <span asp-validation-for="Patrocinador.Nombre" class="text-danger"></span>
                     <label asp-for="Patrocinador.tipoPersona" class="control-label"> </label>
                     <input asp-for="Patrocinador.tipoPersona" class="form-control" />
@@ -26,17 +36,26 @@
                     <input asp-for="Patrocinador.Direccion" class="form-control" />
                     <span asp-validation-for="Patrocinador.Direccion" class="text-danger"></span>
                     <label asp-for="Patrocinador.Telefono" class="control-label"> </label>
+=======
+                    <label asp-for="Patrocinador.tipoPersona" class="control-label">tipo de persona</label>
+                    <input asp-for="Patrocinador.tipoPersona" class="form-control" />
+                    <label asp-for="Patrocinador.Direccion" class="control-label">Dirección</label>
+                    <input asp-for="Patrocinador.Direccion" class="form-control" />
+                    <label asp-for="Patrocinador.Telefono" class="control-label">Teléfono</label>
+>>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Patrocinador/CreatePatrocinador.cshtml
                     <input asp-for="Patrocinador.Telefono" class="form-control" />
                     <span asp-validation-for="Patrocinador.Telefono" class="text-danger"></span>
                 </div>
+                <br>
                 <div class="form-group">
-                     <input type="submit" value="Crear" class="btn btn-primary" />
+                     <input type="submit" value="Crear" class="btn btn-success" />
                 </div>
             </form>
         </div>
     </div>
+    <br>
     <div>
-        <a asp-page="PIndex">Ir al Inicio</a>
+        <a asp-page="PIndex">Volver</a>
     </div>
 </div>
 @section Scripts 
