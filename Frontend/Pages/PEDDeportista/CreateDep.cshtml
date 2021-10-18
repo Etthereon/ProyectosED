@@ -15,12 +15,7 @@
     <div class="row">
         <div class=col-md-4>
             <form method="POST">
-<<<<<<< HEAD:Frontend/Pages/PEDDeportista/CreateDep.cshtml
                 <div asp-validation-summary="ModelOnly" class="text-danger" ></div>
-=======
-                <div> </div>
-                <br>
->>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Deportista/CreateDep.cshtml
                 <div class="form-group">
                     <label asp-for="Deportista.Documento" class="control-label"></label>
                     <input asp-for="Deportista.Documento" class="form-control" />
@@ -30,12 +25,8 @@
                     <span asp-validation-for="Deportista.Nombres" class="text-danger"></span>
                     <label asp-for="Deportista.Apellidos" class="control-label"></label>
                     <input asp-for="Deportista.Apellidos" class="form-control" />
-<<<<<<< HEAD:Frontend/Pages/PEDDeportista/CreateDep.cshtml
                     <span asp-validation-for="Deportista.Apellidos" class="text-danger"></span>
-                    <label asp-for="Deportista.Genero" class="control-label"></label>
-=======
                     <label asp-for="Deportista.Genero" class="control-label">Género</label>
->>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Deportista/CreateDep.cshtml
                     <input asp-for="Deportista.Genero" class="form-control" />
                     <span asp-validation-for="Deportista.Genero" class="text-danger"></span>
                     <label asp-for="Deportista.Rh" class="control-label"></label>
@@ -43,32 +34,20 @@
                     <span asp-validation-for="Deportista.Rh" class="text-danger"></span>
                     <label asp-for="Deportista.EPS" class="control-label"></label>
                     <input asp-for="Deportista.EPS" class="form-control" />
-<<<<<<< HEAD:Frontend/Pages/PEDDeportista/CreateDep.cshtml
                     <span asp-validation-for="Deportista.EPS" class="text-danger"></span>
-                    <label asp-for="Deportista.FechaNac" class="control-label"></label>
-=======
                     <label asp-for="Deportista.FechaNac" class="control-label">Fecha de nacimiento</label>
->>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Deportista/CreateDep.cshtml
                     <input asp-for="Deportista.FechaNac" class="form-control" />
                     <span asp-validation-for="Deportista.FechaNac" class="text-danger"></span>
                     <label asp-for="Deportista.Disciplina" class="control-label"></label>
                     <input asp-for="Deportista.Disciplina" class="form-control" />
-<<<<<<< HEAD:Frontend/Pages/PEDDeportista/CreateDep.cshtml
                     <span asp-validation-for="Deportista.Disciplina" class="text-danger"></span>
-                    <label asp-for="Deportista.Direccion" class="control-label"></label>
-                    <input asp-for="Deportista.Direccion" class="form-control" />
-                    <span asp-validation-for="Deportista.Direccion" class="text-danger"></span>
-                    <label asp-for="Deportista.NumeroEmergencia" class="control-label"></label>
-                    <input asp-for="Deportista.NumeroEmergencia" class="form-control" />
-                    <span asp-validation-for="Deportista.NumeroEmergencia" class="text-danger"></span>
-                    <label asp-for="Deportista.EquipoId" class="control-label">Deportista</label>
-=======
                     <label asp-for="Deportista.Direccion" class="control-label">Dirección</label>
                     <input asp-for="Deportista.Direccion" class="form-control" />
-                    <label asp-for="Deportista.NumeroEmergencia" class="control-label">Numero de emergencia</label>
+                    <span asp-validation-for="Deportista.Direccion" class="text-danger"></span>
+                    <label asp-for="Deportista.NumeroEmergencia" class="control-label">Número de emergencia</label>
                     <input asp-for="Deportista.NumeroEmergencia" class="form-control" />
+                    <span asp-validation-for="Deportista.NumeroEmergencia" class="text-danger"></span>
                     <label asp-for="Deportista.EquipoId" class="control-label">Equipo</label>
->>>>>>> a4a6cf4fae1c6d05301b84149df33ffaa2f4610e:Frontend/Pages/Deportista/CreateDep.cshtml
                     <select asp-for="Deportista.EquipoId" class="form-control"> 
                         <option value="" >**Selecione un Equipo**</option>
                         @foreach (var equi in Model.Equipo)

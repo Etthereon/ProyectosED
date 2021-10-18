@@ -3,9 +3,14 @@
 @{
     ViewData["Title"]="Edit";
 }
+<br>
+<br>
+<br>
+<br>
 
-<h1>Editar Cancha Espacios </h1>
-<h4>Cancha Espacio</h4>
+<h1>Editar canchas </h1>
+<br>
+<h4>Cancha</h4>
 <h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
 <div class="form-horizontal">
@@ -27,7 +32,7 @@
                     <label asp-for="CanchaEspacio.Estado" class="control-label"></label>
                     <input asp-for="CanchaEspacio.Estado" class="form-control" />
                     <span asp-validation-for="CanchaEspacio.Estado" class="text-danger"></span>
-                    <label asp-for="CanchaEspacio.CapacidadEspectadores" class="control-label"></label>
+                    <label asp-for="CanchaEspacio.CapacidadEspectadores" class="control-label">Capacidad de espectadores</label>
                     <input asp-for="CanchaEspacio.CapacidadEspectadores" class="form-control" />
                     <span asp-validation-for="CanchaEspacio.CapacidadEspectadores" class="text-danger"></span>
                     <label asp-for="CanchaEspacio.Medidas" class="control-label"></label>
@@ -44,15 +49,16 @@
                     </select>                    
                     <span asp-validation-for="CanchaEspacio.EscenarioId" class="text-danger"></span>
                    </div>
+                   <br>
                    <div class="form-group">                       
-                       <input type="submit" value="Editar" class="btn btn-primary"/>                       
+                       <input type="submit" value="Editar" class="btn btn-success"/>                       
                    </div>
                </form>
            </div>
         </div>
-
+<br>
         <div>
-            <a asp-page="CEIndex"> Ir a Inicio</a>
+            <a asp-page="CEIndex">Volver</a>
         </div> 
 </div>
 

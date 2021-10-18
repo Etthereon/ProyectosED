@@ -35,7 +35,7 @@ namespace Frontend.Pages
             Equipo=_repoequipo.BuscarEquipo(IdEqu);
             if(TorneoEquipo!=null)
             {
-                ViewData["Mensaje"]="Esta seguro de eliminar el equipo del torneo?";
+                ViewData["Mensaje"]="¿Esta seguro de eliminar el equipo del torneo?";
                 return Page();
             }
             else

@@ -2,9 +2,14 @@
 @model Frontend.Pages.DetailsCEModel
 @{
 }
+<br>
+<br>
+<br>
+<br>
 
-<h1>Detalles de las Canchas Espacios</h1>
-<h4>Cancha Espacio</h4>
+<h1>Detalles de las canchas</h1>
+<br>
+<h4>Canchas</h4>
 
 <div class="form-horizontal">
         
@@ -30,7 +35,7 @@
                    <div class="form-group">
                        <label asp-for="CanchaEspacio.Estado" class="control-label"> </label>
                        <input asp-for="CanchaEspacio.Estado"  class="form-control" readonly/>
-                       <label asp-for="CanchaEspacio.CapacidadEspectadores" class="control-label"> </label>
+                       <label asp-for="CanchaEspacio.CapacidadEspectadores" class="control-label">Capacidad de espectadores</label>
                        <input asp-for="CanchaEspacio.CapacidadEspectadores"  class="form-control" readonly/>   
                        <label asp-for="CanchaEspacio.EscenarioId" class="control-label">Escenario</label>
                        <select name="" id="" asp-for="CanchaEspacio.EscenarioId" class="form-control" disabled>
@@ -45,9 +50,9 @@
                </form>
            </div>
         </div>
-
+<br>
         <div>
-            <a asp-page="CEIndex"> Ir a Inicio</a>
+            <a asp-page="CEIndex">Volver</a>
         </div> 
 </div>
 

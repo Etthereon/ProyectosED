@@ -3,9 +3,15 @@
 @{
     ViewData["Title"]="Delete";
 }
-<h1>Borrar Canchas Espacios</h1>
-<h4>Cancha Espacio</h4>
-<h2 class="text-danger">@ViewData["Mensaje"] </h2>
+<br>
+<br>
+<br>
+<br>
+
+<h1>Borrar canchas</h1>
+<br>
+<h4>Canchas</h4>
+
 <div class="form-horizontal">        
         <hr />        
         <div class="row">
@@ -19,7 +25,7 @@
                         <input asp-for="CanchaEspacio.Disciplina" class="form-control" readonly/>
                         <label asp-for="CanchaEspacio.Estado" class="control-label"></label>
                         <input asp-for="CanchaEspacio.Estado" class="form-control" readonly/>
-                        <label asp-for="CanchaEspacio.CapacidadEspectadores" class="control-label"></label>
+                        <label asp-for="CanchaEspacio.CapacidadEspectadores" class="control-label">Capacidad de espectadores</label>
                         <input asp-for="CanchaEspacio.CapacidadEspectadores" class="form-control" readonly/>
                         <label asp-for="CanchaEspacio.Medidas" class="control-label"></label>
                         <input asp-for="CanchaEspacio.Medidas" class="form-control" readonly/>
@@ -33,15 +39,18 @@
                         </select>                    
                             
                    </div>
+                   <h5 class="text-danger">@ViewData["Mensaje"] </h5>
+                   <br>
+
                    <div class="form-group">                       
-                       <input type="submit" value="Eliminar" class="btn btn-primary"/>                       
+                       <input type="submit" value="Eliminar" class="btn btn-success"/>                       
                    </div>
                </form>
            </div>
         </div>
-
+<br>
         <div>
-            <a asp-page="CEIndex"> Ir a Inicio</a>
+            <a asp-page="CEIndex">Volver</a>
         </div> 
 </div>
 

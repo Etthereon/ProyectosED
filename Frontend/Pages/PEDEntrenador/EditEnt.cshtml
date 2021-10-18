@@ -3,8 +3,13 @@
 @{
      ViewData["Title"]="Edit";
 }
+<br>
+<br>
+<br>
+<br>
 
-<h1>Editar Entrenadores </h1>
+<h1>Editar entrenadores </h1>
+<br>
 <h4>Entrenador</h4>
 <h3 class="text-danger">@ViewData["Mensaje"]</h3>
 
@@ -27,10 +32,10 @@
                     <label asp-for="Entrenador.Apellidos" class="control-label"></label>
                     <input asp-for="Entrenador.Apellidos" class="form-control" />
                     <span asp-validation-for="Entrenador.Apellidos" class="text-danger"></span>
-                    <label asp-for="Entrenador.Genero" class="control-label"></label>
+                    <label asp-for="Entrenador.Genero" class="control-label">Género</label>
                     <input asp-for="Entrenador.Genero" class="form-control" />
                     <span asp-validation-for="Entrenador.Genero" class="text-danger"></span>
-                    <label asp-for="Entrenador.DisciplinaDeportiva" class="control-label"></label>
+                    <label asp-for="Entrenador.DisciplinaDeportiva" class="control-label">Disciplina deportiva</label>
                     <input asp-for="Entrenador.DisciplinaDeportiva" class="form-control" />
                     <span asp-validation-for="Entrenador.DisciplinaDeportiva" class="text-danger"></span>
                     <label asp-for="Entrenador.EquipoId" class="control-label">Equipo</label>
@@ -43,15 +48,16 @@
                     </select>                    
                     <span asp-validation-for="Entrenador.EquipoId" class="text-danger"></span>
                    </div>
+                   <br>
                    <div class="form-group">                       
-                       <input type="submit" value="Editar" class="btn btn-primary"/>                       
+                       <input type="submit" value="Editar" class="btn btn-success"/>                       
                    </div>
                </form>
            </div>
         </div>
-
+<br>
         <div>
-            <a asp-page="EntIndex"> Ir a Inicio</a>
+            <a asp-page="EntIndex">Volver</a>
         </div> 
 </div>
 

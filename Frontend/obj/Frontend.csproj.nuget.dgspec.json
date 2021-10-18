@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyecto\\Aplicacion\\ProyectosED\\frontend\\Frontend.csproj": {}
+    "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Frontend\\Frontend.csproj": {}
   },
   "projects": {
-    "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\Javier Fernando\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\Felip\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Javier Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Felip\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -61,17 +61,17 @@
         }
       }
     },
-    "C:\\Proyecto\\Aplicacion\\ProyectosED\\frontend\\Frontend.csproj": {
+    "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Frontend\\Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto\\Aplicacion\\ProyectosED\\frontend\\Frontend.csproj",
+        "projectUniqueName": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Frontend\\Frontend.csproj",
         "projectName": "Frontend",
-        "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\frontend\\Frontend.csproj",
-        "packagesPath": "C:\\Users\\Javier Fernando\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\frontend\\obj\\",
+        "projectPath": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Frontend\\Frontend.csproj",
+        "packagesPath": "C:\\Users\\Felip\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Javier Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Felip\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -82,11 +82,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj"
+              "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Dominio\\Dominio.csproj"
               },
-              "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\Persistencia.csproj"
+              "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -129,17 +129,17 @@
         }
       }
     },
-    "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\Persistencia.csproj": {
+    "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\Persistencia.csproj",
-        "packagesPath": "C:\\Users\\Javier Fernando\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\obj\\",
+        "projectPath": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Persistencia\\Persistencia.csproj",
+        "packagesPath": "C:\\Users\\Felip\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Javier Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Felip\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -150,8 +150,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj"
+              "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Dominio\\Dominio.csproj"
               }
             }
           }
