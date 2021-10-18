@@ -7266,19 +7266,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Felip\\.nuget\\packages\\": {}
+    "C:\\Users\\Javier Fernando\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Persistencia\\Persistencia.csproj",
+      "projectUniqueName": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\Persistencia.csproj",
       "projectName": "Persistencia",
-      "projectPath": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Persistencia\\Persistencia.csproj",
-      "packagesPath": "C:\\Users\\Felip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Persistencia\\obj\\",
+      "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\Persistencia.csproj",
+      "packagesPath": "C:\\Users\\Javier Fernando\\.nuget\\packages\\",
+      "outputPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Felip\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Javier Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -7289,8 +7289,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\Felip\\Documents\\Desarrollo de software\\Proyecto\\ProyectosED\\Dominio\\Dominio.csproj"
+            "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Proyecto\\Aplicacion\\ProyectosED\\Dominio\\Dominio.csproj"
             }
           }
         }
