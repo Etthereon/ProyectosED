@@ -90,5 +90,19 @@ body {
 
 }
 
+#menu{
+  position: absolute;
+  top: 12px;
+  left: 1350px;
+  text-align: center;
+  color: white;
+}
+#menu:hover{
+  background-color: cornsilk;
+  color: black;
+}
+
+
+
 
 
